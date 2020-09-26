@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Module/Emb_MyServo/MyServoSend.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_70e54bb3413a824ef01dcb0be39aea9c.html">EMB_Module</a></li><li class="navelem"><a class="el" href="dir_c743469d00c7b0c8e09202ac50613e8e.html">Emb_MyServo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">MyServoSend.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>舵机发送数据  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp_8h_source.html">bsp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_app_8h_source.html">EwayApp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_my_servo_send_8h_source.html">MyServoSend.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_self_check_8h_source.html">EwaySelfCheck.h</a>&quot;</code><br />
+</div>
+<p><a href="_my_servo_send_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_SEND</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>发送数据到串口</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>串口号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*punSendBuf</td><td>数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unLength</td><td>数据长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">MyServoAddHead</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机添加帧头</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unKeyWord</td><td>功能码 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*punBuffer</td><td>帧包 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unInfoLength</td><td>帧长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_PING</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>PING功能</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>，ID号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>，COM口号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a057ca0f61ebfa1e3602ac4fc0c49c838"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#a057ca0f61ebfa1e3602ac4fc0c49c838">Mortor_PING</a> (u8 unSlaveAddr, u8 unPort)</td></tr>
+<tr class="memdesc:a057ca0f61ebfa1e3602ac4fc0c49c838"><td class="mdescLeft">&#160;</td><td class="mdescRight">PING舵机  <a href="#a057ca0f61ebfa1e3602ac4fc0c49c838">更多...</a><br /></td></tr>
+<tr class="separator:a057ca0f61ebfa1e3602ac4fc0c49c838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_READ_01</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>读命令</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*unSendBuffer</td><td>寄存器BUF </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unLength</td><td>unSendBuffer长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>发送COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:aff5ac6366189a7210fc2ae4fc7eefb28"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#aff5ac6366189a7210fc2ae4fc7eefb28">Mortor_READ_01</a> (u8 unSlaveAddr, u8 StartReg, u8 unNumber, u8 unPort)</td></tr>
+<tr class="memdesc:aff5ac6366189a7210fc2ae4fc7eefb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">读舵机寄存器——01  <a href="#aff5ac6366189a7210fc2ae4fc7eefb28">更多...</a><br /></td></tr>
+<tr class="separator:aff5ac6366189a7210fc2ae4fc7eefb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_READ</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>读</p>
+<p>通过改变unSendBuffer设定,连续读，或间隔读</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</div></td></tr>
+<tr class="memitem:af1167e55e1298725760a888dc0514b28"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#af1167e55e1298725760a888dc0514b28">Mortor_READ</a> (u8 unSlaveAddr, u8 *unSendBuffer, u16 unLength, u8 unPort)</td></tr>
+<tr class="memdesc:af1167e55e1298725760a888dc0514b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">读舵机寄存器  <a href="#af1167e55e1298725760a888dc0514b28">更多...</a><br /></td></tr>
+<tr class="separator:af1167e55e1298725760a888dc0514b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_WRITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>写命令</p>
+<p>通过unSendBuffer，设置写寄存器及其数据</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*unSendBuffer</td><td>寄存器BUF </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unLength</td><td>unSendBuffer长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>发送COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a7ac09175d9b055d91306cafa90f2541e"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#a7ac09175d9b055d91306cafa90f2541e">Mortor_WRITE</a> (u8 unSlaveAddr, u8 *unSendBuffer, u16 unLength, u8 unPort)</td></tr>
+<tr class="memdesc:a7ac09175d9b055d91306cafa90f2541e"><td class="mdescLeft">&#160;</td><td class="mdescRight">写舵机寄存器  <a href="#a7ac09175d9b055d91306cafa90f2541e">更多...</a><br /></td></tr>
+<tr class="separator:a7ac09175d9b055d91306cafa90f2541e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_SET_ZERO</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>设置舵机零点</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a4cff98b1a8133c247a5bf4b802edf9f4"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#a4cff98b1a8133c247a5bf4b802edf9f4">Mortor_SET_ZERO</a> (u8 unSlaveAddr, u8 unPort)</td></tr>
+<tr class="memdesc:a4cff98b1a8133c247a5bf4b802edf9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置零点  <a href="#a4cff98b1a8133c247a5bf4b802edf9f4">更多...</a><br /></td></tr>
+<tr class="separator:a4cff98b1a8133c247a5bf4b802edf9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_REBORN</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机重启</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a58b0df593a4ce07b19303251db200bfc"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#a58b0df593a4ce07b19303251db200bfc">Mortor_REBORN</a> (u8 unSlaveAddr, u8 unPort)</td></tr>
+<tr class="memdesc:a58b0df593a4ce07b19303251db200bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机重启  <a href="#a58b0df593a4ce07b19303251db200bfc">更多...</a><br /></td></tr>
+<tr class="separator:a58b0df593a4ce07b19303251db200bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_SET_INITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>恢复出场设置</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:ad468c7c259261a3c5007f34621b2e326"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#ad468c7c259261a3c5007f34621b2e326">Mortor_SET_INITE</a> (u8 unSlaveAddr, u8 unPort)</td></tr>
+<tr class="memdesc:ad468c7c259261a3c5007f34621b2e326"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机初始化  <a href="#ad468c7c259261a3c5007f34621b2e326">更多...</a><br /></td></tr>
+<tr class="separator:ad468c7c259261a3c5007f34621b2e326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_BROADCAST_READ</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>广播读</p>
+<p>只连续读</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unRegStartAdd</td><td>寄存器起始ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unRegNum</td><td>读的寄存器个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveStartID</td><td>从站起始ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*delayTime</td><td>回应延迟 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveNumber</td><td>从站个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:abd26882d1d23a798e0dacbdd4ff67d8b"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#abd26882d1d23a798e0dacbdd4ff67d8b">Mortor_BROADCAST_READ</a> (u8 unRegStartAdd, u8 unRegNum, u8 unSlaveStartID, u8 *delayTime, u8 unSlaveNumber, u8 unPort)</td></tr>
+<tr class="memdesc:abd26882d1d23a798e0dacbdd4ff67d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机广播读  <a href="#abd26882d1d23a798e0dacbdd4ff67d8b">更多...</a><br /></td></tr>
+<tr class="separator:abd26882d1d23a798e0dacbdd4ff67d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Mortor_BROADCAST_WRITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>广播写命令</p>
+<p>只可以写连续寄存器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveStartID</td><td>从站起始ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveNumber</td><td>从站个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unRegStartAdd</td><td>寄存器起始ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unRegNum</td><td>读的寄存器个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*punData</td><td>寄存器数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unPort</td><td>COM口</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a97cd1ea63f9deef2a391c595eb499dee"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#a97cd1ea63f9deef2a391c595eb499dee">Mortor_BROADCAST_WRITE</a> (u8 unSlaveStartID, u8 unSlaveNumber, u8 unRegStartAdd, u8 unRegNum, u8 *punData, u8 unPort)</td></tr>
+<tr class="memdesc:a97cd1ea63f9deef2a391c595eb499dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机广播写  <a href="#a97cd1ea63f9deef2a391c595eb499dee">更多...</a><br /></td></tr>
+<tr class="separator:a97cd1ea63f9deef2a391c595eb499dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">SendMortorPID</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机PID修改帧</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unStartID</td><td>从站起始ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unNumber</td><td>个数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a651706957d4bdf8e94be92bf094b5978"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#a651706957d4bdf8e94be92bf094b5978">SendMortorPID</a> (u8 unStartID, u8 unNumber)</td></tr>
+<tr class="separator:a651706957d4bdf8e94be92bf094b5978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aca7d83e1057d4aa9e158fc94c4989872"><td class="memItemLeft" align="right" valign="top">u8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo_send_8c.html#aca7d83e1057d4aa9e158fc94c4989872">pcMyServoSend</a> =&quot;MyS&quot;</td></tr>
+<tr class="separator:aca7d83e1057d4aa9e158fc94c4989872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>舵机发送数据 </p>
+<p>版权所有(C) 2017 - 2022.　北京一维弦科技有限公司. 著作人保留所有权利. 公司通信地址：北京市海淀区北三环西路48号北京科技会展中心1B座16L</p>
+<p>本文件的详细说明. </p><dl class="section author"><dt>作者</dt><dd>xxx, <a href="#" onclick="location.href='mai'+'lto:'+'xxx'+'@e'+'way'+'bo'+'t.c'+'om'; return false;">xxx@e<span style="display: none;">.nosp@m.</span>wayb<span style="display: none;">.nosp@m.</span>ot.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2000-01-01 </dd></dl>
+<dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<dl class="section user"><dt>Change History:</dt><dd></dd></dl>
+<p>&lt;Date&gt; | &lt;Version&gt; | &lt;Author&gt; | </p>
+<p>2000/01/01 | 0.0.1 | xxxx | Create file</p>
+<p>2008/02/13 | 0.0.2 | xxxx | Add ..... </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="abd26882d1d23a798e0dacbdd4ff67d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd26882d1d23a798e0dacbdd4ff67d8b">&#9670;&nbsp;</a></span>Mortor_BROADCAST_READ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_BROADCAST_READ </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unRegStartAdd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unRegNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveStartID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>delayTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机广播读 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00258">258</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_motor_protocol_master_8h_source.html#l00020">BROADCAST_ID</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00012">BROADCAST_READ</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a>.</p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    u8 unSendBuf[256],unSendLenth=0,uni;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">//帧长度</span></div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    unSendLenth=9+unSlaveNumber*2;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">//添加帧头</span></div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    MyServoAddHead(<a class="code" href="_motor_protocol_master_8h.html#a4eac6599886f984c4a3fa492d260e88a">BROADCAST_READ</a>,<a class="code" href="_motor_protocol_master_8h.html#ab9fe47395310b34fa1ceb112c9ca10e2">BROADCAST_ID</a>,unSendBuf,unSendLenth);      </div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    unSendBuf[5]=unRegStartAdd&amp;0XFF;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    unSendBuf[6]=unRegNum&amp;0XFF;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unSlaveNumber;uni++)<span class="comment">//读寄存器</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    {</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        unSendBuf[uni*2+7]=uni+unSlaveStartID+1;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        unSendBuf[uni*2+8]=delayTime[uni];</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);<span class="comment">//校验</span></div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],unSendLenth);</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">for</span>(uni=0;uni&lt;15;uni++)</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a2c24bed6eff2fd7e9db8e40c74f913f8">unPresentSpeedL</a>=0x7531&amp;0xff; </div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a9ebc5ee20f7e51314524edfbcc482b10">unPresentSpeedH</a>=(0x7531&gt;&gt;8)&amp;0xff; </div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">switch</span>(unPort)<span class="comment">//通信质量检测用</span></div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    {</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">case</span> 2:</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                  <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[12].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[13].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                  <span class="keywordflow">break</span>;</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">case</span> 3:</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                  <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[0].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[1].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                  <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[2].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[3].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                  <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[4].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[5].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                  <span class="keywordflow">break</span>;</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">case</span> 4:</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                      <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[6].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[7].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                  <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[8].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[9].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                  <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[10].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[11].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                  <span class="keywordflow">break</span>;</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div><div class="ttc" id="_motor_protocol_master_8h_html_a4eac6599886f984c4a3fa492d260e88a"><div class="ttname"><a href="_motor_protocol_master_8h.html#a4eac6599886f984c4a3fa492d260e88a">BROADCAST_READ</a></div><div class="ttdeci">#define BROADCAST_READ</div><div class="ttdef"><b>Definition:</b> <a href="_motor_protocol_master_8h_source.html#l00012">MotorProtocolMaster.h:12</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a2c24bed6eff2fd7e9db8e40c74f913f8"><div class="ttname"><a href="struct_robot_servo.html#a2c24bed6eff2fd7e9db8e40c74f913f8">RobotServo::unPresentSpeedL</a></div><div class="ttdeci">u8 unPresentSpeedL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00074">EwayServo.h:74</a></div></div>
+<div class="ttc" id="structs485_comunication_html_a65edd4dfae5c428309898977d5dc5bb5"><div class="ttname"><a href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">s485Comunication::un485SendCount</a></div><div class="ttdeci">u16 un485SendCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8h_source.html#l00017">EwaySelfCheck.h:17</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab10cf5dbcd6eab966e884f2b3c375e92"><div class="ttname"><a href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a></div><div class="ttdeci">RobotServo sMyServo[Head_Servo_Num+Arm_Servo_Num+Shoulder_Motor_Num]</div><div class="ttdoc">舵机数据结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00026">EwayServo.c:26</a></div></div>
+<div class="ttc" id="_eway_self_check_8c_html_a02c9842927e7f12896c153ca97b137f0"><div class="ttname"><a href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a></div><div class="ttdeci">s485Comunication s485WholeCount[21]</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8c_source.html#l00013">EwaySelfCheck.c:13</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="_motor_protocol_master_8h_html_ab9fe47395310b34fa1ceb112c9ca10e2"><div class="ttname"><a href="_motor_protocol_master_8h.html#ab9fe47395310b34fa1ceb112c9ca10e2">BROADCAST_ID</a></div><div class="ttdeci">#define BROADCAST_ID</div><div class="ttdef"><b>Definition:</b> <a href="_motor_protocol_master_8h_source.html#l00020">MotorProtocolMaster.h:20</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a9ebc5ee20f7e51314524edfbcc482b10"><div class="ttname"><a href="struct_robot_servo.html#a9ebc5ee20f7e51314524edfbcc482b10">RobotServo::unPresentSpeedH</a></div><div class="ttdeci">u8 unPresentSpeedH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00075">EwayServo.h:75</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a97cd1ea63f9deef2a391c595eb499dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97cd1ea63f9deef2a391c595eb499dee">&#9670;&nbsp;</a></span>Mortor_BROADCAST_WRITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_BROADCAST_WRITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveStartID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unRegStartAdd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unRegNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>punData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机广播写 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00325">325</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_motor_protocol_master_8h_source.html#l00020">BROADCAST_ID</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00013">BROADCAST_WRITE</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_my_servo_send_8c_source.html#l00407">SendMortorPID()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    u8 unSendBuf[256],unSendLenth=0,uni,unj;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">//计算帧长度</span></div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    unSendLenth=9+unSlaveNumber*unRegNum+unSlaveNumber;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">//添加头</span></div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    MyServoAddHead(<a class="code" href="_motor_protocol_master_8h.html#a98da057b2a70bdbe90dd60d7384ba036">BROADCAST_WRITE</a>,<a class="code" href="_motor_protocol_master_8h.html#ab9fe47395310b34fa1ceb112c9ca10e2">BROADCAST_ID</a>,unSendBuf,unSendLenth); </div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    unSendBuf[5]=unRegStartAdd&amp;0XFF;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    unSendBuf[6]=unRegNum&amp;0XFF;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;   <span class="keywordflow">for</span> (uni=0;uni&lt;unSlaveNumber;uni++)<span class="comment">//slaveID i*unRegNum+</span></div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;       unSendBuf[uni*unRegNum+7+uni]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni+unSlaveStartID].<a class="code" href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">unServoSendID</a>;<span class="comment">//从站ID</span></div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;         <span class="keywordflow">for</span> (unj=0;unj&lt;unRegNum;unj++)<span class="comment">//写数据</span></div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        {</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            unSendBuf[uni*unRegNum+8+unj+uni]=punData[uni*unRegNum+unj];</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);<span class="comment">//校验</span></div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],unSendLenth);</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div><div class="ttc" id="_motor_protocol_master_8h_html_a98da057b2a70bdbe90dd60d7384ba036"><div class="ttname"><a href="_motor_protocol_master_8h.html#a98da057b2a70bdbe90dd60d7384ba036">BROADCAST_WRITE</a></div><div class="ttdeci">#define BROADCAST_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="_motor_protocol_master_8h_source.html#l00013">MotorProtocolMaster.h:13</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab10cf5dbcd6eab966e884f2b3c375e92"><div class="ttname"><a href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a></div><div class="ttdeci">RobotServo sMyServo[Head_Servo_Num+Arm_Servo_Num+Shoulder_Motor_Num]</div><div class="ttdoc">舵机数据结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00026">EwayServo.c:26</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_affb1529c95d960fa73cd71093279820c"><div class="ttname"><a href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">RobotServo::unServoSendID</a></div><div class="ttdeci">u8 unServoSendID</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00069">EwayServo.h:69</a></div></div>
+<div class="ttc" id="_motor_protocol_master_8h_html_ab9fe47395310b34fa1ceb112c9ca10e2"><div class="ttname"><a href="_motor_protocol_master_8h.html#ab9fe47395310b34fa1ceb112c9ca10e2">BROADCAST_ID</a></div><div class="ttdeci">#define BROADCAST_ID</div><div class="ttdef"><b>Definition:</b> <a href="_motor_protocol_master_8h_source.html#l00020">MotorProtocolMaster.h:20</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a057ca0f61ebfa1e3602ac4fc0c49c838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057ca0f61ebfa1e3602ac4fc0c49c838">&#9670;&nbsp;</a></span>Mortor_PING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_PING </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PING舵机 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00048">48</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00009">PING</a> , 以及 <a class="el" href="_my_servo_send_8h_source.html#l00034">PingLength_H</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    u8 unSendBuf[<a class="code" href="_my_servo_send_8h.html#a63b5c3ddf395274a5cad493e33c47638">PingLength_H</a>];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//添加头</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#a0934375e02d8b091294f0846581d8282">Ping_H</a>,unSlaveAddr,unSendBuf,<a class="code" href="_my_servo_send_8h.html#a63b5c3ddf395274a5cad493e33c47638">PingLength_H</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],5);<span class="comment">//校验</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],<a class="code" href="_my_servo_send_8h.html#a63b5c3ddf395274a5cad493e33c47638">PingLength_H</a>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="_my_servo_send_8h_html_a63b5c3ddf395274a5cad493e33c47638"><div class="ttname"><a href="_my_servo_send_8h.html#a63b5c3ddf395274a5cad493e33c47638">PingLength_H</a></div><div class="ttdeci">#define PingLength_H</div><div class="ttdoc">PING,帧长 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00034">MyServoSend.h:34</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="_my_servo_send_8h_html_a0934375e02d8b091294f0846581d8282"><div class="ttname"><a href="_my_servo_send_8h.html#a0934375e02d8b091294f0846581d8282">Ping_H</a></div><div class="ttdeci">#define Ping_H</div><div class="ttdoc">PING,在线监测识别，是否做好接收控制指令准备 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00032">MyServoSend.h:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af1167e55e1298725760a888dc0514b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1167e55e1298725760a888dc0514b28">&#9670;&nbsp;</a></span>Mortor_READ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_READ </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>unSendBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读舵机寄存器 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00108">108</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00010">READ</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    u8 unSendBuf[256],unSendLenth=0,uni;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//命令长度</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    unSendLenth=7+unLength;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//添加头</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#a69ae5855fd1b722d8c20ec411b17e144">Read_H</a>,unSlaveAddr,unSendBuf,unSendLenth);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unLength;uni++)<span class="comment">//读寄存器</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            unSendBuf[uni+5]=unSendBuffer[uni];</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);<span class="comment">//校验</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    Mortor_SEND(unPort,&amp;unSendBuf[0],unSendLenth);<span class="comment">//发送</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div><div class="ttc" id="_my_servo_send_8h_html_a69ae5855fd1b722d8c20ec411b17e144"><div class="ttname"><a href="_my_servo_send_8h.html#a69ae5855fd1b722d8c20ec411b17e144">Read_H</a></div><div class="ttdeci">#define Read_H</div><div class="ttdoc">读寄存器;读数据指令 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00036">MyServoSend.h:36</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff5ac6366189a7210fc2ae4fc7eefb28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5ac6366189a7210fc2ae4fc7eefb28">&#9670;&nbsp;</a></span>Mortor_READ_01()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_READ_01 </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>StartReg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读舵机寄存器——01 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00076">76</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a>, <a class="el" href="modbus__host_8c_source.html#l00022">NUM</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00010">READ</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    u8 unSendBuf[256],unLength=0;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    unLength=9;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#a69ae5855fd1b722d8c20ec411b17e144">Read_H</a>,unSlaveAddr,unSendBuf,unLength);  </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    unSendBuf[5]=StartReg;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    unSendBuf[6]=unNumber;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unLength-2);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    unSendBuf[7]=unCRC&amp;0XFF;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    unSendBuf[8]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],unLength);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div><div class="ttc" id="_my_servo_send_8h_html_a69ae5855fd1b722d8c20ec411b17e144"><div class="ttname"><a href="_my_servo_send_8h.html#a69ae5855fd1b722d8c20ec411b17e144">Read_H</a></div><div class="ttdeci">#define Read_H</div><div class="ttdoc">读寄存器;读数据指令 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00036">MyServoSend.h:36</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a58b0df593a4ce07b19303251db200bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b0df593a4ce07b19303251db200bfc">&#9670;&nbsp;</a></span>Mortor_REBORN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_REBORN </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机重启 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00201">201</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00015">REBORN</a>.</p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    u8 unSendBuf[7],unLength;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    unLength=7;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#a740ff978791e20850de2d8fd7cdbfd8e">Reborn_H</a>,unSlaveAddr,unSendBuf,unLength);</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unLength-2);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],unLength);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div><div class="ttc" id="_my_servo_send_8h_html_a740ff978791e20850de2d8fd7cdbfd8e"><div class="ttname"><a href="_my_servo_send_8h.html#a740ff978791e20850de2d8fd7cdbfd8e">Reborn_H</a></div><div class="ttdeci">#define Reborn_H</div><div class="ttdoc">重启,驱动器软件复位重启 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00046">MyServoSend.h:46</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad468c7c259261a3c5007f34621b2e326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad468c7c259261a3c5007f34621b2e326">&#9670;&nbsp;</a></span>Mortor_SET_INITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_SET_INITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机初始化 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00227">227</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00016">SET_INITE</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;{</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    u8 unSendBuf[7],unLength;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    unLength=7;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#a275cc610fbee8f7972cb8e22079dd29b">SetInit_H</a>,unSlaveAddr,unSendBuf,unLength);   </div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unLength-2);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span>(unSlaveAddr&gt;8)</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        Mortor_SEND( unPort,&amp;unSendBuf[0],unLength);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div><div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="_my_servo_send_8h_html_a275cc610fbee8f7972cb8e22079dd29b"><div class="ttname"><a href="_my_servo_send_8h.html#a275cc610fbee8f7972cb8e22079dd29b">SetInit_H</a></div><div class="ttdeci">#define SetInit_H</div><div class="ttdoc">恢复出厂设置 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00048">MyServoSend.h:48</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4cff98b1a8133c247a5bf4b802edf9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff98b1a8133c247a5bf4b802edf9f4">&#9670;&nbsp;</a></span>Mortor_SET_ZERO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_SET_ZERO </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置零点 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00174">174</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00014">SET_ZERO</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    u8 unSendBuf[7],unLength;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    unLength=7;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">//针头</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#a88d1c481b750f07e151a97b566ad1e76">SetZero_H</a>,unSlaveAddr,unSendBuf,unLength);</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unLength-2);<span class="comment">//校验</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],unLength);</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div><div class="ttc" id="_my_servo_send_8h_html_a88d1c481b750f07e151a97b566ad1e76"><div class="ttname"><a href="_my_servo_send_8h.html#a88d1c481b750f07e151a97b566ad1e76">SetZero_H</a></div><div class="ttdeci">#define SetZero_H</div><div class="ttdoc">设定零位,设定当前位置为零位 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00044">MyServoSend.h:44</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7ac09175d9b055d91306cafa90f2541e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac09175d9b055d91306cafa90f2541e">&#9670;&nbsp;</a></span>Mortor_WRITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 Mortor_WRITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>unSendBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写舵机寄存器 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00142">142</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_motor_protocol_master_8h_source.html#l00004">HEADER</a> , 以及 <a class="el" href="_motor_protocol_master_8h_source.html#l00011">WRITE</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    u8 unSendBuf[256],unSendLenth=0,uni;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">//长度</span></div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    unSendLenth=7+unLength;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">//针头</span></div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    MyServoAddHead(<a class="code" href="_my_servo_send_8h.html#adf9101da96e5a67760a80829ea971da6">Write_H</a>,unSlaveAddr,unSendBuf,unSendLenth);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unLength;uni++)<span class="comment">//写寄存器</span></div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;             unSendBuf[uni+5]=unSendBuffer[uni];</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);<span class="comment">//校验</span></div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Mortor_SEND( unPort,&amp;unSendBuf[0],unLength);</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div><div class="ttc" id="_my_servo_send_8h_html_adf9101da96e5a67760a80829ea971da6"><div class="ttname"><a href="_my_servo_send_8h.html#adf9101da96e5a67760a80829ea971da6">Write_H</a></div><div class="ttdeci">#define Write_H</div><div class="ttdoc">写寄存器,写数据指令，收到后验证无误立即执行 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8h_source.html#l00038">MyServoSend.h:38</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a651706957d4bdf8e94be92bf094b5978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651706957d4bdf8e94be92bf094b5978">&#9670;&nbsp;</a></span>SendMortorPID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 SendMortorPID </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unStartID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00407">407</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_my_servo_send_8c_source.html#l00325">Mortor_BROADCAST_WRITE()</a>, <a class="el" href="_eway_c_m_d_8c_source.html#l00032">sBaseCmd</a>, <a class="el" href="_eway_servo_8c_source.html#l00026">sMyServo</a> , 以及 <a class="el" href="_eway_c_m_d_8h_source.html#l00132">EmbBasedCmd::unMyServoPIDFlag</a>.</p>
+<div class="fragment"><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;{</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    u8 unSendBuf[256],uni,unj;</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">for</span> (uni=unStartID;uni&lt;unNumber+unStartID;uni++)</div><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        {</div><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            unSendBuf[(uni-unStartID)*6]  =<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].unKPGainL;</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            unSendBuf[(uni-unStartID)*6+1]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].unKPGainH;</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            unSendBuf[(uni-unStartID)*6+2]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].unKIGainL;</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            unSendBuf[(uni-unStartID)*6+3]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].unKIGainH;</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            unSendBuf[(uni-unStartID)*6+4]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].unKDGainL;</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            unSendBuf[(uni-unStartID)*6+5]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].unKDGainH; </div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        }</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordflow">if</span>(unStartID&gt;12)</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <a class="code" href="_my_servo_send_8c.html#a97cd1ea63f9deef2a391c595eb499dee">Mortor_BROADCAST_WRITE</a>(unStartID,unNumber,0x21,6,unSendBuf,2);<span class="comment">//头</span></div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordflow">if</span>(unStartID&lt;6)</div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <a class="code" href="_my_servo_send_8c.html#a97cd1ea63f9deef2a391c595eb499dee">Mortor_BROADCAST_WRITE</a>(unStartID,unNumber,0x21,6,unSendBuf,3);<span class="comment">//左手</span></div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">if</span>(unStartID&gt;6&amp;&amp;unStartID&lt;12)</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <a class="code" href="_my_servo_send_8c.html#a97cd1ea63f9deef2a391c595eb499dee">Mortor_BROADCAST_WRITE</a>(unStartID,unNumber,0x21,6,unSendBuf,4);<span class="comment">//右手</span></div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="_eway_c_m_d_8c.html#a8755a81e0fb9ccd2960c728c722480c5">sBaseCmd</a>.<a class="code" href="struct_emb_based_cmd.html#a35dddbb2153dbb6db1b848c38eede01e">unMyServoPIDFlag</a>=0;</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div><div class="ttc" id="_eway_c_m_d_8c_html_a8755a81e0fb9ccd2960c728c722480c5"><div class="ttname"><a href="_eway_c_m_d_8c.html#a8755a81e0fb9ccd2960c728c722480c5">sBaseCmd</a></div><div class="ttdeci">EmbBasedCmd sBaseCmd</div><div class="ttdoc">基本设置命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00032">EwayCMD.c:32</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab10cf5dbcd6eab966e884f2b3c375e92"><div class="ttname"><a href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a></div><div class="ttdeci">RobotServo sMyServo[Head_Servo_Num+Arm_Servo_Num+Shoulder_Motor_Num]</div><div class="ttdoc">舵机数据结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00026">EwayServo.c:26</a></div></div>
+<div class="ttc" id="struct_emb_based_cmd_html_a35dddbb2153dbb6db1b848c38eede01e"><div class="ttname"><a href="struct_emb_based_cmd.html#a35dddbb2153dbb6db1b848c38eede01e">EmbBasedCmd::unMyServoPIDFlag</a></div><div class="ttdeci">u8 unMyServoPIDFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00132">EwayCMD.h:132</a></div></div>
+<div class="ttc" id="_my_servo_send_8c_html_a97cd1ea63f9deef2a391c595eb499dee"><div class="ttname"><a href="_my_servo_send_8c.html#a97cd1ea63f9deef2a391c595eb499dee">Mortor_BROADCAST_WRITE</a></div><div class="ttdeci">u8 Mortor_BROADCAST_WRITE(u8 unSlaveStartID, u8 unSlaveNumber, u8 unRegStartAdd, u8 unRegNum, u8 *punData, u8 unPort)</div><div class="ttdoc">舵机广播写 </div><div class="ttdef"><b>Definition:</b> <a href="_my_servo_send_8c_source.html#l00325">MyServoSend.c:325</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="aca7d83e1057d4aa9e158fc94c4989872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7d83e1057d4aa9e158fc94c4989872">&#9670;&nbsp;</a></span>pcMyServoSend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8* pcMyServoSend =&quot;MyS&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_my_servo_send_8c_source.html">MyServoSend.c</a> 第 <a class="el" href="_my_servo_send_8c_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

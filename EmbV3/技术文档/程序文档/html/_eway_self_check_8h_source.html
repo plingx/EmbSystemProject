@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_TaskSchedule/EwaySelfCheck.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_f01bb285a8d2d12c451069ac4cd40c98.html">EMB_TaskSchedule</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EwaySelfCheck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_eway_self_check_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __EWAYSELFCHECK_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __EWAYSELFCHECK_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/*********************************************************************************************************************</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*函数名称：EwayCMD</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*硬件版本：EwayBotV0.2</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*功能： 声明PC发给下位机命令的数据结构，初始化</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*入口：    </span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*出口：</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*作者：</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*创建日期:2016/12/2</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*版本：V0.2</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*********************************************************************************************************************/</span> </div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bsp_8h.html">bsp.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structs485_comunication.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{   </div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">   17</a></span>&#160; u16 <a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>;<span class="comment">//数值放大了100倍，单位0.01V</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structs485_comunication.html#ad15cdc94fb8a687021c7d7f901ef8eeb">   18</a></span>&#160; u16 <a class="code" href="structs485_comunication.html#ad15cdc94fb8a687021c7d7f901ef8eeb">un485RecieveCount</a>;<span class="comment">//数值放大了100倍，单位0.01A</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}<a class="code" href="structs485_comunication.html">s485Comunication</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <a class="code" href="structs485_comunication.html">s485Comunication</a>  <a class="code" href="_eway_self_check_8h.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[21];<span class="comment">//1~14,手臂加头部；15~17肩膀，轮子；18~19，爪子；20:psm;21;psu</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> u32 <a class="code" href="_eway_self_check_8h.html#a7160be13168b3e5b8655a0e84cf4babc">s485Time</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;u8 <a class="code" href="_eway_self_check_8h.html#a52061984838ae4fde3ddaf79dc19ea16">CheckInit</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="bsp_8h_html"><div class="ttname"><a href="bsp_8h.html">bsp.h</a></div></div>
+<div class="ttc" id="structs485_comunication_html_ad15cdc94fb8a687021c7d7f901ef8eeb"><div class="ttname"><a href="structs485_comunication.html#ad15cdc94fb8a687021c7d7f901ef8eeb">s485Comunication::un485RecieveCount</a></div><div class="ttdeci">u16 un485RecieveCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8h_source.html#l00018">EwaySelfCheck.h:18</a></div></div>
+<div class="ttc" id="structs485_comunication_html"><div class="ttname"><a href="structs485_comunication.html">s485Comunication</a></div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8h_source.html#l00015">EwaySelfCheck.h:15</a></div></div>
+<div class="ttc" id="structs485_comunication_html_a65edd4dfae5c428309898977d5dc5bb5"><div class="ttname"><a href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">s485Comunication::un485SendCount</a></div><div class="ttdeci">u16 un485SendCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8h_source.html#l00017">EwaySelfCheck.h:17</a></div></div>
+<div class="ttc" id="_eway_self_check_8h_html_a52061984838ae4fde3ddaf79dc19ea16"><div class="ttname"><a href="_eway_self_check_8h.html#a52061984838ae4fde3ddaf79dc19ea16">CheckInit</a></div><div class="ttdeci">u8 CheckInit(void)</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8c_source.html#l00023">EwaySelfCheck.c:23</a></div></div>
+<div class="ttc" id="_eway_self_check_8h_html_a02c9842927e7f12896c153ca97b137f0"><div class="ttname"><a href="_eway_self_check_8h.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a></div><div class="ttdeci">s485Comunication s485WholeCount[21]</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8c_source.html#l00013">EwaySelfCheck.c:13</a></div></div>
+<div class="ttc" id="_eway_self_check_8h_html_a7160be13168b3e5b8655a0e84cf4babc"><div class="ttname"><a href="_eway_self_check_8h.html#a7160be13168b3e5b8655a0e84cf4babc">s485Time</a></div><div class="ttdeci">u32 s485Time</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8c_source.html#l00014">EwaySelfCheck.c:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

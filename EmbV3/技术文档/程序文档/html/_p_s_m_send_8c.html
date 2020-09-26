@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Module/Emb_PSM/PSMSend.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_70e54bb3413a824ef01dcb0be39aea9c.html">EMB_Module</a></li><li class="navelem"><a class="el" href="dir_51ea1e5dd105f2a10cd1e67f955e31cc.html">Emb_PSM</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">PSMSend.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>发送PSM数据  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_eway_psm_8h_source.html">EwayPsm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_p_s_m_send_8h_source.html">PSMSend.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="modbus__host_8h_source.html">modbus_host.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_self_check_8h_source.html">EwaySelfCheck.h</a>&quot;</code><br />
+</div>
+<p><a href="_p_s_m_send_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">PSMAddHead</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>添加PSM帧头</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unKeyWord</td><td>功能码 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*punBuffer</td><td>帧buf </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unInfoLength</td><td>帧长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a1e4f6ade83dba1b4f5da8484aeabad90"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a> (u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</td></tr>
+<tr class="separator:a1e4f6ade83dba1b4f5da8484aeabad90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PSM_PING</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>对舵机变量初始化</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a2392b07092134bad0a826a9354249b4a"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#a2392b07092134bad0a826a9354249b4a">PSM_PING</a> (u8 unSlaveAddr)</td></tr>
+<tr class="memdesc:a2392b07092134bad0a826a9354249b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">PING——PSM  <a href="#a2392b07092134bad0a826a9354249b4a">更多...</a><br /></td></tr>
+<tr class="separator:a2392b07092134bad0a826a9354249b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PSM_Read</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>读PSM寄存器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*unSendBuffer</td><td>读寄存器BUF </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unLength</td><td>BUF长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:aa20df24000bfb990da2f98b98a3f3333"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#aa20df24000bfb990da2f98b98a3f3333">PSM_Read</a> (u8 unSlaveAddr, u8 *unSendBuffer, u16 unLength)</td></tr>
+<tr class="memdesc:aa20df24000bfb990da2f98b98a3f3333"><td class="mdescLeft">&#160;</td><td class="mdescRight">读PSM寄存器  <a href="#aa20df24000bfb990da2f98b98a3f3333">更多...</a><br /></td></tr>
+<tr class="separator:aa20df24000bfb990da2f98b98a3f3333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PSM_WRITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>写PSM寄存器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unRegAddr</td><td>寄存器地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unRegNum</td><td>寄存器个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*unSendBuffer</td><td>写入数据</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:abce8f868e98c435bde54298116a5a1b3"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#abce8f868e98c435bde54298116a5a1b3">PSM_WRITE</a> (u8 unSlaveAddr, u8 <a class="el" href="_battery_charger_send_8h.html#afbcdae5c308a3c21cfc0c31ee6c67af3">unRegAddr</a>, u16 unRegNum, u8 *unSendBuffer)</td></tr>
+<tr class="memdesc:abce8f868e98c435bde54298116a5a1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">写PSM寄存器  <a href="#abce8f868e98c435bde54298116a5a1b3">更多...</a><br /></td></tr>
+<tr class="separator:abce8f868e98c435bde54298116a5a1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PSM_SET_Reborn</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>PSM重启</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a707b1641d63af28b821bf36b5d9ea336"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#a707b1641d63af28b821bf36b5d9ea336">PSM_SET_Reborn</a> (u8 unSlaveAddr)</td></tr>
+<tr class="separator:a707b1641d63af28b821bf36b5d9ea336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PSM_SET_INITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>PSM，复位</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a5afc2572a1d95d42129cf958b585339c"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#a5afc2572a1d95d42129cf958b585339c">PSM_SET_INITE</a> (u8 unSlaveAddr)</td></tr>
+<tr class="memdesc:a5afc2572a1d95d42129cf958b585339c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PSM初始化  <a href="#a5afc2572a1d95d42129cf958b585339c">更多...</a><br /></td></tr>
+<tr class="separator:a5afc2572a1d95d42129cf958b585339c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a2f2a9992b51b516fd44c2f81bdeecc34"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_s_m_send_8c.html#a2f2a9992b51b516fd44c2f81bdeecc34">unPSMRegAddr</a> [2] ={0x36,0x1F}</td></tr>
+<tr class="memdesc:a2f2a9992b51b516fd44c2f81bdeecc34"><td class="mdescLeft">&#160;</td><td class="mdescRight">PSM读寄存器BUF  <a href="#a2f2a9992b51b516fd44c2f81bdeecc34">更多...</a><br /></td></tr>
+<tr class="separator:a2f2a9992b51b516fd44c2f81bdeecc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>发送PSM数据 </p>
+<p>版权所有(C) 2017 - 2022.　北京一维弦科技有限公司. 著作人保留所有权利. 公司通信地址：北京市海淀区北三环西路48号北京科技会展中心1B座16L</p>
+<p>本文件的详细说明. </p><dl class="section author"><dt>作者</dt><dd>xxx, <a href="#" onclick="location.href='mai'+'lto:'+'xxx'+'@e'+'way'+'bo'+'t.c'+'om'; return false;">xxx@e<span style="display: none;">.nosp@m.</span>wayb<span style="display: none;">.nosp@m.</span>ot.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2000-01-01 </dd></dl>
+<dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<dl class="section user"><dt>Change History:</dt><dd></dd></dl>
+<p>&lt;Date&gt; | &lt;Version&gt; | &lt;Author&gt; | </p>
+<p>2000/01/01 | 0.0.1 | xxxx | Create file</p>
+<p>2008/02/13 | 0.0.2 | xxxx | Add ..... </p>
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a2392b07092134bad0a826a9354249b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2392b07092134bad0a826a9354249b4a">&#9670;&nbsp;</a></span>PSM_PING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 PSM_PING </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PING——PSM </p>
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00043">43</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00186">PSMAddHead()</a>, <a class="el" href="_p_s_m_send_8h_source.html#l00032">PSMPing_H</a> , 以及 <a class="el" href="_p_s_m_send_8h_source.html#l00034">PSMPingLength_H</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    u8 unSendBuf[<a class="code" href="_p_s_m_send_8h.html#a1507f27393afd9f0d2acea7bba2a980f">PSMPingLength_H</a>];</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//添加头</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a>(<a class="code" href="_p_s_m_send_8h.html#ad47474ecfe984eda4acbc996643b59a3">PSMPing_H</a>,unSlaveAddr,unSendBuf,<a class="code" href="_p_s_m_send_8h.html#a1507f27393afd9f0d2acea7bba2a980f">PSMPingLength_H</a>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],5);<span class="comment">//校验</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,<a class="code" href="_p_s_m_send_8h.html#a1507f27393afd9f0d2acea7bba2a980f">PSMPingLength_H</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="_p_s_m_send_8c_html_a1e4f6ade83dba1b4f5da8484aeabad90"><div class="ttname"><a href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a></div><div class="ttdeci">u8 PSMAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8c_source.html#l00186">PSMSend.c:186</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_a1507f27393afd9f0d2acea7bba2a980f"><div class="ttname"><a href="_p_s_m_send_8h.html#a1507f27393afd9f0d2acea7bba2a980f">PSMPingLength_H</a></div><div class="ttdeci">#define PSMPingLength_H</div><div class="ttdoc">ping，帧长 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00034">PSMSend.h:34</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_ad47474ecfe984eda4acbc996643b59a3"><div class="ttname"><a href="_p_s_m_send_8h.html#ad47474ecfe984eda4acbc996643b59a3">PSMPing_H</a></div><div class="ttdeci">#define PSMPing_H</div><div class="ttdoc">PING,在线监测识别，是否做好接收控制指令准备 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00032">PSMSend.h:32</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa20df24000bfb990da2f98b98a3f3333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa20df24000bfb990da2f98b98a3f3333">&#9670;&nbsp;</a></span>PSM_Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 PSM_Read </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>unSendBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读PSM寄存器 </p>
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00070">70</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00186">PSMAddHead()</a> , 以及 <a class="el" href="_p_s_m_send_8h_source.html#l00036">PSMRead_H</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="taskscheduling_8c_source.html#l00057">TasksCheduling()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    u8 unSendBuf[255],unSendLenth,uni;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    unSendLenth=7+unLength;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a>(<a class="code" href="_p_s_m_send_8h.html#a714eed4ffe087eecfc3ad96f897f9c32">PSMRead_H</a>,unSlaveAddr,unSendBuf,unSendLenth);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unLength;uni++)<span class="comment">//读寄存器</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    unSendBuf[uni+5]=unSendBuffer[uni];</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div><div class="ttc" id="_p_s_m_send_8c_html_a1e4f6ade83dba1b4f5da8484aeabad90"><div class="ttname"><a href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a></div><div class="ttdeci">u8 PSMAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8c_source.html#l00186">PSMSend.c:186</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_a714eed4ffe087eecfc3ad96f897f9c32"><div class="ttname"><a href="_p_s_m_send_8h.html#a714eed4ffe087eecfc3ad96f897f9c32">PSMRead_H</a></div><div class="ttdeci">#define PSMRead_H</div><div class="ttdoc">读寄存器;读数据指令 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00036">PSMSend.h:36</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5afc2572a1d95d42129cf958b585339c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afc2572a1d95d42129cf958b585339c">&#9670;&nbsp;</a></span>PSM_SET_INITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 PSM_SET_INITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PSM初始化 </p>
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00158">158</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00186">PSMAddHead()</a> , 以及 <a class="el" href="_p_s_m_send_8h_source.html#l00044">PSMSetInit_H</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    u8 unSendBuf[7],unSendLenth;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    unSendLenth=7;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a>(<a class="code" href="_p_s_m_send_8h.html#af04775c8e67fae525510c7e43312e9bd">PSMSetInit_H</a>,unSlaveAddr,unSendBuf,unSendLenth); </div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div><div class="ttc" id="_p_s_m_send_8c_html_a1e4f6ade83dba1b4f5da8484aeabad90"><div class="ttname"><a href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a></div><div class="ttdeci">u8 PSMAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8c_source.html#l00186">PSMSend.c:186</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_af04775c8e67fae525510c7e43312e9bd"><div class="ttname"><a href="_p_s_m_send_8h.html#af04775c8e67fae525510c7e43312e9bd">PSMSetInit_H</a></div><div class="ttdeci">#define PSMSetInit_H</div><div class="ttdoc">恢复出厂设置 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00044">PSMSend.h:44</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a707b1641d63af28b821bf36b5d9ea336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a707b1641d63af28b821bf36b5d9ea336">&#9670;&nbsp;</a></span>PSM_SET_Reborn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 PSM_SET_Reborn </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00133">133</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00186">PSMAddHead()</a> , 以及 <a class="el" href="_p_s_m_send_8h_source.html#l00042">PSMReborn_H</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    u8 unSendBuf[7],unSendLenth;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    unSendLenth=7;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a>(<a class="code" href="_p_s_m_send_8h.html#ad2d7e4d77d3501f6566b4a0b71318f53">PSMReborn_H</a>,unSlaveAddr,unSendBuf,unSendLenth);  </div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div><div class="ttc" id="_p_s_m_send_8c_html_a1e4f6ade83dba1b4f5da8484aeabad90"><div class="ttname"><a href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a></div><div class="ttdeci">u8 PSMAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8c_source.html#l00186">PSMSend.c:186</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_ad2d7e4d77d3501f6566b4a0b71318f53"><div class="ttname"><a href="_p_s_m_send_8h.html#ad2d7e4d77d3501f6566b4a0b71318f53">PSMReborn_H</a></div><div class="ttdeci">#define PSMReborn_H</div><div class="ttdoc">重启,驱动器软件复位重启 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00042">PSMSend.h:42</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abce8f868e98c435bde54298116a5a1b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce8f868e98c435bde54298116a5a1b3">&#9670;&nbsp;</a></span>PSM_WRITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 PSM_WRITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unRegAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unRegNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>unSendBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写PSM寄存器 </p>
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00102">102</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a>, <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00186">PSMAddHead()</a>, <a class="el" href="_p_s_m_send_8h_source.html#l00040">PSMWrite_H</a> , 以及 <a class="el" href="_battery_charger_send_8c_source.html#l00029">unRegAddr</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="taskscheduling_8c_source.html#l00057">TasksCheduling()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    u8 unSendBuf[256],unSendLenth=0,uni;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    unSendLenth=7+unRegNum+2;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a>(<a class="code" href="_p_s_m_send_8h.html#acc3a71b0f49e0e35b046d745ebe1188d">PSMWrite_H</a>,unSlaveAddr,unSendBuf,unSendLenth);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  unSendBuf[5]=<a class="code" href="_battery_charger_send_8c.html#afbcdae5c308a3c21cfc0c31ee6c67af3">unRegAddr</a>;   </div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    unSendBuf[6]=unRegNum;  </div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unRegNum;uni++)<span class="comment">//写寄存器</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      unSendBuf[uni+7]=unSendBuffer[uni];</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div><div class="ttc" id="_p_s_m_send_8c_html_a1e4f6ade83dba1b4f5da8484aeabad90"><div class="ttname"><a href="_p_s_m_send_8c.html#a1e4f6ade83dba1b4f5da8484aeabad90">PSMAddHead</a></div><div class="ttdeci">u8 PSMAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8c_source.html#l00186">PSMSend.c:186</a></div></div>
+<div class="ttc" id="_battery_charger_send_8c_html_afbcdae5c308a3c21cfc0c31ee6c67af3"><div class="ttname"><a href="_battery_charger_send_8c.html#afbcdae5c308a3c21cfc0c31ee6c67af3">unRegAddr</a></div><div class="ttdeci">u8 unRegAddr[2]</div><div class="ttdoc">读寄存器BUF </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8c_source.html#l00029">BatteryChargerSend.c:29</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_acc3a71b0f49e0e35b046d745ebe1188d"><div class="ttname"><a href="_p_s_m_send_8h.html#acc3a71b0f49e0e35b046d745ebe1188d">PSMWrite_H</a></div><div class="ttdeci">#define PSMWrite_H</div><div class="ttdoc">写寄存器,写数据指令，收到后验证无误立即执行 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00040">PSMSend.h:40</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1e4f6ade83dba1b4f5da8484aeabad90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4f6ade83dba1b4f5da8484aeabad90">&#9670;&nbsp;</a></span>PSMAddHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 PSMAddHead </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unKeyWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>punBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unInfoLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00186">186</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_p_s_m_send_8h_source.html#l00027">PSMHeader_H</a>, <a class="el" href="_eway_self_check_8c_source.html#l00013">s485WholeCount</a> , 以及 <a class="el" href="_eway_self_check_8h_source.html#l00017">s485Comunication::un485SendCount</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_p_s_m_send_8c_source.html#l00043">PSM_PING()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00070">PSM_Read()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00158">PSM_SET_INITE()</a>, <a class="el" href="_p_s_m_send_8c_source.html#l00133">PSM_SET_Reborn()</a> , 以及 <a class="el" href="_p_s_m_send_8c_source.html#l00102">PSM_WRITE()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    punBuffer[0]=<a class="code" href="_p_s_m_send_8h.html#a82d9ec429d5431e3735fd210b8d81649">PSMHeader_H</a>&amp;0XFF;<span class="comment">//侦头</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    punBuffer[1]=(<a class="code" href="_p_s_m_send_8h.html#a82d9ec429d5431e3735fd210b8d81649">PSMHeader_H</a>&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    punBuffer[2]=unSlaveAddr;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    punBuffer[3]=unInfoLength&amp;0XFF;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    punBuffer[4]=unKeyWord&amp;0XFF;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[19].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;            </div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div><div class="ttc" id="structs485_comunication_html_a65edd4dfae5c428309898977d5dc5bb5"><div class="ttname"><a href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">s485Comunication::un485SendCount</a></div><div class="ttdeci">u16 un485SendCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8h_source.html#l00017">EwaySelfCheck.h:17</a></div></div>
+<div class="ttc" id="_eway_self_check_8c_html_a02c9842927e7f12896c153ca97b137f0"><div class="ttname"><a href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a></div><div class="ttdeci">s485Comunication s485WholeCount[21]</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8c_source.html#l00013">EwaySelfCheck.c:13</a></div></div>
+<div class="ttc" id="_p_s_m_send_8h_html_a82d9ec429d5431e3735fd210b8d81649"><div class="ttname"><a href="_p_s_m_send_8h.html#a82d9ec429d5431e3735fd210b8d81649">PSMHeader_H</a></div><div class="ttdeci">#define PSMHeader_H</div><div class="ttdoc">PSM帧头 </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_m_send_8h_source.html#l00027">PSMSend.h:27</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a2f2a9992b51b516fd44c2f81bdeecc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2a9992b51b516fd44c2f81bdeecc34">&#9670;&nbsp;</a></span>unPSMRegAddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unPSMRegAddr[2] ={0x36,0x1F}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PSM读寄存器BUF </p>
+<p>读寄存器BUF </p>
+
+<p class="definition">在文件 <a class="el" href="_p_s_m_send_8c_source.html">PSMSend.c</a> 第 <a class="el" href="_p_s_m_send_8c_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="taskscheduling_8c_source.html#l00057">TasksCheduling()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

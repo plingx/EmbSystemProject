@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Module/Emb_MyServo/EwayServo.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_70e54bb3413a824ef01dcb0be39aea9c.html">EMB_Module</a></li><li class="navelem"><a class="el" href="dir_c743469d00c7b0c8e09202ac50613e8e.html">Emb_MyServo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">EwayServo.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>声明舵机控制相关全局变量，函数，结构体等  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp_8h_source.html">bsp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_public_8h_source.html">EwayPublic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_c_m_d_8h_source.html">EwayCMD.h</a>&quot;</code><br />
+</div>
+<p><a href="_eway_servo_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_s_a_motor_control.html">HSAMotorControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HEAD/SHOULDER/ARM，运动控制结构  <a href="struct_h_s_a_motor_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_robot_servo.html">RobotServo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">机器人舵机数据结构  <a href="struct_robot_servo.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_motor_buf.html">MotorBuf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机buffer,数据结构  <a href="struct_motor_buf.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad766a6c74e542bc31945741254b25488"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#ad766a6c74e542bc31945741254b25488">MOTOR_POSITION_MAX</a>&#160;&#160;&#160;4095</td></tr>
+<tr class="memdesc:ad766a6c74e542bc31945741254b25488"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机最大位置  <a href="#ad766a6c74e542bc31945741254b25488">更多...</a><br /></td></tr>
+<tr class="separator:ad766a6c74e542bc31945741254b25488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f458a9cfbafc9e4cd8c8433ad6dba0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a57f458a9cfbafc9e4cd8c8433ad6dba0">MOTOR_SPEED_MAX</a>&#160;&#160;&#160;1023</td></tr>
+<tr class="memdesc:a57f458a9cfbafc9e4cd8c8433ad6dba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机最大速度  <a href="#a57f458a9cfbafc9e4cd8c8433ad6dba0">更多...</a><br /></td></tr>
+<tr class="separator:a57f458a9cfbafc9e4cd8c8433ad6dba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80330afe964b9a86107bfd1d01b7aa66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a80330afe964b9a86107bfd1d01b7aa66">MOTOR_SPEED_MIN</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a80330afe964b9a86107bfd1d01b7aa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机最小速度  <a href="#a80330afe964b9a86107bfd1d01b7aa66">更多...</a><br /></td></tr>
+<tr class="separator:a80330afe964b9a86107bfd1d01b7aa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebe06ea6bc686838e2e166fda6a5537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#aeebe06ea6bc686838e2e166fda6a5537">ControlSP</a>&#160;&#160;&#160;(float)27.36</td></tr>
+<tr class="memdesc:aeebe06ea6bc686838e2e166fda6a5537"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机速度转换系数1：240减速比  <a href="#aeebe06ea6bc686838e2e166fda6a5537">更多...</a><br /></td></tr>
+<tr class="separator:aeebe06ea6bc686838e2e166fda6a5537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3579b983b5d4d2777fcc48b236ec6ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#ae3579b983b5d4d2777fcc48b236ec6ff">ControlSPH</a>&#160;&#160;&#160;(float)41.04</td></tr>
+<tr class="memdesc:ae3579b983b5d4d2777fcc48b236ec6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机速度转换系数2:360减速比  <a href="#ae3579b983b5d4d2777fcc48b236ec6ff">更多...</a><br /></td></tr>
+<tr class="separator:ae3579b983b5d4d2777fcc48b236ec6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6788e3d11074fae593fd17b91b12359d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a6788e3d11074fae593fd17b91b12359d">SHOULDER_POS_TO_ROBOT_POS</a>&#160;&#160;&#160;(float) -3.33</td></tr>
+<tr class="memdesc:a6788e3d11074fae593fd17b91b12359d"><td class="mdescLeft">&#160;</td><td class="mdescRight">肩膀位置单位转换  <a href="#a6788e3d11074fae593fd17b91b12359d">更多...</a><br /></td></tr>
+<tr class="separator:a6788e3d11074fae593fd17b91b12359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd8e8c9efb6f06d783bdb74d661fc8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#adfd8e8c9efb6f06d783bdb74d661fc8f">SHOULDER_SPEED_TO_ROBOT_SPEED</a>&#160;&#160;&#160;(float)0.33</td></tr>
+<tr class="memdesc:adfd8e8c9efb6f06d783bdb74d661fc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">肩膀速度单位转换  <a href="#adfd8e8c9efb6f06d783bdb74d661fc8f">更多...</a><br /></td></tr>
+<tr class="separator:adfd8e8c9efb6f06d783bdb74d661fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f275514a23c368d101f280752a7a82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#ac3f275514a23c368d101f280752a7a82">MOTOR_SPEED_EX_DIFF</a>&#160;&#160;&#160;0.2332</td></tr>
+<tr class="memdesc:ac3f275514a23c368d101f280752a7a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">电机速度转换单位时间码盘数，系数  <a href="#ac3f275514a23c368d101f280752a7a82">更多...</a><br /></td></tr>
+<tr class="separator:ac3f275514a23c368d101f280752a7a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afbfc3b4320cb392375b793f4a9183f75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#afbfc3b4320cb392375b793f4a9183f75">ServoVarInit</a> (void)</td></tr>
+<tr class="memdesc:afbfc3b4320cb392375b793f4a9183f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机初始化函数  <a href="#afbfc3b4320cb392375b793f4a9183f75">更多...</a><br /></td></tr>
+<tr class="separator:afbfc3b4320cb392375b793f4a9183f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ab10cf5dbcd6eab966e884f2b3c375e92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_robot_servo.html">RobotServo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a> [<a class="el" href="_emb_init_pra_8h.html#a0d4dca28cacff012a0e78d000f91f20c">Head_Servo_Num</a>+<a class="el" href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a>+<a class="el" href="_emb_init_pra_8h.html#aca82254dcd370d522acbf0996cbc6bd0">Shoulder_Motor_Num</a>]</td></tr>
+<tr class="memdesc:ab10cf5dbcd6eab966e884f2b3c375e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机数据结构体  <a href="#ab10cf5dbcd6eab966e884f2b3c375e92">更多...</a><br /></td></tr>
+<tr class="separator:ab10cf5dbcd6eab966e884f2b3c375e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8a5efbd226070f5ee878e6c24bda8e"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a0e8a5efbd226070f5ee878e6c24bda8e">unArmMotorControlFlag</a></td></tr>
+<tr class="memdesc:a0e8a5efbd226070f5ee878e6c24bda8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">手臂舵机控制标示  <a href="#a0e8a5efbd226070f5ee878e6c24bda8e">更多...</a><br /></td></tr>
+<tr class="separator:a0e8a5efbd226070f5ee878e6c24bda8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f376be153106e09ba323c588fa6cc0"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#ac9f376be153106e09ba323c588fa6cc0">unHeadMotorControlFlag</a></td></tr>
+<tr class="memdesc:ac9f376be153106e09ba323c588fa6cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">头部舵机控制标示  <a href="#ac9f376be153106e09ba323c588fa6cc0">更多...</a><br /></td></tr>
+<tr class="separator:ac9f376be153106e09ba323c588fa6cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24d5c28f4953cb2f536499af3e6c93a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_motor_buf.html">MotorBuf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a></td></tr>
+<tr class="memdesc:ab24d5c28f4953cb2f536499af3e6c93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">手臂BUFFER  <a href="#ab24d5c28f4953cb2f536499af3e6c93a">更多...</a><br /></td></tr>
+<tr class="separator:ab24d5c28f4953cb2f536499af3e6c93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fa715615ff390064f0b34b97e0a296"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_motor_buf.html">MotorBuf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a></td></tr>
+<tr class="memdesc:aa0fa715615ff390064f0b34b97e0a296"><td class="mdescLeft">&#160;</td><td class="mdescRight">头部BUFFER  <a href="#aa0fa715615ff390064f0b34b97e0a296">更多...</a><br /></td></tr>
+<tr class="separator:aa0fa715615ff390064f0b34b97e0a296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b49e7076e27584bb2bc6177790f9804"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a2b49e7076e27584bb2bc6177790f9804">unArmStartFlag</a></td></tr>
+<tr class="memdesc:a2b49e7076e27584bb2bc6177790f9804"><td class="mdescLeft">&#160;</td><td class="mdescRight">手臂插值起始点标志  <a href="#a2b49e7076e27584bb2bc6177790f9804">更多...</a><br /></td></tr>
+<tr class="separator:a2b49e7076e27584bb2bc6177790f9804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc39e92df8e90de6d010c37c084b1dd"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a1fc39e92df8e90de6d010c37c084b1dd">unHeadStartFlag</a></td></tr>
+<tr class="memdesc:a1fc39e92df8e90de6d010c37c084b1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">头部插值起始点标志  <a href="#a1fc39e92df8e90de6d010c37c084b1dd">更多...</a><br /></td></tr>
+<tr class="separator:a1fc39e92df8e90de6d010c37c084b1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3749e17093bd4e4839994a6c3b007a12"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eway_servo_8h.html#a3749e17093bd4e4839994a6c3b007a12">unShoulderStartFlag</a></td></tr>
+<tr class="memdesc:a3749e17093bd4e4839994a6c3b007a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">肩膀插值起始点标志  <a href="#a3749e17093bd4e4839994a6c3b007a12">更多...</a><br /></td></tr>
+<tr class="separator:a3749e17093bd4e4839994a6c3b007a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>声明舵机控制相关全局变量，函数，结构体等 </p>
+<p>版权所有(C) 2017 - 2022.　北京一维弦科技有限公司. 著作人保留所有权利. 公司通信地址：北京市海淀区北三环西路48号北京科技会展中心1B座16L</p>
+<p>本文件的详细说明. </p><dl class="section author"><dt>作者</dt><dd>xxx, <a href="#" onclick="location.href='mai'+'lto:'+'xxx'+'@e'+'way'+'bo'+'t.c'+'om'; return false;">xxx@e<span style="display: none;">.nosp@m.</span>wayb<span style="display: none;">.nosp@m.</span>ot.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2000-01-01 </dd></dl>
+<dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<dl class="section user"><dt>Change History:</dt><dd></dd></dl>
+<p>&lt;Date&gt; | &lt;Version&gt; | &lt;Author&gt; | </p>
+<p>2000/01/01 | 0.0.1 | xxxx | Create file</p>
+<p>2008/02/13 | 0.0.2 | xxxx | Add ..... </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aeebe06ea6bc686838e2e166fda6a5537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeebe06ea6bc686838e2e166fda6a5537">&#9670;&nbsp;</a></span>ControlSP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ControlSP&#160;&#160;&#160;(float)27.36</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机速度转换系数1：240减速比 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae3579b983b5d4d2777fcc48b236ec6ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3579b983b5d4d2777fcc48b236ec6ff">&#9670;&nbsp;</a></span>ControlSPH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ControlSPH&#160;&#160;&#160;(float)41.04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机速度转换系数2:360减速比 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad766a6c74e542bc31945741254b25488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad766a6c74e542bc31945741254b25488">&#9670;&nbsp;</a></span>MOTOR_POSITION_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_POSITION_MAX&#160;&#160;&#160;4095</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机最大位置 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3f275514a23c368d101f280752a7a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f275514a23c368d101f280752a7a82">&#9670;&nbsp;</a></span>MOTOR_SPEED_EX_DIFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_SPEED_EX_DIFF&#160;&#160;&#160;0.2332</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电机速度转换单位时间码盘数，系数 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a57f458a9cfbafc9e4cd8c8433ad6dba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f458a9cfbafc9e4cd8c8433ad6dba0">&#9670;&nbsp;</a></span>MOTOR_SPEED_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_SPEED_MAX&#160;&#160;&#160;1023</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机最大速度 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a80330afe964b9a86107bfd1d01b7aa66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80330afe964b9a86107bfd1d01b7aa66">&#9670;&nbsp;</a></span>MOTOR_SPEED_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_SPEED_MIN&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机最小速度 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6788e3d11074fae593fd17b91b12359d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6788e3d11074fae593fd17b91b12359d">&#9670;&nbsp;</a></span>SHOULDER_POS_TO_ROBOT_POS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHOULDER_POS_TO_ROBOT_POS&#160;&#160;&#160;(float) -3.33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>肩膀位置单位转换 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adfd8e8c9efb6f06d783bdb74d661fc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd8e8c9efb6f06d783bdb74d661fc8f">&#9670;&nbsp;</a></span>SHOULDER_SPEED_TO_ROBOT_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHOULDER_SPEED_TO_ROBOT_SPEED&#160;&#160;&#160;(float)0.33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>肩膀速度单位转换 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a> 第 <a class="el" href="_eway_servo_8h_source.html#l00040">40</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00095">GenerateShoulderGoalPositionSpeed()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="afbfc3b4320cb392375b793f4a9183f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfc3b4320cb392375b793f4a9183f75">&#9670;&nbsp;</a></span>ServoVarInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServoVarInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机初始化函数 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00063">63</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    u8 uni=0;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span>(uni=0;uni&lt;(<a class="code" href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a>+<a class="code" href="_emb_init_pra_8h.html#a0d4dca28cacff012a0e78d000f91f20c">Head_Servo_Num</a>+<a class="code" href="_emb_init_pra_8h.html#aca82254dcd370d522acbf0996cbc6bd0">Shoulder_Motor_Num</a>);uni++)</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#aee7d47de85f42d8aa665d5e01cdde628">unServoID</a>= uni+1;               <span class="comment">/* STM32内部串口设备指针 */</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">unServoSendID</a>= uni+1;         <span class="comment">/*广播指令下发ID*/</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (uni&gt;=<a class="code" href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a>+<a class="code" href="_emb_init_pra_8h.html#aca82254dcd370d522acbf0996cbc6bd0">Shoulder_Motor_Num</a>)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">unServoSendID</a>= uni;   </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a79bde9cf2e35849e38b411ec79f42d20">unPresentPositionL</a>=0;         <span class="comment">/* 当前位置 */</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a18089f6fdaab96cfc042e79637bb7e77">unPresentPositionH</a>=0;                 </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a2c24bed6eff2fd7e9db8e40c74f913f8">unPresentSpeedL</a>=0;              <span class="comment">/*当前速度 */</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a9ebc5ee20f7e51314524edfbcc482b10">unPresentSpeedH</a>=0;    </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a2938539a7c2bf2c78fca099e1001c94a">unPresentStatusL</a>=0;             <span class="comment">/* 当前状态  */</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a2b6a3367086416714d1c318a5bdbf2ec">unPresentStatusH</a>=0;             </div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a26a0ce5c08f282971c6a92ba1696a46b">unPresentLoadL</a>=0;           <span class="comment">/* 当前负载 */</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a5b87f18a2a6bcc725e665f4ae1f2efdf">unPresentLoadH</a>=0;     </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ab91552d1c5248ed5e63ee93ee4bc4e6e">unPresentVoltageL</a>=0;          <span class="comment">/* 当前电压 */</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a4e6cabfff3d01d175ffcf7011b3beed3">unPresentVoltageH</a>=0;          </div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#aef09f0c8eec958c64bbca1ed6b800d31">unPresentTemperature</a>=0;        <span class="comment">/* 当前温度*/</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78b9aafb23868ef3730dca0fb7fb9962">unTorqueSwitch</a>=0 ;             <span class="comment">/* 0: no    1: hava keep torque   */</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#aa6db0c7fcdbd68f52ae21b6c9279c6c3">unLEDSwitch</a>=0;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#abeb81b5e6a99e8eb088d6f10ff6be3ca">unKDGainL</a>=0;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a2c52ed4798703d9f3f5de3f826d393f3">unKIGainL</a>=0;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a28ca7d7ae128e4a7e02d18ae61b2205f">unKPGainL</a>=32;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#af58af1515e1865548ed0fcada843f4db">unKDGainH</a>=0;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ad7fac7462c7628a0d579e7bdf516debe">unKIGainH</a>=0;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a59f3d1e9dbb748fa9861d1052e2de213">unKPGainH</a>=0;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a84a84112fce6e33f3240404c027521da">unGoalPositionL</a>=0;              <span class="comment">/*  目标位置 */</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a4b8440aefbfa72dd9a406848866baee5">unGoalPositionH</a>=0x08;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a0fe44b2364deee3578dc2843b90b8db8">unMovingSpeedL</a>=0x10;            <span class="comment">/*  移动速度 */</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ae7a7594ee9377a62cd59e290f1f7c4bb">unMovingSpeedH</a>=0;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a6a1ad5f8822dbb2ce5c5190a720f0476">unTorqueLimitL</a>=0xFF;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ab05e1253550d3da67ad61f22ae154c3f">unTorqueLimitH</a>=0x03;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">//测试新加</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ad7d7b80854953ed9286937df4a5c2b5a">unGetKDGain</a>=0;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#adac6e6a8491aae2469e3a2b4c27ec6ae">unGetKIGain</a>=0;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a67716d42c32e590febaa4d58f1628054">unGetKPGain</a>=0;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div><div class="ttc" id="struct_robot_servo_html_aa6db0c7fcdbd68f52ae21b6c9279c6c3"><div class="ttname"><a href="struct_robot_servo.html#aa6db0c7fcdbd68f52ae21b6c9279c6c3">RobotServo::unLEDSwitch</a></div><div class="ttdeci">u8 unLEDSwitch</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00086">EwayServo.h:86</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a4e6cabfff3d01d175ffcf7011b3beed3"><div class="ttname"><a href="struct_robot_servo.html#a4e6cabfff3d01d175ffcf7011b3beed3">RobotServo::unPresentVoltageH</a></div><div class="ttdeci">u8 unPresentVoltageH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00081">EwayServo.h:81</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_ae7a7594ee9377a62cd59e290f1f7c4bb"><div class="ttname"><a href="struct_robot_servo.html#ae7a7594ee9377a62cd59e290f1f7c4bb">RobotServo::unMovingSpeedH</a></div><div class="ttdeci">u8 unMovingSpeedH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00096">EwayServo.h:96</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a18089f6fdaab96cfc042e79637bb7e77"><div class="ttname"><a href="struct_robot_servo.html#a18089f6fdaab96cfc042e79637bb7e77">RobotServo::unPresentPositionH</a></div><div class="ttdeci">u8 unPresentPositionH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00071">EwayServo.h:71</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a2938539a7c2bf2c78fca099e1001c94a"><div class="ttname"><a href="struct_robot_servo.html#a2938539a7c2bf2c78fca099e1001c94a">RobotServo::unPresentStatusL</a></div><div class="ttdeci">u8 unPresentStatusL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00076">EwayServo.h:76</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_aee7d47de85f42d8aa665d5e01cdde628"><div class="ttname"><a href="struct_robot_servo.html#aee7d47de85f42d8aa665d5e01cdde628">RobotServo::unServoID</a></div><div class="ttdeci">u8 unServoID</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00068">EwayServo.h:68</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a26a0ce5c08f282971c6a92ba1696a46b"><div class="ttname"><a href="struct_robot_servo.html#a26a0ce5c08f282971c6a92ba1696a46b">RobotServo::unPresentLoadL</a></div><div class="ttdeci">u8 unPresentLoadL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00078">EwayServo.h:78</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a2c52ed4798703d9f3f5de3f826d393f3"><div class="ttname"><a href="struct_robot_servo.html#a2c52ed4798703d9f3f5de3f826d393f3">RobotServo::unKIGainL</a></div><div class="ttdeci">u8 unKIGainL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00088">EwayServo.h:88</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a2c24bed6eff2fd7e9db8e40c74f913f8"><div class="ttname"><a href="struct_robot_servo.html#a2c24bed6eff2fd7e9db8e40c74f913f8">RobotServo::unPresentSpeedL</a></div><div class="ttdeci">u8 unPresentSpeedL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00074">EwayServo.h:74</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a6a1ad5f8822dbb2ce5c5190a720f0476"><div class="ttname"><a href="struct_robot_servo.html#a6a1ad5f8822dbb2ce5c5190a720f0476">RobotServo::unTorqueLimitL</a></div><div class="ttdeci">u8 unTorqueLimitL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00097">EwayServo.h:97</a></div></div>
+<div class="ttc" id="_emb_init_pra_8h_html_ac2e2c6d5befc8b9a8173bd62ee6f9be7"><div class="ttname"><a href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a></div><div class="ttdeci">#define Arm_Servo_Num</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00136">EmbInitPra.h:136</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a4b8440aefbfa72dd9a406848866baee5"><div class="ttname"><a href="struct_robot_servo.html#a4b8440aefbfa72dd9a406848866baee5">RobotServo::unGoalPositionH</a></div><div class="ttdeci">u8 unGoalPositionH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00094">EwayServo.h:94</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_abeb81b5e6a99e8eb088d6f10ff6be3ca"><div class="ttname"><a href="struct_robot_servo.html#abeb81b5e6a99e8eb088d6f10ff6be3ca">RobotServo::unKDGainL</a></div><div class="ttdeci">u8 unKDGainL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00087">EwayServo.h:87</a></div></div>
+<div class="ttc" id="_emb_init_pra_8h_html_aca82254dcd370d522acbf0996cbc6bd0"><div class="ttname"><a href="_emb_init_pra_8h.html#aca82254dcd370d522acbf0996cbc6bd0">Shoulder_Motor_Num</a></div><div class="ttdeci">#define Shoulder_Motor_Num</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00137">EmbInitPra.h:137</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_af58af1515e1865548ed0fcada843f4db"><div class="ttname"><a href="struct_robot_servo.html#af58af1515e1865548ed0fcada843f4db">RobotServo::unKDGainH</a></div><div class="ttdeci">u8 unKDGainH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00090">EwayServo.h:90</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a28ca7d7ae128e4a7e02d18ae61b2205f"><div class="ttname"><a href="struct_robot_servo.html#a28ca7d7ae128e4a7e02d18ae61b2205f">RobotServo::unKPGainL</a></div><div class="ttdeci">u8 unKPGainL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00089">EwayServo.h:89</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a59f3d1e9dbb748fa9861d1052e2de213"><div class="ttname"><a href="struct_robot_servo.html#a59f3d1e9dbb748fa9861d1052e2de213">RobotServo::unKPGainH</a></div><div class="ttdeci">u8 unKPGainH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00092">EwayServo.h:92</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab10cf5dbcd6eab966e884f2b3c375e92"><div class="ttname"><a href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a></div><div class="ttdeci">RobotServo sMyServo[Head_Servo_Num+Arm_Servo_Num+Shoulder_Motor_Num]</div><div class="ttdoc">舵机数据结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00026">EwayServo.c:26</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a79bde9cf2e35849e38b411ec79f42d20"><div class="ttname"><a href="struct_robot_servo.html#a79bde9cf2e35849e38b411ec79f42d20">RobotServo::unPresentPositionL</a></div><div class="ttdeci">u8 unPresentPositionL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00070">EwayServo.h:70</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_ab91552d1c5248ed5e63ee93ee4bc4e6e"><div class="ttname"><a href="struct_robot_servo.html#ab91552d1c5248ed5e63ee93ee4bc4e6e">RobotServo::unPresentVoltageL</a></div><div class="ttdeci">u8 unPresentVoltageL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00080">EwayServo.h:80</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_ad7d7b80854953ed9286937df4a5c2b5a"><div class="ttname"><a href="struct_robot_servo.html#ad7d7b80854953ed9286937df4a5c2b5a">RobotServo::unGetKDGain</a></div><div class="ttdeci">u8 unGetKDGain</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00099">EwayServo.h:99</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a78b9aafb23868ef3730dca0fb7fb9962"><div class="ttname"><a href="struct_robot_servo.html#a78b9aafb23868ef3730dca0fb7fb9962">RobotServo::unTorqueSwitch</a></div><div class="ttdeci">u8 unTorqueSwitch</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00085">EwayServo.h:85</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_affb1529c95d960fa73cd71093279820c"><div class="ttname"><a href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">RobotServo::unServoSendID</a></div><div class="ttdeci">u8 unServoSendID</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00069">EwayServo.h:69</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a5b87f18a2a6bcc725e665f4ae1f2efdf"><div class="ttname"><a href="struct_robot_servo.html#a5b87f18a2a6bcc725e665f4ae1f2efdf">RobotServo::unPresentLoadH</a></div><div class="ttdeci">u8 unPresentLoadH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00079">EwayServo.h:79</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a9ebc5ee20f7e51314524edfbcc482b10"><div class="ttname"><a href="struct_robot_servo.html#a9ebc5ee20f7e51314524edfbcc482b10">RobotServo::unPresentSpeedH</a></div><div class="ttdeci">u8 unPresentSpeedH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00075">EwayServo.h:75</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a0fe44b2364deee3578dc2843b90b8db8"><div class="ttname"><a href="struct_robot_servo.html#a0fe44b2364deee3578dc2843b90b8db8">RobotServo::unMovingSpeedL</a></div><div class="ttdeci">u8 unMovingSpeedL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00095">EwayServo.h:95</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_ab05e1253550d3da67ad61f22ae154c3f"><div class="ttname"><a href="struct_robot_servo.html#ab05e1253550d3da67ad61f22ae154c3f">RobotServo::unTorqueLimitH</a></div><div class="ttdeci">u8 unTorqueLimitH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00098">EwayServo.h:98</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_ad7fac7462c7628a0d579e7bdf516debe"><div class="ttname"><a href="struct_robot_servo.html#ad7fac7462c7628a0d579e7bdf516debe">RobotServo::unKIGainH</a></div><div class="ttdeci">u8 unKIGainH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00091">EwayServo.h:91</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_adac6e6a8491aae2469e3a2b4c27ec6ae"><div class="ttname"><a href="struct_robot_servo.html#adac6e6a8491aae2469e3a2b4c27ec6ae">RobotServo::unGetKIGain</a></div><div class="ttdeci">u8 unGetKIGain</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00100">EwayServo.h:100</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a84a84112fce6e33f3240404c027521da"><div class="ttname"><a href="struct_robot_servo.html#a84a84112fce6e33f3240404c027521da">RobotServo::unGoalPositionL</a></div><div class="ttdeci">u8 unGoalPositionL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00093">EwayServo.h:93</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a2b6a3367086416714d1c318a5bdbf2ec"><div class="ttname"><a href="struct_robot_servo.html#a2b6a3367086416714d1c318a5bdbf2ec">RobotServo::unPresentStatusH</a></div><div class="ttdeci">u8 unPresentStatusH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00077">EwayServo.h:77</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a67716d42c32e590febaa4d58f1628054"><div class="ttname"><a href="struct_robot_servo.html#a67716d42c32e590febaa4d58f1628054">RobotServo::unGetKPGain</a></div><div class="ttdeci">u8 unGetKPGain</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00101">EwayServo.h:101</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_aef09f0c8eec958c64bbca1ed6b800d31"><div class="ttname"><a href="struct_robot_servo.html#aef09f0c8eec958c64bbca1ed6b800d31">RobotServo::unPresentTemperature</a></div><div class="ttdeci">u8 unPresentTemperature</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00084">EwayServo.h:84</a></div></div>
+<div class="ttc" id="_emb_init_pra_8h_html_a0d4dca28cacff012a0e78d000f91f20c"><div class="ttname"><a href="_emb_init_pra_8h.html#a0d4dca28cacff012a0e78d000f91f20c">Head_Servo_Num</a></div><div class="ttdeci">#define Head_Servo_Num</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00138">EmbInitPra.h:138</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="ab24d5c28f4953cb2f536499af3e6c93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24d5c28f4953cb2f536499af3e6c93a">&#9670;&nbsp;</a></span>sArmMotorBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_motor_buf.html">MotorBuf</a> sArmMotorBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>手臂BUFFER </p>
+<p>手臂BUFFER </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_motion_control_8c_source.html#l00531">MyServoMoving()</a>.</p>
+
+</div>
+</div>
+<a id="aa0fa715615ff390064f0b34b97e0a296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fa715615ff390064f0b34b97e0a296">&#9670;&nbsp;</a></span>sHeadMotorBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_motor_buf.html">MotorBuf</a> sHeadMotorBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>头部BUFFER </p>
+<p>头部BUFFER </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00040">40</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_motion_control_8c_source.html#l00531">MyServoMoving()</a>.</p>
+
+</div>
+</div>
+<a id="ab10cf5dbcd6eab966e884f2b3c375e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10cf5dbcd6eab966e884f2b3c375e92">&#9670;&nbsp;</a></span>sMyServo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_robot_servo.html">RobotServo</a> sMyServo[<a class="el" href="_emb_init_pra_8h.html#a0d4dca28cacff012a0e78d000f91f20c">Head_Servo_Num</a>+<a class="el" href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a>+<a class="el" href="_emb_init_pra_8h.html#aca82254dcd370d522acbf0996cbc6bd0">Shoulder_Motor_Num</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机数据结构体 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_arm_control_8c_source.html#l00107">ArmSetCMD()</a>, <a class="el" href="_arm_control_8c_source.html#l00045">ArmStart()</a>, <a class="el" href="interpolate_8c_source.html#l00095">GenerateShoulderGoalPositionSpeed()</a>, <a class="el" href="_head_control_8c_source.html#l00099">HeadSetCMD()</a>, <a class="el" href="_head_control_8c_source.html#l00042">HeadStart()</a>, <a class="el" href="_my_servo___master_8c_source.html#l00045">MotorControl()</a>, <a class="el" href="_my_servo_recive_8c_source.html#l00186">ReadMyServoData()</a>, <a class="el" href="_motion_control_8c_source.html#l00257">SendArmDataToExePack()</a>, <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>, <a class="el" href="_my_servo_send_8c_source.html#l00407">SendMortorPID()</a>, <a class="el" href="_motion_control_8c_source.html#l00191">SendMotorLimitToExePack()</a>, <a class="el" href="_motion_control_8c_source.html#l00087">SendPIDToExePack()</a>, <a class="el" href="_motion_control_8c_source.html#l00147">SendTorqueSwitchToExePack()</a>, <a class="el" href="_shoulder_control_8c_source.html#l00046">ShoulderMotorControl()</a>, <a class="el" href="_motion_control_8c_source.html#l00590">ShoulderMoving()</a>, <a class="el" href="_shoulder_control_8c_source.html#l00093">ShoulderPraChange()</a> , 以及 <a class="el" href="taskscheduling_8c_source.html#l00057">TasksCheduling()</a>.</p>
+
+</div>
+</div>
+<a id="a0e8a5efbd226070f5ee878e6c24bda8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8a5efbd226070f5ee878e6c24bda8e">&#9670;&nbsp;</a></span>unArmMotorControlFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unArmMotorControlFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>手臂舵机控制标示 </p>
+<p>手臂舵机控制标示 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00034">34</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_arm_control_8c_source.html#l00045">ArmStart()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00531">MyServoMoving()</a>.</p>
+
+</div>
+</div>
+<a id="a2b49e7076e27584bb2bc6177790f9804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b49e7076e27584bb2bc6177790f9804">&#9670;&nbsp;</a></span>unArmStartFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unArmStartFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>手臂插值起始点标志 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00028">28</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_arm_control_8c_source.html#l00045">ArmStart()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00257">SendArmDataToExePack()</a>.</p>
+
+</div>
+</div>
+<a id="ac9f376be153106e09ba323c588fa6cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f376be153106e09ba323c588fa6cc0">&#9670;&nbsp;</a></span>unHeadMotorControlFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unHeadMotorControlFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>头部舵机控制标示 </p>
+<p>头部舵机控制标示 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00036">36</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_head_control_8c_source.html#l00042">HeadStart()</a>, <a class="el" href="_motion_control_8c_source.html#l00531">MyServoMoving()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>.</p>
+
+</div>
+</div>
+<a id="a1fc39e92df8e90de6d010c37c084b1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc39e92df8e90de6d010c37c084b1dd">&#9670;&nbsp;</a></span>unHeadStartFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unHeadStartFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>头部插值起始点标志 </p>
+<p>头部插值起始点标志 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00030">30</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_head_control_8c_source.html#l00042">HeadStart()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>.</p>
+
+</div>
+</div>
+<a id="a3749e17093bd4e4839994a6c3b007a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3749e17093bd4e4839994a6c3b007a12">&#9670;&nbsp;</a></span>unShoulderStartFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unShoulderStartFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>肩膀插值起始点标志 </p>
+
+<p class="definition">在文件 <a class="el" href="_eway_servo_8c_source.html">EwayServo.c</a> 第 <a class="el" href="_eway_servo_8c_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

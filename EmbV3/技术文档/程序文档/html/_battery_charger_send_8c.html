@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Module/Emb_BatteryCharger/BatteryChargerSend.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_70e54bb3413a824ef01dcb0be39aea9c.html">EMB_Module</a></li><li class="navelem"><a class="el" href="dir_b3487dafa3c8d4c54c591b04fba3494d.html">Emb_BatteryCharger</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">BatteryChargerSend.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>发送电池数据  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp_8h_source.html">bsp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_battery_charger_send_8h_source.html">BatteryChargerSend.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="modbus__host_8h_source.html">modbus_host.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_self_check_8h_source.html">EwaySelfCheck.h</a>&quot;</code><br />
+</div>
+<p><a href="_battery_charger_send_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">BatteryChargerAddHead</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>添加帧头</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unKeyWord</td><td>功能码 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*punBuffer</td><td>帧buf </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unInfoLength</td><td>帧长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:ab3ccb362530b3cd69e6199abd97bffd8"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a> (u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</td></tr>
+<tr class="separator:ab3ccb362530b3cd69e6199abd97bffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">BatteryCharger_PING</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>电池板PING</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a622b2b2da8e9344734c2f6aa19f2f213"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_battery_charger_send_8c.html#a622b2b2da8e9344734c2f6aa19f2f213">BatteryCharger_PING</a> (u8 unSlaveAddr)</td></tr>
+<tr class="memdesc:a622b2b2da8e9344734c2f6aa19f2f213"><td class="mdescLeft">&#160;</td><td class="mdescRight">电池PING  <a href="#a622b2b2da8e9344734c2f6aa19f2f213">更多...</a><br /></td></tr>
+<tr class="separator:a622b2b2da8e9344734c2f6aa19f2f213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">BatteryCharger_Read</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>读电池板寄存器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*unSendBuffer</td><td>读寄存器BUF </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unLength</td><td>BUF长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a976b4575c56d6d6965e55ffac14e78ad"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_battery_charger_send_8c.html#a976b4575c56d6d6965e55ffac14e78ad">BatteryCharger_Read</a> (u8 unSlaveAddr, u8 *unSendBuffer, u16 unLength)</td></tr>
+<tr class="memdesc:a976b4575c56d6d6965e55ffac14e78ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">读电池板  <a href="#a976b4575c56d6d6965e55ffac14e78ad">更多...</a><br /></td></tr>
+<tr class="separator:a976b4575c56d6d6965e55ffac14e78ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">BatteryCharger_WRITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>写电池板寄存器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*unSendBuffer</td><td>读寄存器BUF </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unLength</td><td>BUF长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a7b58b26d1b5e3ee26668869531d4e6f4"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_battery_charger_send_8c.html#a7b58b26d1b5e3ee26668869531d4e6f4">BatteryCharger_WRITE</a> (u8 unSlaveAddr, u8 *unSendBuffer, u16 unLength)</td></tr>
+<tr class="memdesc:a7b58b26d1b5e3ee26668869531d4e6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">写电池寄存器  <a href="#a7b58b26d1b5e3ee26668869531d4e6f4">更多...</a><br /></td></tr>
+<tr class="separator:a7b58b26d1b5e3ee26668869531d4e6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">BatteryCharger_SET_INITE</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>电池板初始化</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unSlaveAddr</td><td>从站ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a86345a244e6f9943774225aede6b6d2a"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_battery_charger_send_8c.html#a86345a244e6f9943774225aede6b6d2a">BatteryCharger_SET_INITE</a> (u8 unSlaveAddr)</td></tr>
+<tr class="memdesc:a86345a244e6f9943774225aede6b6d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">电池板初始化  <a href="#a86345a244e6f9943774225aede6b6d2a">更多...</a><br /></td></tr>
+<tr class="separator:a86345a244e6f9943774225aede6b6d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:afbcdae5c308a3c21cfc0c31ee6c67af3"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_battery_charger_send_8c.html#afbcdae5c308a3c21cfc0c31ee6c67af3">unRegAddr</a> [2] ={0x1E,0x0D}</td></tr>
+<tr class="memdesc:afbcdae5c308a3c21cfc0c31ee6c67af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">读寄存器BUF  <a href="#afbcdae5c308a3c21cfc0c31ee6c67af3">更多...</a><br /></td></tr>
+<tr class="separator:afbcdae5c308a3c21cfc0c31ee6c67af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>发送电池数据 </p>
+<p>版权所有(C) 2017 - 2022.　北京一维弦科技有限公司. 著作人保留所有权利. 公司通信地址：北京市海淀区北三环西路48号北京科技会展中心1B座16L</p>
+<p>本文件的详细说明. </p><dl class="section author"><dt>作者</dt><dd>xxx, <a href="#" onclick="location.href='mai'+'lto:'+'xxx'+'@e'+'way'+'bo'+'t.c'+'om'; return false;">xxx@e<span style="display: none;">.nosp@m.</span>wayb<span style="display: none;">.nosp@m.</span>ot.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2000-01-01 </dd></dl>
+<dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<dl class="section user"><dt>Change History:</dt><dd></dd></dl>
+<p>&lt;Date&gt; | &lt;Version&gt; | &lt;Author&gt; | </p>
+<p>2000/01/01 | 0.0.1 | xxxx | Create file</p>
+<p>2008/02/13 | 0.0.2 | xxxx | Add ..... </p>
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a622b2b2da8e9344734c2f6aa19f2f213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622b2b2da8e9344734c2f6aa19f2f213">&#9670;&nbsp;</a></span>BatteryCharger_PING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 BatteryCharger_PING </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电池PING </p>
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 第 <a class="el" href="_battery_charger_send_8c_source.html#l00043">43</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_battery_charger_send_8c_source.html#l00157">BatteryChargerAddHead()</a>, <a class="el" href="_battery_charger_send_8h_source.html#l00031">BatteryPing_H</a>, <a class="el" href="_battery_charger_send_8h_source.html#l00033">BatteryPingLength_H</a>, <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a> , 以及 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    u8 unSendBuf[<a class="code" href="_battery_charger_send_8h.html#aece9bc0d259197e7c9c327494b27ae97">BatteryPingLength_H</a>];</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a>(<a class="code" href="_battery_charger_send_8h.html#a5d500c1bad68a743214d5293189b1912">BatteryPing_H</a>,unSlaveAddr,unSendBuf,<a class="code" href="_battery_charger_send_8h.html#aece9bc0d259197e7c9c327494b27ae97">BatteryPingLength_H</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],5);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,<a class="code" href="_battery_charger_send_8h.html#aece9bc0d259197e7c9c327494b27ae97">BatteryPingLength_H</a>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="ttc" id="_battery_charger_send_8c_html_ab3ccb362530b3cd69e6199abd97bffd8"><div class="ttname"><a href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a></div><div class="ttdeci">u8 BatteryChargerAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8c_source.html#l00157">BatteryChargerSend.c:157</a></div></div>
+<div class="ttc" id="_battery_charger_send_8h_html_aece9bc0d259197e7c9c327494b27ae97"><div class="ttname"><a href="_battery_charger_send_8h.html#aece9bc0d259197e7c9c327494b27ae97">BatteryPingLength_H</a></div><div class="ttdeci">#define BatteryPingLength_H</div><div class="ttdoc">ping 帧长 </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8h_source.html#l00033">BatteryChargerSend.h:33</a></div></div>
+<div class="ttc" id="_battery_charger_send_8h_html_a5d500c1bad68a743214d5293189b1912"><div class="ttname"><a href="_battery_charger_send_8h.html#a5d500c1bad68a743214d5293189b1912">BatteryPing_H</a></div><div class="ttdeci">#define BatteryPing_H</div><div class="ttdoc">PING,在线监测识别，是否做好接收控制指令准备 </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8h_source.html#l00031">BatteryChargerSend.h:31</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a976b4575c56d6d6965e55ffac14e78ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976b4575c56d6d6965e55ffac14e78ad">&#9670;&nbsp;</a></span>BatteryCharger_Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 BatteryCharger_Read </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>unSendBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读电池板 </p>
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 第 <a class="el" href="_battery_charger_send_8c_source.html#l00069">69</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_battery_charger_send_8c_source.html#l00157">BatteryChargerAddHead()</a>, <a class="el" href="_battery_charger_send_8h_source.html#l00035">BatteryRead_H</a>, <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a> , 以及 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="taskscheduling_8c_source.html#l00057">TasksCheduling()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    u8 unSendBuf[255],unSendLenth,uni;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    unSendLenth=7+unLength;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a>(<a class="code" href="_battery_charger_send_8h.html#a04dc7308847e63ced6ff6b2a1195929c">BatteryRead_H</a>,unSlaveAddr,unSendBuf,unSendLenth);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unLength;uni++)<span class="comment">//读寄存器</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;     unSendBuf[uni+5]=unSendBuffer[uni];</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="_battery_charger_send_8c_html_ab3ccb362530b3cd69e6199abd97bffd8"><div class="ttname"><a href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a></div><div class="ttdeci">u8 BatteryChargerAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8c_source.html#l00157">BatteryChargerSend.c:157</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="_battery_charger_send_8h_html_a04dc7308847e63ced6ff6b2a1195929c"><div class="ttname"><a href="_battery_charger_send_8h.html#a04dc7308847e63ced6ff6b2a1195929c">BatteryRead_H</a></div><div class="ttdeci">#define BatteryRead_H</div><div class="ttdoc">读寄存器;读数据指令 </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8h_source.html#l00035">BatteryChargerSend.h:35</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a86345a244e6f9943774225aede6b6d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86345a244e6f9943774225aede6b6d2a">&#9670;&nbsp;</a></span>BatteryCharger_SET_INITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 BatteryCharger_SET_INITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电池板初始化 </p>
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 第 <a class="el" href="_battery_charger_send_8c_source.html#l00129">129</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_battery_charger_send_8c_source.html#l00157">BatteryChargerAddHead()</a>, <a class="el" href="_battery_charger_send_8h_source.html#l00041">BatterySetInit_H</a>, <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a> , 以及 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    u8 unSendBuf[7],unSendLenth;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    unSendLenth=7;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a>(<a class="code" href="_battery_charger_send_8h.html#ab27aff74de50c4fbb6fd287ce3132967">BatterySetInit_H</a>,unSlaveAddr,unSendBuf,unSendLenth);  </div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    unSendBuf[5]=unCRC&amp;0XFF;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    unSendBuf[6]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div><div class="ttc" id="_battery_charger_send_8c_html_ab3ccb362530b3cd69e6199abd97bffd8"><div class="ttname"><a href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a></div><div class="ttdeci">u8 BatteryChargerAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8c_source.html#l00157">BatteryChargerSend.c:157</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="_battery_charger_send_8h_html_ab27aff74de50c4fbb6fd287ce3132967"><div class="ttname"><a href="_battery_charger_send_8h.html#ab27aff74de50c4fbb6fd287ce3132967">BatterySetInit_H</a></div><div class="ttdeci">#define BatterySetInit_H</div><div class="ttdoc">恢复出厂设置 </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8h_source.html#l00041">BatteryChargerSend.h:41</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7b58b26d1b5e3ee26668869531d4e6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b58b26d1b5e3ee26668869531d4e6f4">&#9670;&nbsp;</a></span>BatteryCharger_WRITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 BatteryCharger_WRITE </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>unSendBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写电池寄存器 </p>
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 第 <a class="el" href="_battery_charger_send_8c_source.html#l00100">100</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_battery_charger_send_8c_source.html#l00157">BatteryChargerAddHead()</a>, <a class="el" href="_battery_charger_send_8h_source.html#l00039">BatteryWrite_H</a>, <a class="el" href="bsp__uart__fifo_8h_source.html#l00085">COM7</a>, <a class="el" href="bsp__uart__fifo_8c_source.html#l00225">comSendBuf()</a> , 以及 <a class="el" href="bsp__user__lib_8c_source.html#l00296">CRC16_Modbus()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    u8 unSendBuf[256],unSendLenth=0,uni;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    u16 unCRC;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    unSendLenth=7+unLength;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a>(<a class="code" href="_battery_charger_send_8h.html#a5ddcfcd2441dfe176253f1844b2a2321">BatteryWrite_H</a>,unSlaveAddr,unSendBuf,unSendLenth);    </div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">for</span> (uni=0;uni&lt;unLength;uni++)<span class="comment">//写寄存器</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     unSendBuf[uni+5]=unSendBuffer[uni];</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    unCRC=<a class="code" href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a>(&amp;unSendBuf[0],unSendLenth-2);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    unSendBuf[unSendLenth-2]=unCRC&amp;0XFF;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    unSendBuf[unSendLenth-1]=(unCRC&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a>(<a class="code" href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a>,unSendBuf,unSendLenth);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div><div class="ttc" id="_battery_charger_send_8c_html_ab3ccb362530b3cd69e6199abd97bffd8"><div class="ttname"><a href="_battery_charger_send_8c.html#ab3ccb362530b3cd69e6199abd97bffd8">BatteryChargerAddHead</a></div><div class="ttdeci">u8 BatteryChargerAddHead(u8 unKeyWord, u8 unSlaveAddr, u8 *punBuffer, u16 unInfoLength)</div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8c_source.html#l00157">BatteryChargerSend.c:157</a></div></div>
+<div class="ttc" id="_battery_charger_send_8h_html_a5ddcfcd2441dfe176253f1844b2a2321"><div class="ttname"><a href="_battery_charger_send_8h.html#a5ddcfcd2441dfe176253f1844b2a2321">BatteryWrite_H</a></div><div class="ttdeci">#define BatteryWrite_H</div><div class="ttdoc">写寄存器,写数据指令，收到后验证无误立即执行 </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8h_source.html#l00039">BatteryChargerSend.h:39</a></div></div>
+<div class="ttc" id="bsp__user__lib_8h_html_a4435884c08096d64cef694f9b29029b8"><div class="ttname"><a href="bsp__user__lib_8h.html#a4435884c08096d64cef694f9b29029b8">CRC16_Modbus</a></div><div class="ttdeci">uint16_t CRC16_Modbus(uint8_t *_pBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__user__lib_8c_source.html#l00296">bsp_user_lib.c:296</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_a2d204edff2b16f4b042da250297503d5"><div class="ttname"><a href="bsp__uart__fifo_8h.html#a2d204edff2b16f4b042da250297503d5">comSendBuf</a></div><div class="ttdeci">void comSendBuf(COM_PORT_E _ucPort, uint8_t *_ucaBuf, uint16_t _usLen)</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8c_source.html#l00225">bsp_uart_fifo.c:225</a></div></div>
+<div class="ttc" id="bsp__uart__fifo_8h_html_ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e"><div class="ttname"><a href="bsp__uart__fifo_8h.html#ad9867ef85f617d2f9876ab351e6e4cefab2bcd55185959916a91b8a4921d5465e">COM7</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart__fifo_8h_source.html#l00085">bsp_uart_fifo.h:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab3ccb362530b3cd69e6199abd97bffd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ccb362530b3cd69e6199abd97bffd8">&#9670;&nbsp;</a></span>BatteryChargerAddHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 BatteryChargerAddHead </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unKeyWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unSlaveAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>punBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>unInfoLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 第 <a class="el" href="_battery_charger_send_8c_source.html#l00157">157</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_battery_charger_send_8h_source.html#l00026">BatteryHeader_H</a>, <a class="el" href="_eway_self_check_8c_source.html#l00013">s485WholeCount</a> , 以及 <a class="el" href="_eway_self_check_8h_source.html#l00017">s485Comunication::un485SendCount</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_battery_charger_send_8c_source.html#l00043">BatteryCharger_PING()</a>, <a class="el" href="_battery_charger_send_8c_source.html#l00069">BatteryCharger_Read()</a>, <a class="el" href="_battery_charger_send_8c_source.html#l00129">BatteryCharger_SET_INITE()</a> , 以及 <a class="el" href="_battery_charger_send_8c_source.html#l00100">BatteryCharger_WRITE()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    punBuffer[0]=<a class="code" href="_battery_charger_send_8h.html#ad235dbcbb3368a10e476c57f31e13062">BatteryHeader_H</a>&amp;0XFF;<span class="comment">//侦头</span></div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    punBuffer[1]=(<a class="code" href="_battery_charger_send_8h.html#ad235dbcbb3368a10e476c57f31e13062">BatteryHeader_H</a>&gt;&gt;8)&amp;0XFF;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    punBuffer[2]=unSlaveAddr;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    punBuffer[3]=unInfoLength&amp;0XFF;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    punBuffer[4]=unKeyWord&amp;0XFF;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a>[20].<a class="code" href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">un485SendCount</a>++;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div><div class="ttc" id="structs485_comunication_html_a65edd4dfae5c428309898977d5dc5bb5"><div class="ttname"><a href="structs485_comunication.html#a65edd4dfae5c428309898977d5dc5bb5">s485Comunication::un485SendCount</a></div><div class="ttdeci">u16 un485SendCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8h_source.html#l00017">EwaySelfCheck.h:17</a></div></div>
+<div class="ttc" id="_eway_self_check_8c_html_a02c9842927e7f12896c153ca97b137f0"><div class="ttname"><a href="_eway_self_check_8c.html#a02c9842927e7f12896c153ca97b137f0">s485WholeCount</a></div><div class="ttdeci">s485Comunication s485WholeCount[21]</div><div class="ttdef"><b>Definition:</b> <a href="_eway_self_check_8c_source.html#l00013">EwaySelfCheck.c:13</a></div></div>
+<div class="ttc" id="_battery_charger_send_8h_html_ad235dbcbb3368a10e476c57f31e13062"><div class="ttname"><a href="_battery_charger_send_8h.html#ad235dbcbb3368a10e476c57f31e13062">BatteryHeader_H</a></div><div class="ttdeci">#define BatteryHeader_H</div><div class="ttdoc">充电控制板帧头 </div><div class="ttdef"><b>Definition:</b> <a href="_battery_charger_send_8h_source.html#l00026">BatteryChargerSend.h:26</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="afbcdae5c308a3c21cfc0c31ee6c67af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcdae5c308a3c21cfc0c31ee6c67af3">&#9670;&nbsp;</a></span>unRegAddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unRegAddr[2] ={0x1E,0x0D}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读寄存器BUF </p>
+
+<p class="definition">在文件 <a class="el" href="_battery_charger_send_8c_source.html">BatteryChargerSend.c</a> 第 <a class="el" href="_battery_charger_send_8c_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_p_s_m_send_8c_source.html#l00102">PSM_WRITE()</a> , 以及 <a class="el" href="taskscheduling_8c_source.html#l00057">TasksCheduling()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

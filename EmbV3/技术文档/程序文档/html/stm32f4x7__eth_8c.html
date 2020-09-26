@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/bsp/ETHERNET/stm32f4x7_eth.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_c577b749049dc49cc6a11c70bc2bb203.html">bsp</a></li><li class="navelem"><a class="el" href="dir_2051d8ffa1e9a8b419b36a03123ba072.html">ETHERNET</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">stm32f4x7_eth.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This file is the low level driver for STM32F407xx/417xx Ethernet Controller. This driver does not include low level functions for PTP time-stamp.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="stm32f4x7__eth_8h_source.html">stm32f4x7_eth.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="stm32f4x7__eth_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga0d96b5b1d88725ebdac89e28b786ec84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga0d96b5b1d88725ebdac89e28b786ec84">ETH_DeInit</a> (void)</td></tr>
+<tr class="memdesc:ga0d96b5b1d88725ebdac89e28b786ec84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the ETHERNET peripheral registers to their default reset values.  <a href="group___e_t_h___private___functions.html#ga0d96b5b1d88725ebdac89e28b786ec84">更多...</a><br /></td></tr>
+<tr class="separator:ga0d96b5b1d88725ebdac89e28b786ec84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53f3d018eab9974662e4bfd00671e900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga53f3d018eab9974662e4bfd00671e900">ETH_StructInit</a> (<a class="el" href="struct_e_t_h___init_type_def.html">ETH_InitTypeDef</a> *ETH_InitStruct)</td></tr>
+<tr class="memdesc:ga53f3d018eab9974662e4bfd00671e900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills each ETH_InitStruct member with its default value.  <a href="group___e_t_h___private___functions.html#ga53f3d018eab9974662e4bfd00671e900">更多...</a><br /></td></tr>
+<tr class="separator:ga53f3d018eab9974662e4bfd00671e900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17a011c3d06ec34e248310142d888d89"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga17a011c3d06ec34e248310142d888d89">ETH_Init</a> (<a class="el" href="struct_e_t_h___init_type_def.html">ETH_InitTypeDef</a> *ETH_InitStruct, uint16_t PHYAddress)</td></tr>
+<tr class="memdesc:ga17a011c3d06ec34e248310142d888d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the ETHERNET peripheral according to the specified parameters in the ETH_InitStruct .  <a href="group___e_t_h___private___functions.html#ga17a011c3d06ec34e248310142d888d89">更多...</a><br /></td></tr>
+<tr class="separator:ga17a011c3d06ec34e248310142d888d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91dc3e4848316fd9bc5f14ed44451e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga91dc3e4848316fd9bc5f14ed44451e4c">ETH_Start</a> (void)</td></tr>
+<tr class="memdesc:ga91dc3e4848316fd9bc5f14ed44451e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables ENET MAC and DMA reception/transmission  <a href="group___e_t_h___private___functions.html#ga91dc3e4848316fd9bc5f14ed44451e4c">更多...</a><br /></td></tr>
+<tr class="separator:ga91dc3e4848316fd9bc5f14ed44451e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c2addd245943d8aaa69d9d8274296f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga1c2addd245943d8aaa69d9d8274296f9">ETH_MACTransmissionCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga1c2addd245943d8aaa69d9d8274296f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MAC transmission.  <a href="group___e_t_h___private___functions.html#ga1c2addd245943d8aaa69d9d8274296f9">更多...</a><br /></td></tr>
+<tr class="separator:ga1c2addd245943d8aaa69d9d8274296f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga957d4ed0810745c3e4a34020209c34cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga957d4ed0810745c3e4a34020209c34cb">ETH_MACReceptionCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga957d4ed0810745c3e4a34020209c34cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MAC reception.  <a href="group___e_t_h___private___functions.html#ga957d4ed0810745c3e4a34020209c34cb">更多...</a><br /></td></tr>
+<tr class="separator:ga957d4ed0810745c3e4a34020209c34cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ed03ee5131dbd95a3c54f5a41044c14"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga5ed03ee5131dbd95a3c54f5a41044c14">ETH_GetFlowControlBusyStatus</a> (void)</td></tr>
+<tr class="memdesc:ga5ed03ee5131dbd95a3c54f5a41044c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the ETHERNET flow control busy bit is set or not.  <a href="group___e_t_h___private___functions.html#ga5ed03ee5131dbd95a3c54f5a41044c14">更多...</a><br /></td></tr>
+<tr class="separator:ga5ed03ee5131dbd95a3c54f5a41044c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77e9c30c78e2e8e8c863c62f71431fb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga77e9c30c78e2e8e8c863c62f71431fb3">ETH_InitiatePauseControlFrame</a> (void)</td></tr>
+<tr class="memdesc:ga77e9c30c78e2e8e8c863c62f71431fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate a Pause Control Frame (Full-duplex only).  <a href="group___e_t_h___private___functions.html#ga77e9c30c78e2e8e8c863c62f71431fb3">更多...</a><br /></td></tr>
+<tr class="separator:ga77e9c30c78e2e8e8c863c62f71431fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29375b0fc5a57b65655717456446d542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga29375b0fc5a57b65655717456446d542">ETH_BackPressureActivationCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga29375b0fc5a57b65655717456446d542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MAC BackPressure operation activation (Half-duplex only).  <a href="group___e_t_h___private___functions.html#ga29375b0fc5a57b65655717456446d542">更多...</a><br /></td></tr>
+<tr class="separator:ga29375b0fc5a57b65655717456446d542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga228c50ed994be06ba53766b2b29aa1ea"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga228c50ed994be06ba53766b2b29aa1ea">ETH_GetMACFlagStatus</a> (uint32_t ETH_MAC_FLAG)</td></tr>
+<tr class="memdesc:ga228c50ed994be06ba53766b2b29aa1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET MAC flag is set or not.  <a href="group___e_t_h___private___functions.html#ga228c50ed994be06ba53766b2b29aa1ea">更多...</a><br /></td></tr>
+<tr class="separator:ga228c50ed994be06ba53766b2b29aa1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d1db176a4fe6dc5bac9a91dec5cb297"><td class="memItemLeft" align="right" valign="top">ITStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga2d1db176a4fe6dc5bac9a91dec5cb297">ETH_GetMACITStatus</a> (uint32_t ETH_MAC_IT)</td></tr>
+<tr class="memdesc:ga2d1db176a4fe6dc5bac9a91dec5cb297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET MAC interrupt has occurred or not.  <a href="group___e_t_h___private___functions.html#ga2d1db176a4fe6dc5bac9a91dec5cb297">更多...</a><br /></td></tr>
+<tr class="separator:ga2d1db176a4fe6dc5bac9a91dec5cb297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32331cefa8d98dbb571073da67ee2d6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga32331cefa8d98dbb571073da67ee2d6d">ETH_MACITConfig</a> (uint32_t ETH_MAC_IT, FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga32331cefa8d98dbb571073da67ee2d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified ETHERNET MAC interrupts.  <a href="group___e_t_h___private___functions.html#ga32331cefa8d98dbb571073da67ee2d6d">更多...</a><br /></td></tr>
+<tr class="separator:ga32331cefa8d98dbb571073da67ee2d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad5dabc9a0f660251a3bda1bc6f33d61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaad5dabc9a0f660251a3bda1bc6f33d61">ETH_MACAddressConfig</a> (uint32_t MacAddr, uint8_t *Addr)</td></tr>
+<tr class="memdesc:gaad5dabc9a0f660251a3bda1bc6f33d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the selected MAC address.  <a href="group___e_t_h___private___functions.html#gaad5dabc9a0f660251a3bda1bc6f33d61">更多...</a><br /></td></tr>
+<tr class="separator:gaad5dabc9a0f660251a3bda1bc6f33d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56d23a718606d5ad4075d47fa60c80fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga56d23a718606d5ad4075d47fa60c80fa">ETH_GetMACAddress</a> (uint32_t MacAddr, uint8_t *Addr)</td></tr>
+<tr class="memdesc:ga56d23a718606d5ad4075d47fa60c80fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected MAC address.  <a href="group___e_t_h___private___functions.html#ga56d23a718606d5ad4075d47fa60c80fa">更多...</a><br /></td></tr>
+<tr class="separator:ga56d23a718606d5ad4075d47fa60c80fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac03ce2cccebcfcd743edcd1fcd3661c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gac03ce2cccebcfcd743edcd1fcd3661c5">ETH_MACAddressPerfectFilterCmd</a> (uint32_t MacAddr, FunctionalState NewState)</td></tr>
+<tr class="memdesc:gac03ce2cccebcfcd743edcd1fcd3661c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Address filter module uses the specified ETHERNET MAC address for perfect filtering  <a href="group___e_t_h___private___functions.html#gac03ce2cccebcfcd743edcd1fcd3661c5">更多...</a><br /></td></tr>
+<tr class="separator:gac03ce2cccebcfcd743edcd1fcd3661c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40f5d84c15d9fb51a21532266cf046dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga40f5d84c15d9fb51a21532266cf046dc">ETH_MACAddressFilterConfig</a> (uint32_t MacAddr, uint32_t Filter)</td></tr>
+<tr class="memdesc:ga40f5d84c15d9fb51a21532266cf046dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the filter type for the specified ETHERNET MAC address  <a href="group___e_t_h___private___functions.html#ga40f5d84c15d9fb51a21532266cf046dc">更多...</a><br /></td></tr>
+<tr class="separator:ga40f5d84c15d9fb51a21532266cf046dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17c1b3075dd8d3a9c20d3059d4b51d9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga17c1b3075dd8d3a9c20d3059d4b51d9b">ETH_MACAddressMaskBytesFilterConfig</a> (uint32_t MacAddr, uint32_t MaskByte)</td></tr>
+<tr class="memdesc:ga17c1b3075dd8d3a9c20d3059d4b51d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the filter type for the specified ETHERNET MAC address  <a href="group___e_t_h___private___functions.html#ga17c1b3075dd8d3a9c20d3059d4b51d9b">更多...</a><br /></td></tr>
+<tr class="separator:ga17c1b3075dd8d3a9c20d3059d4b51d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32da1044684ecb01ed759fbceb603d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_frame_type_def.html">FrameTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga32da1044684ecb01ed759fbceb603d03">ETH_Get_Received_Frame</a> (void)</td></tr>
+<tr class="memdesc:ga32da1044684ecb01ed759fbceb603d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called to get the received frame (to be used with polling method only).  <a href="group___e_t_h___private___functions.html#ga32da1044684ecb01ed759fbceb603d03">更多...</a><br /></td></tr>
+<tr class="separator:ga32da1044684ecb01ed759fbceb603d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad81f857bbc1cf82415ffb0aa58667a5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_frame_type_def.html">FrameTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gad81f857bbc1cf82415ffb0aa58667a5b">ETH_Get_Received_Frame_interrupt</a> (void)</td></tr>
+<tr class="memdesc:gad81f857bbc1cf82415ffb0aa58667a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called when a frame is received using DMA Receive interrupt, it allows scanning of Rx descriptors to get the the receive frame (should be used with interrupt mode only)  <a href="group___e_t_h___private___functions.html#gad81f857bbc1cf82415ffb0aa58667a5b">更多...</a><br /></td></tr>
+<tr class="separator:gad81f857bbc1cf82415ffb0aa58667a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4359cb57a8978e37aa6c38c70486d96c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga4359cb57a8978e37aa6c38c70486d96c">ETH_Prepare_Transmit_Descriptors</a> (u16 FrameLength)</td></tr>
+<tr class="memdesc:ga4359cb57a8978e37aa6c38c70486d96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares DMA Tx descriptors to transmit an ethernet frame  <a href="group___e_t_h___private___functions.html#ga4359cb57a8978e37aa6c38c70486d96c">更多...</a><br /></td></tr>
+<tr class="separator:ga4359cb57a8978e37aa6c38c70486d96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ced4d280067fc3c6acdf11c99d40b5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga7ced4d280067fc3c6acdf11c99d40b5c">ETH_DMARxDescChainInit</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDescTab, uint8_t *RxBuff, uint32_t RxBuffCount)</td></tr>
+<tr class="memdesc:ga7ced4d280067fc3c6acdf11c99d40b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the DMA Rx descriptors in chain mode.  <a href="group___e_t_h___private___functions.html#ga7ced4d280067fc3c6acdf11c99d40b5c">更多...</a><br /></td></tr>
+<tr class="separator:ga7ced4d280067fc3c6acdf11c99d40b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d5f732ce7f5719d02edffa84d29eee3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga8d5f732ce7f5719d02edffa84d29eee3">ETH_CheckFrameReceived</a> (void)</td></tr>
+<tr class="memdesc:ga8d5f732ce7f5719d02edffa84d29eee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function polls for a frame reception  <a href="group___e_t_h___private___functions.html#ga8d5f732ce7f5719d02edffa84d29eee3">更多...</a><br /></td></tr>
+<tr class="separator:ga8d5f732ce7f5719d02edffa84d29eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c70e9592681691df4cb753464930f29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga8c70e9592681691df4cb753464930f29">ETH_DMATxDescChainInit</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDescTab, uint8_t *TxBuff, uint32_t TxBuffCount)</td></tr>
+<tr class="memdesc:ga8c70e9592681691df4cb753464930f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the DMA Tx descriptors in chain mode.  <a href="group___e_t_h___private___functions.html#ga8c70e9592681691df4cb753464930f29">更多...</a><br /></td></tr>
+<tr class="separator:ga8c70e9592681691df4cb753464930f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5ab3fd1e2c953543ffa3b239c8f99cc"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaf5ab3fd1e2c953543ffa3b239c8f99cc">ETH_GetDMATxDescFlagStatus</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, uint32_t ETH_DMATxDescFlag)</td></tr>
+<tr class="memdesc:gaf5ab3fd1e2c953543ffa3b239c8f99cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET DMA Tx Desc flag is set or not.  <a href="group___e_t_h___private___functions.html#gaf5ab3fd1e2c953543ffa3b239c8f99cc">更多...</a><br /></td></tr>
+<tr class="separator:gaf5ab3fd1e2c953543ffa3b239c8f99cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa13c7c77c6a7fe9361721ec3ffe28936"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaa13c7c77c6a7fe9361721ec3ffe28936">ETH_GetDMATxDescCollisionCount</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc)</td></tr>
+<tr class="memdesc:gaa13c7c77c6a7fe9361721ec3ffe28936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the specified ETHERNET DMA Tx Desc collision count.  <a href="group___e_t_h___private___functions.html#gaa13c7c77c6a7fe9361721ec3ffe28936">更多...</a><br /></td></tr>
+<tr class="separator:gaa13c7c77c6a7fe9361721ec3ffe28936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413a65b13e62c095383209c9806d45e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga413a65b13e62c095383209c9806d45e9">ETH_SetDMATxDescOwnBit</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc)</td></tr>
+<tr class="memdesc:ga413a65b13e62c095383209c9806d45e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified DMA Tx Desc Own bit.  <a href="group___e_t_h___private___functions.html#ga413a65b13e62c095383209c9806d45e9">更多...</a><br /></td></tr>
+<tr class="separator:ga413a65b13e62c095383209c9806d45e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a9af6d16dd48449fbfa0bd70d86d033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga0a9af6d16dd48449fbfa0bd70d86d033">ETH_DMATxDescTransmitITConfig</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga0a9af6d16dd48449fbfa0bd70d86d033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified DMA Tx Desc Transmit interrupt.  <a href="group___e_t_h___private___functions.html#ga0a9af6d16dd48449fbfa0bd70d86d033">更多...</a><br /></td></tr>
+<tr class="separator:ga0a9af6d16dd48449fbfa0bd70d86d033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a131a7519ff5e1b958611e1e850ca8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga5a131a7519ff5e1b958611e1e850ca8c">ETH_DMATxDescFrameSegmentConfig</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, uint32_t DMATxDesc_FrameSegment)</td></tr>
+<tr class="memdesc:ga5a131a7519ff5e1b958611e1e850ca8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure Tx descriptor as last or first segment  <a href="group___e_t_h___private___functions.html#ga5a131a7519ff5e1b958611e1e850ca8c">更多...</a><br /></td></tr>
+<tr class="separator:ga5a131a7519ff5e1b958611e1e850ca8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae07965fada6c03008b7d1003b2757d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gae07965fada6c03008b7d1003b2757d20">ETH_DMATxDescChecksumInsertionConfig</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, uint32_t DMATxDesc_Checksum)</td></tr>
+<tr class="memdesc:gae07965fada6c03008b7d1003b2757d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the specified ETHERNET DMA Tx Desc Checksum Insertion.  <a href="group___e_t_h___private___functions.html#gae07965fada6c03008b7d1003b2757d20">更多...</a><br /></td></tr>
+<tr class="separator:gae07965fada6c03008b7d1003b2757d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa71dbb9fcbc332eead0ee0a39c3902d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaa71dbb9fcbc332eead0ee0a39c3902d9">ETH_DMATxDescCRCCmd</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, FunctionalState NewState)</td></tr>
+<tr class="memdesc:gaa71dbb9fcbc332eead0ee0a39c3902d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the DMA Tx Desc CRC.  <a href="group___e_t_h___private___functions.html#gaa71dbb9fcbc332eead0ee0a39c3902d9">更多...</a><br /></td></tr>
+<tr class="separator:gaa71dbb9fcbc332eead0ee0a39c3902d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd6db20b60f912418a8efa63a338537c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gadd6db20b60f912418a8efa63a338537c">ETH_DMATxDescSecondAddressChainedCmd</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, FunctionalState NewState)</td></tr>
+<tr class="memdesc:gadd6db20b60f912418a8efa63a338537c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the DMA Tx Desc second address chained.  <a href="group___e_t_h___private___functions.html#gadd6db20b60f912418a8efa63a338537c">更多...</a><br /></td></tr>
+<tr class="separator:gadd6db20b60f912418a8efa63a338537c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74381c07a52cc49a15e2ff01096507a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga74381c07a52cc49a15e2ff01096507a5">ETH_DMATxDescShortFramePaddingCmd</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga74381c07a52cc49a15e2ff01096507a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the DMA Tx Desc padding for frame shorter than 64 bytes.  <a href="group___e_t_h___private___functions.html#ga74381c07a52cc49a15e2ff01096507a5">更多...</a><br /></td></tr>
+<tr class="separator:ga74381c07a52cc49a15e2ff01096507a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f8abdcfb8c176292157882bcd59ef89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga6f8abdcfb8c176292157882bcd59ef89">ETH_DMATxDescBufferSizeConfig</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMATxDesc, uint32_t BufferSize1, uint32_t BufferSize2)</td></tr>
+<tr class="memdesc:ga6f8abdcfb8c176292157882bcd59ef89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the specified DMA Tx Desc buffer1 and buffer2 sizes.  <a href="group___e_t_h___private___functions.html#ga6f8abdcfb8c176292157882bcd59ef89">更多...</a><br /></td></tr>
+<tr class="separator:ga6f8abdcfb8c176292157882bcd59ef89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97aa4c183279e5de5178bd877d1fc1e2"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga97aa4c183279e5de5178bd877d1fc1e2">ETH_GetDMARxDescFlagStatus</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDesc, uint32_t ETH_DMARxDescFlag)</td></tr>
+<tr class="memdesc:ga97aa4c183279e5de5178bd877d1fc1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET Rx Desc flag is set or not.  <a href="group___e_t_h___private___functions.html#ga97aa4c183279e5de5178bd877d1fc1e2">更多...</a><br /></td></tr>
+<tr class="separator:ga97aa4c183279e5de5178bd877d1fc1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b1be870cd20c1a64bdc95bedc625379"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga3b1be870cd20c1a64bdc95bedc625379">ETH_GetDMAPTPRxDescExtendedFlagStatus</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMAPTPRxDesc, uint32_t ETH_DMAPTPRxDescExtendedFlag)</td></tr>
+<tr class="memdesc:ga3b1be870cd20c1a64bdc95bedc625379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET PTP Rx Desc extended flag is set or not.  <a href="group___e_t_h___private___functions.html#ga3b1be870cd20c1a64bdc95bedc625379">更多...</a><br /></td></tr>
+<tr class="separator:ga3b1be870cd20c1a64bdc95bedc625379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa55be718c937981e3dc1d4980761c894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaa55be718c937981e3dc1d4980761c894">ETH_SetDMARxDescOwnBit</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDesc)</td></tr>
+<tr class="memdesc:gaa55be718c937981e3dc1d4980761c894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified DMA Rx Desc Own bit.  <a href="group___e_t_h___private___functions.html#gaa55be718c937981e3dc1d4980761c894">更多...</a><br /></td></tr>
+<tr class="separator:gaa55be718c937981e3dc1d4980761c894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga401892e1763b9ef4b3505e94eded30af"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga401892e1763b9ef4b3505e94eded30af">ETH_GetDMARxDescFrameLength</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDesc)</td></tr>
+<tr class="memdesc:ga401892e1763b9ef4b3505e94eded30af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the specified DMA Rx Desc frame length.  <a href="group___e_t_h___private___functions.html#ga401892e1763b9ef4b3505e94eded30af">更多...</a><br /></td></tr>
+<tr class="separator:ga401892e1763b9ef4b3505e94eded30af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ca2336a329429d5b04e29356c872357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga2ca2336a329429d5b04e29356c872357">ETH_DMARxDescReceiveITConfig</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDesc, FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga2ca2336a329429d5b04e29356c872357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified DMA Rx Desc receive interrupt.  <a href="group___e_t_h___private___functions.html#ga2ca2336a329429d5b04e29356c872357">更多...</a><br /></td></tr>
+<tr class="separator:ga2ca2336a329429d5b04e29356c872357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace358b2dc608ed93467139a2912840c4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gace358b2dc608ed93467139a2912840c4">ETH_GetDMARxDescBufferSize</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDesc, uint32_t DMARxDesc_Buffer)</td></tr>
+<tr class="memdesc:gace358b2dc608ed93467139a2912840c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the specified ETHERNET DMA Rx Desc buffer size.  <a href="group___e_t_h___private___functions.html#gace358b2dc608ed93467139a2912840c4">更多...</a><br /></td></tr>
+<tr class="separator:gace358b2dc608ed93467139a2912840c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7cc997af976bff3cadb07afe6025ce5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gae7cc997af976bff3cadb07afe6025ce5">ETH_GetRxPktSize</a> (<a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *DMARxDesc)</td></tr>
+<tr class="memdesc:gae7cc997af976bff3cadb07afe6025ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the received packet.  <a href="group___e_t_h___private___functions.html#gae7cc997af976bff3cadb07afe6025ce5">更多...</a><br /></td></tr>
+<tr class="separator:gae7cc997af976bff3cadb07afe6025ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdad75bef5e5e2b83d36d818540e051f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gacdad75bef5e5e2b83d36d818540e051f">ETH_EnhancedDescriptorCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:gacdad75bef5e5e2b83d36d818540e051f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Enhanced descriptor structure.  <a href="group___e_t_h___private___functions.html#gacdad75bef5e5e2b83d36d818540e051f">更多...</a><br /></td></tr>
+<tr class="separator:gacdad75bef5e5e2b83d36d818540e051f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5b991b83a1a26f4d3fdfcb44a9e2961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gac5b991b83a1a26f4d3fdfcb44a9e2961">ETH_SoftwareReset</a> (void)</td></tr>
+<tr class="memdesc:gac5b991b83a1a26f4d3fdfcb44a9e2961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all MAC subsystem internal registers and logic.  <a href="group___e_t_h___private___functions.html#gac5b991b83a1a26f4d3fdfcb44a9e2961">更多...</a><br /></td></tr>
+<tr class="separator:gac5b991b83a1a26f4d3fdfcb44a9e2961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92fe59489331817a185f80d4ffdebc6a"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga92fe59489331817a185f80d4ffdebc6a">ETH_GetSoftwareResetStatus</a> (void)</td></tr>
+<tr class="memdesc:ga92fe59489331817a185f80d4ffdebc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the ETHERNET software reset bit is set or not.  <a href="group___e_t_h___private___functions.html#ga92fe59489331817a185f80d4ffdebc6a">更多...</a><br /></td></tr>
+<tr class="separator:ga92fe59489331817a185f80d4ffdebc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1c2bfb21045bcadeee68ddf14f7c197"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gab1c2bfb21045bcadeee68ddf14f7c197">ETH_GetDMAFlagStatus</a> (uint32_t ETH_DMA_FLAG)</td></tr>
+<tr class="memdesc:gab1c2bfb21045bcadeee68ddf14f7c197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET DMA flag is set or not.  <a href="group___e_t_h___private___functions.html#gab1c2bfb21045bcadeee68ddf14f7c197">更多...</a><br /></td></tr>
+<tr class="separator:gab1c2bfb21045bcadeee68ddf14f7c197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3b6af6472df3a723d46c255f90f85a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gae3b6af6472df3a723d46c255f90f85a4">ETH_DMAClearFlag</a> (uint32_t ETH_DMA_FLAG)</td></tr>
+<tr class="memdesc:gae3b6af6472df3a723d46c255f90f85a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the ETHERNET抯 DMA pending flag.  <a href="group___e_t_h___private___functions.html#gae3b6af6472df3a723d46c255f90f85a4">更多...</a><br /></td></tr>
+<tr class="separator:gae3b6af6472df3a723d46c255f90f85a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4c3fe4587148958503b55f7f6d46cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gab4c3fe4587148958503b55f7f6d46cae">ETH_DMAITConfig</a> (uint32_t ETH_DMA_IT, FunctionalState NewState)</td></tr>
+<tr class="memdesc:gab4c3fe4587148958503b55f7f6d46cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified ETHERNET DMA interrupts.  <a href="group___e_t_h___private___functions.html#gab4c3fe4587148958503b55f7f6d46cae">更多...</a><br /></td></tr>
+<tr class="separator:gab4c3fe4587148958503b55f7f6d46cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaa9cddbe71f59b1ab7e45db49bb228e"><td class="memItemLeft" align="right" valign="top">ITStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaaaa9cddbe71f59b1ab7e45db49bb228e">ETH_GetDMAITStatus</a> (uint32_t ETH_DMA_IT)</td></tr>
+<tr class="memdesc:gaaaa9cddbe71f59b1ab7e45db49bb228e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET DMA interrupt has occurred or not.  <a href="group___e_t_h___private___functions.html#gaaaa9cddbe71f59b1ab7e45db49bb228e">更多...</a><br /></td></tr>
+<tr class="separator:gaaaa9cddbe71f59b1ab7e45db49bb228e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga854816cf37670ec22f61167be41446b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga854816cf37670ec22f61167be41446b8">ETH_DMAClearITPendingBit</a> (uint32_t ETH_DMA_IT)</td></tr>
+<tr class="memdesc:ga854816cf37670ec22f61167be41446b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the ETHERNET抯 DMA IT pending bit.  <a href="group___e_t_h___private___functions.html#ga854816cf37670ec22f61167be41446b8">更多...</a><br /></td></tr>
+<tr class="separator:ga854816cf37670ec22f61167be41446b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaf5b161f45ed799eea1c99c24c220a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaeaf5b161f45ed799eea1c99c24c220a6">ETH_GetTransmitProcessState</a> (void)</td></tr>
+<tr class="memdesc:gaeaf5b161f45ed799eea1c99c24c220a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ETHERNET DMA Transmit Process State.  <a href="group___e_t_h___private___functions.html#gaeaf5b161f45ed799eea1c99c24c220a6">更多...</a><br /></td></tr>
+<tr class="separator:gaeaf5b161f45ed799eea1c99c24c220a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ea7e1e8cdbe0e57eecc609ddaa8a3f0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga2ea7e1e8cdbe0e57eecc609ddaa8a3f0">ETH_GetReceiveProcessState</a> (void)</td></tr>
+<tr class="memdesc:ga2ea7e1e8cdbe0e57eecc609ddaa8a3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ETHERNET DMA Receive Process State.  <a href="group___e_t_h___private___functions.html#ga2ea7e1e8cdbe0e57eecc609ddaa8a3f0">更多...</a><br /></td></tr>
+<tr class="separator:ga2ea7e1e8cdbe0e57eecc609ddaa8a3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga886f872a0046bbb3f9f08890bb10a7d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga886f872a0046bbb3f9f08890bb10a7d6">ETH_FlushTransmitFIFO</a> (void)</td></tr>
+<tr class="memdesc:ga886f872a0046bbb3f9f08890bb10a7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the ETHERNET transmit FIFO.  <a href="group___e_t_h___private___functions.html#ga886f872a0046bbb3f9f08890bb10a7d6">更多...</a><br /></td></tr>
+<tr class="separator:ga886f872a0046bbb3f9f08890bb10a7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6c37cbdce7cf962d8de25ac635e37c9"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaf6c37cbdce7cf962d8de25ac635e37c9">ETH_GetFlushTransmitFIFOStatus</a> (void)</td></tr>
+<tr class="memdesc:gaf6c37cbdce7cf962d8de25ac635e37c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the ETHERNET flush transmit FIFO bit is cleared or not.  <a href="group___e_t_h___private___functions.html#gaf6c37cbdce7cf962d8de25ac635e37c9">更多...</a><br /></td></tr>
+<tr class="separator:gaf6c37cbdce7cf962d8de25ac635e37c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e5a7dbbed57e1c5a98a7c5703677808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga0e5a7dbbed57e1c5a98a7c5703677808">ETH_DMATransmissionCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga0e5a7dbbed57e1c5a98a7c5703677808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the DMA transmission.  <a href="group___e_t_h___private___functions.html#ga0e5a7dbbed57e1c5a98a7c5703677808">更多...</a><br /></td></tr>
+<tr class="separator:ga0e5a7dbbed57e1c5a98a7c5703677808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7409aa31c2fe05ff1c3382a47e742fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga7409aa31c2fe05ff1c3382a47e742fb4">ETH_DMAReceptionCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga7409aa31c2fe05ff1c3382a47e742fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the DMA reception.  <a href="group___e_t_h___private___functions.html#ga7409aa31c2fe05ff1c3382a47e742fb4">更多...</a><br /></td></tr>
+<tr class="separator:ga7409aa31c2fe05ff1c3382a47e742fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ec13d619e677182759d62c1baf346e0"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga6ec13d619e677182759d62c1baf346e0">ETH_GetDMAOverflowStatus</a> (uint32_t ETH_DMA_Overflow)</td></tr>
+<tr class="memdesc:ga6ec13d619e677182759d62c1baf346e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET DMA overflow flag is set or not.  <a href="group___e_t_h___private___functions.html#ga6ec13d619e677182759d62c1baf346e0">更多...</a><br /></td></tr>
+<tr class="separator:ga6ec13d619e677182759d62c1baf346e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35b0b3e25b2ea21d8ed26cf0d7b647eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga35b0b3e25b2ea21d8ed26cf0d7b647eb">ETH_GetRxOverflowMissedFrameCounter</a> (void)</td></tr>
+<tr class="memdesc:ga35b0b3e25b2ea21d8ed26cf0d7b647eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ETHERNET DMA Rx Overflow Missed Frame Counter value.  <a href="group___e_t_h___private___functions.html#ga35b0b3e25b2ea21d8ed26cf0d7b647eb">更多...</a><br /></td></tr>
+<tr class="separator:ga35b0b3e25b2ea21d8ed26cf0d7b647eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadab3ea237f119efc6ed5dbc3eb410f5d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gadab3ea237f119efc6ed5dbc3eb410f5d">ETH_GetBufferUnavailableMissedFrameCounter</a> (void)</td></tr>
+<tr class="memdesc:gadab3ea237f119efc6ed5dbc3eb410f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ETHERNET DMA Buffer Unavailable Missed Frame Counter value.  <a href="group___e_t_h___private___functions.html#gadab3ea237f119efc6ed5dbc3eb410f5d">更多...</a><br /></td></tr>
+<tr class="separator:gadab3ea237f119efc6ed5dbc3eb410f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga085e61016aa89e1721b81db6bd990b0c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga085e61016aa89e1721b81db6bd990b0c">ETH_GetCurrentTxDescStartAddress</a> (void)</td></tr>
+<tr class="memdesc:ga085e61016aa89e1721b81db6bd990b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ETHERNET DMA DMACHTDR register value.  <a href="group___e_t_h___private___functions.html#ga085e61016aa89e1721b81db6bd990b0c">更多...</a><br /></td></tr>
+<tr class="separator:ga085e61016aa89e1721b81db6bd990b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac634789c0d1462c1c5ba5cf8427fa4a1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gac634789c0d1462c1c5ba5cf8427fa4a1">ETH_GetCurrentRxDescStartAddress</a> (void)</td></tr>
+<tr class="memdesc:gac634789c0d1462c1c5ba5cf8427fa4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ETHERNET DMA DMACHRDR register value.  <a href="group___e_t_h___private___functions.html#gac634789c0d1462c1c5ba5cf8427fa4a1">更多...</a><br /></td></tr>
+<tr class="separator:gac634789c0d1462c1c5ba5cf8427fa4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eb1868f6d9e2feac881fdc5f04eab95"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga7eb1868f6d9e2feac881fdc5f04eab95">ETH_GetCurrentTxBufferAddress</a> (void)</td></tr>
+<tr class="memdesc:ga7eb1868f6d9e2feac881fdc5f04eab95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ETHERNET DMA DMACHTBAR register value.  <a href="group___e_t_h___private___functions.html#ga7eb1868f6d9e2feac881fdc5f04eab95">更多...</a><br /></td></tr>
+<tr class="separator:ga7eb1868f6d9e2feac881fdc5f04eab95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1729bb299d7cc0a7873a3f0b63498314"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga1729bb299d7cc0a7873a3f0b63498314">ETH_GetCurrentRxBufferAddress</a> (void)</td></tr>
+<tr class="memdesc:ga1729bb299d7cc0a7873a3f0b63498314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ETHERNET DMA DMACHRBAR register value.  <a href="group___e_t_h___private___functions.html#ga1729bb299d7cc0a7873a3f0b63498314">更多...</a><br /></td></tr>
+<tr class="separator:ga1729bb299d7cc0a7873a3f0b63498314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae933a3ddae920fc22a764bdf4af0b3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gae933a3ddae920fc22a764bdf4af0b3a5">ETH_ResumeDMATransmission</a> (void)</td></tr>
+<tr class="memdesc:gae933a3ddae920fc22a764bdf4af0b3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes the DMA Transmission by writing to the DmaTxPollDemand register (the data written could be anything). This forces the DMA to resume transmission.  <a href="group___e_t_h___private___functions.html#gae933a3ddae920fc22a764bdf4af0b3a5">更多...</a><br /></td></tr>
+<tr class="separator:gae933a3ddae920fc22a764bdf4af0b3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2149971fef6d9478acb91a0592ed7af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaf2149971fef6d9478acb91a0592ed7af">ETH_ResumeDMAReception</a> (void)</td></tr>
+<tr class="memdesc:gaf2149971fef6d9478acb91a0592ed7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes the DMA Transmission by writing to the DmaRxPollDemand register (the data written could be anything). This forces the DMA to resume reception.  <a href="group___e_t_h___private___functions.html#gaf2149971fef6d9478acb91a0592ed7af">更多...</a><br /></td></tr>
+<tr class="separator:gaf2149971fef6d9478acb91a0592ed7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf35f8a86c56bd5a1c2cf1f5184b5f34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaf35f8a86c56bd5a1c2cf1f5184b5f34d">ETH_SetReceiveWatchdogTimer</a> (uint8_t Value)</td></tr>
+<tr class="memdesc:gaf35f8a86c56bd5a1c2cf1f5184b5f34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the DMA Receive status watchdog timer register value  <a href="group___e_t_h___private___functions.html#gaf35f8a86c56bd5a1c2cf1f5184b5f34d">更多...</a><br /></td></tr>
+<tr class="separator:gaf35f8a86c56bd5a1c2cf1f5184b5f34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eb7fe9ad95d19b5a10eaa49c4d32f3d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga7eb7fe9ad95d19b5a10eaa49c4d32f3d">ETH_ReadPHYRegister</a> (uint16_t PHYAddress, uint16_t PHYReg)</td></tr>
+<tr class="memdesc:ga7eb7fe9ad95d19b5a10eaa49c4d32f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a PHY register  <a href="group___e_t_h___private___functions.html#ga7eb7fe9ad95d19b5a10eaa49c4d32f3d">更多...</a><br /></td></tr>
+<tr class="separator:ga7eb7fe9ad95d19b5a10eaa49c4d32f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad200a7959958f29c4e3815fdc85fd55b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gad200a7959958f29c4e3815fdc85fd55b">ETH_WritePHYRegister</a> (uint16_t PHYAddress, uint16_t PHYReg, uint16_t PHYValue)</td></tr>
+<tr class="memdesc:gad200a7959958f29c4e3815fdc85fd55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to a PHY register  <a href="group___e_t_h___private___functions.html#gad200a7959958f29c4e3815fdc85fd55b">更多...</a><br /></td></tr>
+<tr class="separator:gad200a7959958f29c4e3815fdc85fd55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f4a52485e0eb7d9899c296cb814ade9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga2f4a52485e0eb7d9899c296cb814ade9">ETH_PHYLoopBackCmd</a> (uint16_t PHYAddress, FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga2f4a52485e0eb7d9899c296cb814ade9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the PHY loopBack mode. : Don't be confused with ETH_MACLoopBackCmd function which enables internal loopback at MII level  <a href="group___e_t_h___private___functions.html#ga2f4a52485e0eb7d9899c296cb814ade9">更多...</a><br /></td></tr>
+<tr class="separator:ga2f4a52485e0eb7d9899c296cb814ade9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad19ac0436076c96431e887c3684b0712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gad19ac0436076c96431e887c3684b0712">ETH_ResetWakeUpFrameFilterRegisterPointer</a> (void)</td></tr>
+<tr class="memdesc:gad19ac0436076c96431e887c3684b0712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset Wakeup frame filter register pointer.  <a href="group___e_t_h___private___functions.html#gad19ac0436076c96431e887c3684b0712">更多...</a><br /></td></tr>
+<tr class="separator:gad19ac0436076c96431e887c3684b0712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4de8ef73542786c3bd17f2de8244e978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga4de8ef73542786c3bd17f2de8244e978">ETH_SetWakeUpFrameFilterRegister</a> (uint32_t *Buffer)</td></tr>
+<tr class="memdesc:ga4de8ef73542786c3bd17f2de8244e978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates the remote wakeup frame registers.  <a href="group___e_t_h___private___functions.html#ga4de8ef73542786c3bd17f2de8244e978">更多...</a><br /></td></tr>
+<tr class="separator:ga4de8ef73542786c3bd17f2de8244e978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf19478fdd8068eb9b93cf0d0af480779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaf19478fdd8068eb9b93cf0d0af480779">ETH_GlobalUnicastWakeUpCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:gaf19478fdd8068eb9b93cf0d0af480779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables any unicast packet filtered by the MAC address recognition to be a wake-up frame.  <a href="group___e_t_h___private___functions.html#gaf19478fdd8068eb9b93cf0d0af480779">更多...</a><br /></td></tr>
+<tr class="separator:gaf19478fdd8068eb9b93cf0d0af480779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff458e5ff5e03e499e15140cc3885df0"><td class="memItemLeft" align="right" valign="top">FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaff458e5ff5e03e499e15140cc3885df0">ETH_GetPMTFlagStatus</a> (uint32_t ETH_PMT_FLAG)</td></tr>
+<tr class="memdesc:gaff458e5ff5e03e499e15140cc3885df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET PMT flag is set or not.  <a href="group___e_t_h___private___functions.html#gaff458e5ff5e03e499e15140cc3885df0">更多...</a><br /></td></tr>
+<tr class="separator:gaff458e5ff5e03e499e15140cc3885df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5a89c30b697512f6025501919283e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaf5a89c30b697512f6025501919283e87">ETH_WakeUpFrameDetectionCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:gaf5a89c30b697512f6025501919283e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MAC Wake-Up Frame Detection.  <a href="group___e_t_h___private___functions.html#gaf5a89c30b697512f6025501919283e87">更多...</a><br /></td></tr>
+<tr class="separator:gaf5a89c30b697512f6025501919283e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1046cf81d04dbe98239de11b55bf952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gad1046cf81d04dbe98239de11b55bf952">ETH_MagicPacketDetectionCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:gad1046cf81d04dbe98239de11b55bf952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MAC Magic Packet Detection.  <a href="group___e_t_h___private___functions.html#gad1046cf81d04dbe98239de11b55bf952">更多...</a><br /></td></tr>
+<tr class="separator:gad1046cf81d04dbe98239de11b55bf952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3095c4125cd2bbaedc6a1e5ed3a81669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga3095c4125cd2bbaedc6a1e5ed3a81669">ETH_PowerDownCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga3095c4125cd2bbaedc6a1e5ed3a81669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MAC Power Down.  <a href="group___e_t_h___private___functions.html#ga3095c4125cd2bbaedc6a1e5ed3a81669">更多...</a><br /></td></tr>
+<tr class="separator:ga3095c4125cd2bbaedc6a1e5ed3a81669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6317136f5ca8aff711630b595e5639b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga6317136f5ca8aff711630b595e5639b3">ETH_MMCCounterFullPreset</a> (void)</td></tr>
+<tr class="memdesc:ga6317136f5ca8aff711630b595e5639b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preset and Initialize the MMC counters to almost-full value: 0xFFFF_FFF0 (full - 16)  <a href="group___e_t_h___private___functions.html#ga6317136f5ca8aff711630b595e5639b3">更多...</a><br /></td></tr>
+<tr class="separator:ga6317136f5ca8aff711630b595e5639b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefaef524644df31d09c8c6d68829414f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gaefaef524644df31d09c8c6d68829414f">ETH_MMCCounterHalfPreset</a> (void)</td></tr>
+<tr class="memdesc:gaefaef524644df31d09c8c6d68829414f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preset and Initialize the MMC counters to almost-hal value: 0x7FFF_FFF0 (half - 16).  <a href="group___e_t_h___private___functions.html#gaefaef524644df31d09c8c6d68829414f">更多...</a><br /></td></tr>
+<tr class="separator:gaefaef524644df31d09c8c6d68829414f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e7e93f2c4ccedba18a88ee64310f6aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga3e7e93f2c4ccedba18a88ee64310f6aa">ETH_MMCCounterFreezeCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga3e7e93f2c4ccedba18a88ee64310f6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MMC Counter Freeze.  <a href="group___e_t_h___private___functions.html#ga3e7e93f2c4ccedba18a88ee64310f6aa">更多...</a><br /></td></tr>
+<tr class="separator:ga3e7e93f2c4ccedba18a88ee64310f6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0256f8400163ab8a6efc4db63bd2534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#gae0256f8400163ab8a6efc4db63bd2534">ETH_MMCResetOnReadCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:gae0256f8400163ab8a6efc4db63bd2534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MMC Reset On Read.  <a href="group___e_t_h___private___functions.html#gae0256f8400163ab8a6efc4db63bd2534">更多...</a><br /></td></tr>
+<tr class="separator:gae0256f8400163ab8a6efc4db63bd2534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83f70e57935ac7a6acaf49befa1a1cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga83f70e57935ac7a6acaf49befa1a1cba">ETH_MMCCounterRolloverCmd</a> (FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga83f70e57935ac7a6acaf49befa1a1cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the MMC Counter Stop Rollover.  <a href="group___e_t_h___private___functions.html#ga83f70e57935ac7a6acaf49befa1a1cba">更多...</a><br /></td></tr>
+<tr class="separator:ga83f70e57935ac7a6acaf49befa1a1cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga414106bd2efd86e44ea8469ef3229843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga414106bd2efd86e44ea8469ef3229843">ETH_MMCCountersReset</a> (void)</td></tr>
+<tr class="memdesc:ga414106bd2efd86e44ea8469ef3229843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the MMC Counters.  <a href="group___e_t_h___private___functions.html#ga414106bd2efd86e44ea8469ef3229843">更多...</a><br /></td></tr>
+<tr class="separator:ga414106bd2efd86e44ea8469ef3229843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d338dca853b68d6607a78fffa2227d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga4d338dca853b68d6607a78fffa2227d5">ETH_MMCITConfig</a> (uint32_t ETH_MMC_IT, FunctionalState NewState)</td></tr>
+<tr class="memdesc:ga4d338dca853b68d6607a78fffa2227d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the specified ETHERNET MMC interrupts.  <a href="group___e_t_h___private___functions.html#ga4d338dca853b68d6607a78fffa2227d5">更多...</a><br /></td></tr>
+<tr class="separator:ga4d338dca853b68d6607a78fffa2227d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21ef2d7640d1d8914aa09836c252113b"><td class="memItemLeft" align="right" valign="top">ITStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga21ef2d7640d1d8914aa09836c252113b">ETH_GetMMCITStatus</a> (uint32_t ETH_MMC_IT)</td></tr>
+<tr class="memdesc:ga21ef2d7640d1d8914aa09836c252113b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified ETHERNET MMC IT is set or not.  <a href="group___e_t_h___private___functions.html#ga21ef2d7640d1d8914aa09836c252113b">更多...</a><br /></td></tr>
+<tr class="separator:ga21ef2d7640d1d8914aa09836c252113b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90c0f3ab25885f3bb3e4e62b558473de"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___private___functions.html#ga90c0f3ab25885f3bb3e4e62b558473de">ETH_GetMMCRegister</a> (uint32_t ETH_MMCReg)</td></tr>
+<tr class="memdesc:ga90c0f3ab25885f3bb3e4e62b558473de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the specified ETHERNET MMC register value.  <a href="group___e_t_h___private___functions.html#ga90c0f3ab25885f3bb3e4e62b558473de">更多...</a><br /></td></tr>
+<tr class="separator:ga90c0f3ab25885f3bb3e4e62b558473de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ab7a021e716d96935e3e29fe4521a93c7"><td class="memItemLeft" align="right" valign="top">__IO <a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4x7__eth_8c.html#ab7a021e716d96935e3e29fe4521a93c7">DMATxDescToSet</a></td></tr>
+<tr class="separator:ab7a021e716d96935e3e29fe4521a93c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361b965b3c16b23a1a08c257fd8e237d"><td class="memItemLeft" align="right" valign="top">__IO <a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4x7__eth_8c.html#a361b965b3c16b23a1a08c257fd8e237d">DMARxDescToGet</a></td></tr>
+<tr class="separator:a361b965b3c16b23a1a08c257fd8e237d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2826344bf53bba6e5296aa788ee0aca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_e_t_h___d_m_a___rx___frame__infos.html">ETH_DMA_Rx_Frame_infos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4x7__eth_8c.html#ae2826344bf53bba6e5296aa788ee0aca">RX_Frame_Descriptor</a></td></tr>
+<tr class="separator:ae2826344bf53bba6e5296aa788ee0aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51afd6f29fca93dcd806685a001843b1"><td class="memItemLeft" align="right" valign="top">__IO <a class="el" href="struct_e_t_h___d_m_a___rx___frame__infos.html">ETH_DMA_Rx_Frame_infos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4x7__eth_8c.html#a51afd6f29fca93dcd806685a001843b1">DMA_RX_FRAME_infos</a></td></tr>
+<tr class="separator:a51afd6f29fca93dcd806685a001843b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad920a2b4724e2463ede05c1b495ba356"><td class="memItemLeft" align="right" valign="top">__IO uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4x7__eth_8c.html#ad920a2b4724e2463ede05c1b495ba356">Frame_Rx_index</a></td></tr>
+<tr class="separator:ad920a2b4724e2463ede05c1b495ba356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This file is the low level driver for STM32F407xx/417xx Ethernet Controller. This driver does not include low level functions for PTP time-stamp. </p>
+<dl class="section author"><dt>作者</dt><dd>MCD Application Team </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>V1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>14-October-2011 </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</p>
+<h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+
+<p class="definition">在文件 <a class="el" href="stm32f4x7__eth_8c_source.html">stm32f4x7_eth.c</a> 中定义.</p>
+</div><h2 class="groupheader">变量说明</h2>
+<a id="a51afd6f29fca93dcd806685a001843b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51afd6f29fca93dcd806685a001843b1">&#9670;&nbsp;</a></span>DMA_RX_FRAME_infos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__IO <a class="el" href="struct_e_t_h___d_m_a___rx___frame__infos.html">ETH_DMA_Rx_Frame_infos</a>* DMA_RX_FRAME_infos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="stm32f4x7__eth_8c_source.html">stm32f4x7_eth.c</a> 第 <a class="el" href="stm32f4x7__eth_8c_source.html#l00088">88</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="stm32f4x7__eth_8c_source.html#l01199">ETH_CheckFrameReceived()</a>, <a class="el" href="stm32f4x7__eth_8c_source.html#l01153">ETH_DMARxDescChainInit()</a>, <a class="el" href="stm32f4x7__eth_8c_source.html#l00957">ETH_Get_Received_Frame()</a> , 以及 <a class="el" href="stm32f4x7__eth_8c_source.html#l00996">ETH_Get_Received_Frame_interrupt()</a>.</p>
+
+</div>
+</div>
+<a id="a361b965b3c16b23a1a08c257fd8e237d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361b965b3c16b23a1a08c257fd8e237d">&#9670;&nbsp;</a></span>DMARxDescToGet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__IO <a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a>* DMARxDescToGet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="stm32f4x7__eth_8c_source.html">stm32f4x7_eth.c</a> 第 <a class="el" href="stm32f4x7__eth_8c_source.html#l00082">82</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="stm32f4x7__eth_8c_source.html#l01199">ETH_CheckFrameReceived()</a>, <a class="el" href="stm32f4x7__eth_8c_source.html#l01153">ETH_DMARxDescChainInit()</a>, <a class="el" href="stm32f4x7__eth_8c_source.html#l00957">ETH_Get_Received_Frame()</a>, <a class="el" href="stm32f4x7__eth_8c_source.html#l00996">ETH_Get_Received_Frame_interrupt()</a>, <a class="el" href="lan8720_8c_source.html#l00177">ETH_IRQHandler()</a> , 以及 <a class="el" href="lan8720_8c_source.html#l00188">ETH_Rx_Packet()</a>.</p>
+
+</div>
+</div>
+<a id="ab7a021e716d96935e3e29fe4521a93c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a021e716d96935e3e29fe4521a93c7">&#9670;&nbsp;</a></span>DMATxDescToSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__IO <a class="el" href="struct_e_t_h___d_m_a_d_e_s_c_type_def.html">ETH_DMADESCTypeDef</a>* DMATxDescToSet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="stm32f4x7__eth_8c_source.html">stm32f4x7_eth.c</a> 第 <a class="el" href="stm32f4x7__eth_8c_source.html#l00081">81</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="stm32f4x7__eth_8c_source.html#l01241">ETH_DMATxDescChainInit()</a>, <a class="el" href="lan8720_8c_source.html#l00240">ETH_GetCurrentTxBuffer()</a>, <a class="el" href="stm32f4x7__eth_8c_source.html#l01071">ETH_Prepare_Transmit_Descriptors()</a> , 以及 <a class="el" href="lan8720_8c_source.html#l00221">ETH_Tx_Packet()</a>.</p>
+
+</div>
+</div>
+<a id="ad920a2b4724e2463ede05c1b495ba356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad920a2b4724e2463ede05c1b495ba356">&#9670;&nbsp;</a></span>Frame_Rx_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__IO uint32_t Frame_Rx_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="stm32f4x7__eth_8c_source.html">stm32f4x7_eth.c</a> 第 <a class="el" href="stm32f4x7__eth_8c_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae2826344bf53bba6e5296aa788ee0aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2826344bf53bba6e5296aa788ee0aca">&#9670;&nbsp;</a></span>RX_Frame_Descriptor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_e_t_h___d_m_a___rx___frame__infos.html">ETH_DMA_Rx_Frame_infos</a> RX_Frame_Descriptor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="stm32f4x7__eth_8c_source.html">stm32f4x7_eth.c</a> 第 <a class="el" href="stm32f4x7__eth_8c_source.html#l00087">87</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="stm32f4x7__eth_8c_source.html#l01153">ETH_DMARxDescChainInit()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

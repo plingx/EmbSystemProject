@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Module/Interplot/interpolate.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_70e54bb3413a824ef01dcb0be39aea9c.html">EMB_Module</a></li><li class="navelem"><a class="el" href="dir_a6c54a025b36177dd3b581f798816827.html">Interplot</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">interpolate.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>插值计算  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp_8h_source.html">bsp.h</a>&quot;</code><br />
+</div>
+<p><a href="interpolate_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad34f6fafc202c1fda8a782c78ae42048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ad34f6fafc202c1fda8a782c78ae42048"><td class="mdescLeft">&#160;</td><td class="mdescRight">插值数量  <a href="#ad34f6fafc202c1fda8a782c78ae42048">更多...</a><br /></td></tr>
+<tr class="separator:ad34f6fafc202c1fda8a782c78ae42048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8c8efc85613da73d3832d189b2b09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#adf8c8efc85613da73d3832d189b2b09a">WHEEL_SIGN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:adf8c8efc85613da73d3832d189b2b09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向轮子标志  <a href="#adf8c8efc85613da73d3832d189b2b09a">更多...</a><br /></td></tr>
+<tr class="separator:adf8c8efc85613da73d3832d189b2b09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288112c03a9d41fabb42bf9222cd9d55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a288112c03a9d41fabb42bf9222cd9d55">ARM_NUM</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a288112c03a9d41fabb42bf9222cd9d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f6d43e495a77c0acc20ab3d04c4c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#ac6f6d43e495a77c0acc20ab3d04c4c90">HEAD_NUM</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ac6f6d43e495a77c0acc20ab3d04c4c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc65d26c771e87cbac7b21dfe1528381"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#abc65d26c771e87cbac7b21dfe1528381">WHEEL_POSITION_NUM</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:abc65d26c771e87cbac7b21dfe1528381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11eff3229cb138d527b6fe4db2d6fc50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a11eff3229cb138d527b6fe4db2d6fc50">WHEEL_SPEED_PROTECT</a>&#160;&#160;&#160;20000</td></tr>
+<tr class="separator:a11eff3229cb138d527b6fe4db2d6fc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a628d8f512b36a1ee4e6ab8854f844cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a628d8f512b36a1ee4e6ab8854f844cf4">GenerateArmGoalPositionSpeed</a> (void)</td></tr>
+<tr class="memdesc:a628d8f512b36a1ee4e6ab8854f844cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">手臂插值  <a href="#a628d8f512b36a1ee4e6ab8854f844cf4">更多...</a><br /></td></tr>
+<tr class="separator:a628d8f512b36a1ee4e6ab8854f844cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38771fa468e664f3f1a8a0997cb04bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a38771fa468e664f3f1a8a0997cb04bdd">GenerateHeadGoalPositionSpeed</a> (void)</td></tr>
+<tr class="memdesc:a38771fa468e664f3f1a8a0997cb04bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">头插值  <a href="#a38771fa468e664f3f1a8a0997cb04bdd">更多...</a><br /></td></tr>
+<tr class="separator:a38771fa468e664f3f1a8a0997cb04bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a632d8f5f20d02b245ccf43c229c593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a5a632d8f5f20d02b245ccf43c229c593">GenerateShoulderGoalPositionSpeed</a> (u8 unID)</td></tr>
+<tr class="memdesc:a5a632d8f5f20d02b245ccf43c229c593"><td class="mdescLeft">&#160;</td><td class="mdescRight">肩膀插值  <a href="#a5a632d8f5f20d02b245ccf43c229c593">更多...</a><br /></td></tr>
+<tr class="separator:a5a632d8f5f20d02b245ccf43c229c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0576ea38613674e58936649a44c8a10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a0576ea38613674e58936649a44c8a10c">InterpolateBrake</a> (u8 unObject)</td></tr>
+<tr class="memdesc:a0576ea38613674e58936649a44c8a10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">插值函数  <a href="#a0576ea38613674e58936649a44c8a10c">更多...</a><br /></td></tr>
+<tr class="separator:a0576ea38613674e58936649a44c8a10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0bee76bf229dc9c240df127e188c5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#aef0bee76bf229dc9c240df127e188c5b">GenerateWheelGoalPositionSpeed</a> (void)</td></tr>
+<tr class="memdesc:aef0bee76bf229dc9c240df127e188c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">轮子插值  <a href="#aef0bee76bf229dc9c240df127e188c5b">更多...</a><br /></td></tr>
+<tr class="separator:aef0bee76bf229dc9c240df127e188c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a46e9ec3cdd44bc08f37a8b1e6509d580"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a46e9ec3cdd44bc08f37a8b1e6509d580">unArmInterPolateNum</a></td></tr>
+<tr class="memdesc:a46e9ec3cdd44bc08f37a8b1e6509d580"><td class="mdescLeft">&#160;</td><td class="mdescRight">手臂插值点个数  <a href="#a46e9ec3cdd44bc08f37a8b1e6509d580">更多...</a><br /></td></tr>
+<tr class="separator:a46e9ec3cdd44bc08f37a8b1e6509d580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad9965fe4a95e11dcbde29c41250719"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a></td></tr>
+<tr class="memdesc:a1ad9965fe4a95e11dcbde29c41250719"><td class="mdescLeft">&#160;</td><td class="mdescRight">肩膀插值点个数  <a href="#a1ad9965fe4a95e11dcbde29c41250719">更多...</a><br /></td></tr>
+<tr class="separator:a1ad9965fe4a95e11dcbde29c41250719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3908ad795cdde2555c5169450bba33"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#aea3908ad795cdde2555c5169450bba33">unHeadInterPolateNum</a></td></tr>
+<tr class="memdesc:aea3908ad795cdde2555c5169450bba33"><td class="mdescLeft">&#160;</td><td class="mdescRight">头部插值点个数  <a href="#aea3908ad795cdde2555c5169450bba33">更多...</a><br /></td></tr>
+<tr class="separator:aea3908ad795cdde2555c5169450bba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac881af8c5744572c479fa0bf22350a9b"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a></td></tr>
+<tr class="memdesc:ac881af8c5744572c479fa0bf22350a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">轮子插值点个数  <a href="#ac881af8c5744572c479fa0bf22350a9b">更多...</a><br /></td></tr>
+<tr class="separator:ac881af8c5744572c479fa0bf22350a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e4bf85356a3280effa0b8f1005f506"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#ae5e4bf85356a3280effa0b8f1005f506">unArmInterPolateFlag</a></td></tr>
+<tr class="separator:ae5e4bf85356a3280effa0b8f1005f506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32129913e6650198e0103b51664be08"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#ac32129913e6650198e0103b51664be08">unHeadInterPolateFlag</a></td></tr>
+<tr class="separator:ac32129913e6650198e0103b51664be08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789c1c6321dfac3359a40cac737678ce"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a789c1c6321dfac3359a40cac737678ce">unShoulderInterPolateFlag</a></td></tr>
+<tr class="separator:a789c1c6321dfac3359a40cac737678ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50668822ec8506c016133ecd26fc6113"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpolate_8h.html#a50668822ec8506c016133ecd26fc6113">unWheelInterPolateFlag</a></td></tr>
+<tr class="separator:a50668822ec8506c016133ecd26fc6113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>插值计算 </p>
+<p>版权所有(C) 2017 - 2022.　北京一维弦科技有限公司. 著作人保留所有权利. 公司通信地址：北京市海淀区北三环西路48号北京科技会展中心1B座16L</p>
+<p>本文件的详细说明. </p><dl class="section author"><dt>作者</dt><dd>xxx, <a href="#" onclick="location.href='mai'+'lto:'+'xxx'+'@e'+'way'+'bo'+'t.c'+'om'; return false;">xxx@e<span style="display: none;">.nosp@m.</span>wayb<span style="display: none;">.nosp@m.</span>ot.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2000-01-01 </dd></dl>
+<dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<dl class="section user"><dt>Change History:</dt><dd></dd></dl>
+<p>&lt;Date&gt; | &lt;Version&gt; | &lt;Author&gt; | </p>
+<p>2000/01/01 | 0.0.1 | xxxx | Create file</p>
+<p>2008/02/13 | 0.0.2 | xxxx | Add ..... </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a288112c03a9d41fabb42bf9222cd9d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288112c03a9d41fabb42bf9222cd9d55">&#9670;&nbsp;</a></span>ARM_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARM_NUM&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 第 <a class="el" href="interpolate_8h_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00444">InterpolateBrake()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00257">SendArmDataToExePack()</a>.</p>
+
+</div>
+</div>
+<a id="ac6f6d43e495a77c0acc20ab3d04c4c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f6d43e495a77c0acc20ab3d04c4c90">&#9670;&nbsp;</a></span>HEAD_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEAD_NUM&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 第 <a class="el" href="interpolate_8h_source.html#l00030">30</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00444">InterpolateBrake()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>.</p>
+
+</div>
+</div>
+<a id="ad34f6fafc202c1fda8a782c78ae42048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34f6fafc202c1fda8a782c78ae42048">&#9670;&nbsp;</a></span>INTERPOLATE_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INTERPOLATE_NUM&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>插值数量 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 第 <a class="el" href="interpolate_8h_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abc65d26c771e87cbac7b21dfe1528381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc65d26c771e87cbac7b21dfe1528381">&#9670;&nbsp;</a></span>WHEEL_POSITION_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WHEEL_POSITION_NUM&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 第 <a class="el" href="interpolate_8h_source.html#l00031">31</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="_wheel_control_8c_source.html#l00210">EmbWheelBrake()</a> , 以及 <a class="el" href="interpolate_8c_source.html#l00444">InterpolateBrake()</a>.</p>
+
+</div>
+</div>
+<a id="adf8c8efc85613da73d3832d189b2b09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8c8efc85613da73d3832d189b2b09a">&#9670;&nbsp;</a></span>WHEEL_SIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WHEEL_SIGN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>反向轮子标志 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 第 <a class="el" href="interpolate_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a11eff3229cb138d527b6fe4db2d6fc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11eff3229cb138d527b6fe4db2d6fc50">&#9670;&nbsp;</a></span>WHEEL_SPEED_PROTECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WHEEL_SPEED_PROTECT&#160;&#160;&#160;20000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8h_source.html">interpolate.h</a> 第 <a class="el" href="interpolate_8h_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a628d8f512b36a1ee4e6ab8854f844cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628d8f512b36a1ee4e6ab8854f844cf4">&#9670;&nbsp;</a></span>GenerateArmGoalPositionSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GenerateArmGoalPositionSpeed </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>手臂插值 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00074">74</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_eway_c_m_d_8c_source.html#l00026">sArmMotorCmdPack</a>, <a class="el" href="interpolate_8c_source.html#l00044">unArmInterPolateFlag</a>, <a class="el" href="interpolate_8c_source.html#l00031">unArmInterPolateNum</a> , 以及 <a class="el" href="_eway_c_m_d_8h_source.html#l00095">EmbArmMotorCmdPack::unModeFlag</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_motion_control_8c_source.html#l00257">SendArmDataToExePack()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{  </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    u8 unMode;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (0==<a class="code" href="interpolate_8c.html#a46e9ec3cdd44bc08f37a8b1e6509d580">unArmInterPolateNum</a>)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="interpolate_8c.html#ae5e4bf85356a3280effa0b8f1005f506">unArmInterPolateFlag</a>=0;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      unMode=<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">unModeFlag</a>;<span class="comment">//控制模式：1，速度；0，位置</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      GenerateMotorGoalPositionSpeed(1,<a class="code" href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a>,unMode);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div><div class="ttc" id="_emb_init_pra_8h_html_ac2e2c6d5befc8b9a8173bd62ee6f9be7"><div class="ttname"><a href="_emb_init_pra_8h.html#ac2e2c6d5befc8b9a8173bd62ee6f9be7">Arm_Servo_Num</a></div><div class="ttdeci">#define Arm_Servo_Num</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00136">EmbInitPra.h:136</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a46e9ec3cdd44bc08f37a8b1e6509d580"><div class="ttname"><a href="interpolate_8c.html#a46e9ec3cdd44bc08f37a8b1e6509d580">unArmInterPolateNum</a></div><div class="ttdeci">u8 unArmInterPolateNum</div><div class="ttdoc">手臂插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00031">interpolate.c:31</a></div></div>
+<div class="ttc" id="struct_emb_arm_motor_cmd_pack_html_aef7cf414ca8f2325f11471b78ff90540"><div class="ttname"><a href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">EmbArmMotorCmdPack::unModeFlag</a></div><div class="ttdeci">u8 unModeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00095">EwayCMD.h:95</a></div></div>
+<div class="ttc" id="_eway_c_m_d_8c_html_a0de7795893891ebfa8d7d9d843821d6d"><div class="ttname"><a href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a></div><div class="ttdeci">EmbArmMotorCmdPack sArmMotorCmdPack</div><div class="ttdoc">手臂命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00026">EwayCMD.c:26</a></div></div>
+<div class="ttc" id="interpolate_8c_html_ae5e4bf85356a3280effa0b8f1005f506"><div class="ttname"><a href="interpolate_8c.html#ae5e4bf85356a3280effa0b8f1005f506">unArmInterPolateFlag</a></div><div class="ttdeci">u8 unArmInterPolateFlag</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00044">interpolate.c:44</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38771fa468e664f3f1a8a0997cb04bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38771fa468e664f3f1a8a0997cb04bdd">&#9670;&nbsp;</a></span>GenerateHeadGoalPositionSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GenerateHeadGoalPositionSpeed </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>头插值 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00176">176</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_eway_c_m_d_8c_source.html#l00028">sHeadMotorCmdPack</a>, <a class="el" href="interpolate_8c_source.html#l00046">unHeadInterPolateFlag</a>, <a class="el" href="interpolate_8c_source.html#l00035">unHeadInterPolateNum</a> , 以及 <a class="el" href="_eway_c_m_d_8h_source.html#l00106">EmbHeadMotorCmdPack::unModeFlag</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{ </div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    u8 unMode; </div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">if</span> ( 0==<a class="code" href="interpolate_8c.html#aea3908ad795cdde2555c5169450bba33">unHeadInterPolateNum</a>)</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="interpolate_8c.html#ac32129913e6650198e0103b51664be08">unHeadInterPolateFlag</a>=0;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      unMode=<a class="code" href="_eway_c_m_d_8c.html#a20fe4ac1bfae514b71374e20f27445c5">sHeadMotorCmdPack</a>.<a class="code" href="struct_emb_head_motor_cmd_pack.html#ad4f9805262db196dcb8ea4c2f8500bb4">unModeFlag</a>;<span class="comment">//控制模式：1，速度；0，位置</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      GenerateMotorGoalPositionSpeed(<a class="code" href="_emb_init_pra_8h.html#a2c4e3aaa4f867fdc88ccc64239623a96">Head_Start_ID</a>+1,<a class="code" href="_emb_init_pra_8h.html#a0d4dca28cacff012a0e78d000f91f20c">Head_Servo_Num</a>,unMode);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div><div class="ttc" id="interpolate_8c_html_aea3908ad795cdde2555c5169450bba33"><div class="ttname"><a href="interpolate_8c.html#aea3908ad795cdde2555c5169450bba33">unHeadInterPolateNum</a></div><div class="ttdeci">u8 unHeadInterPolateNum</div><div class="ttdoc">头部插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00035">interpolate.c:35</a></div></div>
+<div class="ttc" id="interpolate_8c_html_ac32129913e6650198e0103b51664be08"><div class="ttname"><a href="interpolate_8c.html#ac32129913e6650198e0103b51664be08">unHeadInterPolateFlag</a></div><div class="ttdeci">u8 unHeadInterPolateFlag</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00046">interpolate.c:46</a></div></div>
+<div class="ttc" id="struct_emb_head_motor_cmd_pack_html_ad4f9805262db196dcb8ea4c2f8500bb4"><div class="ttname"><a href="struct_emb_head_motor_cmd_pack.html#ad4f9805262db196dcb8ea4c2f8500bb4">EmbHeadMotorCmdPack::unModeFlag</a></div><div class="ttdeci">u8 unModeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00106">EwayCMD.h:106</a></div></div>
+<div class="ttc" id="_eway_c_m_d_8c_html_a20fe4ac1bfae514b71374e20f27445c5"><div class="ttname"><a href="_eway_c_m_d_8c.html#a20fe4ac1bfae514b71374e20f27445c5">sHeadMotorCmdPack</a></div><div class="ttdeci">EmbHeadMotorCmdPack sHeadMotorCmdPack</div><div class="ttdoc">头部命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00028">EwayCMD.c:28</a></div></div>
+<div class="ttc" id="_emb_init_pra_8h_html_a2c4e3aaa4f867fdc88ccc64239623a96"><div class="ttname"><a href="_emb_init_pra_8h.html#a2c4e3aaa4f867fdc88ccc64239623a96">Head_Start_ID</a></div><div class="ttdeci">#define Head_Start_ID</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00131">EmbInitPra.h:131</a></div></div>
+<div class="ttc" id="_emb_init_pra_8h_html_a0d4dca28cacff012a0e78d000f91f20c"><div class="ttname"><a href="_emb_init_pra_8h.html#a0d4dca28cacff012a0e78d000f91f20c">Head_Servo_Num</a></div><div class="ttdeci">#define Head_Servo_Num</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00138">EmbInitPra.h:138</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5a632d8f5f20d02b245ccf43c229c593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a632d8f5f20d02b245ccf43c229c593">&#9670;&nbsp;</a></span>GenerateShoulderGoalPositionSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GenerateShoulderGoalPositionSpeed </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>肩膀插值 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00095">95</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_eway_servo_8h_source.html#l00051">HSAMotorControl::nCmdPosition</a>, <a class="el" href="_eway_servo_8h_source.html#l00052">HSAMotorControl::nCmdSpeed</a>, <a class="el" href="_eway_servo_8h_source.html#l00058">HSAMotorControl::nExeSpeed</a>, <a class="el" href="_eway_servo_8h_source.html#l00054">HSAMotorControl::nLastCmdPosition</a>, <a class="el" href="_eway_servo_8h_source.html#l00055">HSAMotorControl::nLastCmdSpeed</a>, <a class="el" href="_eway_c_m_d_8c_source.html#l00026">sArmMotorCmdPack</a>, <a class="el" href="_eway_servo_8h_source.html#l00102">RobotServo::sControl</a>, <a class="el" href="_eway_servo_8h_source.html#l00040">SHOULDER_SPEED_TO_ROBOT_SPEED</a>, <a class="el" href="_eway_servo_8c_source.html#l00026">sMyServo</a>, <a class="el" href="_eway_c_m_d_8h_source.html#l00094">EmbArmMotorCmdPack::unCmbCount</a> , 以及 <a class="el" href="_eway_c_m_d_8h_source.html#l00095">EmbArmMotorCmdPack::unModeFlag</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{ </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">int</span>   nInitPosition,nEndPosition; </div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">float</span> fInitSpeed,fEndSpeed; </div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//初始位置速度</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    nInitPosition=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">nLastCmdPosition</a>; </div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    fInitSpeed   =<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">nLastCmdSpeed</a>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//最后位置速度</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    nEndPosition =<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>; </div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    fEndSpeed    =<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>; </div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     <span class="keywordflow">if</span> (1==<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#a6c2c36e4adf1c66618bd706285dfe58e">unCmbCount</a>)</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;         {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          <span class="comment">// here, we assume the goal speed of target point is zero,SpeedToDiff(MotorCMDSpeed[i])</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">if</span>(1==<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">unModeFlag</a>)<span class="comment">/*1:速度模式;0:位置模式*/</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;              {   </div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                 <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=0-<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>/<a class="code" href="_eway_servo_8h.html#adfd8e8c9efb6f06d783bdb74d661fc8f">SHOULDER_SPEED_TO_ROBOT_SPEED</a>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;              }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                     fInitSpeed  =fInitSpeed*30.0/1000.0;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                       <span class="comment">//插值</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;             InterpolateSpeedPosition(nInitPosition,fInitSpeed,nEndPosition,0,<a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                     <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="interpolate_8c.html#a8e50322a4b108b8c547594ba94c4b8c1">nTempGoalPosition</a>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                 <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=(int)<a class="code" href="interpolate_8c.html#afb4f0215dc7dafa4842191d7babc82aa">fTempDiffPerCycle</a>*1000.0/30.0 ;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              <a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>++;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="comment">//执行命令</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>-<a class="code" href="_eway_wheelbldc_8c.html#ad709f2b2fd2fc6ab8acb3c7af33abcf6">sShoulderMotor</a>.<a class="code" href="struct_shoulder.html#a5ff71ec7613fea95ce3c39dab4aaced7">nRealPosInit</a>)/<a class="code" href="_eway_servo_8h.html#a6788e3d11074fae593fd17b91b12359d">SHOULDER_POS_TO_ROBOT_POS</a>;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>/<a class="code" href="_eway_servo_8h.html#adfd8e8c9efb6f06d783bdb74d661fc8f">SHOULDER_SPEED_TO_ROBOT_SPEED</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>&gt;=<a class="code" href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a>)</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">if</span>(1==<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">unModeFlag</a>)</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#adab2e2a993245d23b36e458df527f71f">unBrakeFlag</a>=1;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9bda0ad753dfb3e0747a07e88211bba0">unStopFlag</a>=0;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <a class="code" href="interpolate_8c.html#a789c1c6321dfac3359a40cac737678ce">unShoulderInterPolateFlag</a>=1;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>=0;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">nLastCmdPosition</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">nLastCmdSpeed</a>=0;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;       <span class="keywordflow">return</span>;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;       }</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;     <span class="keywordflow">if</span> (2 &lt;=<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#a6c2c36e4adf1c66618bd706285dfe58e">unCmbCount</a>){</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;          <span class="comment">// here, we assume the goal speed of target point is zero</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    <span class="keywordflow">if</span>(1==<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">unModeFlag</a>)<span class="comment">/*1:速度模式;0:位置模式*/</span></div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            {   </div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=0-<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>/<a class="code" href="_eway_servo_8h.html#adfd8e8c9efb6f06d783bdb74d661fc8f">SHOULDER_SPEED_TO_ROBOT_SPEED</a>;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                fInitSpeed  =fInitSpeed*30.0/1000.0;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                fEndSpeed   =fEndSpeed*30.0/1000.0;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="comment">//插值 </span></div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        InterpolateSpeedPosition(nInitPosition,fInitSpeed,nEndPosition,fEndSpeed,<a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;              <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="interpolate_8c.html#a8e50322a4b108b8c547594ba94c4b8c1">nTempGoalPosition</a>;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=(int)<a class="code" href="interpolate_8c.html#afb4f0215dc7dafa4842191d7babc82aa">fTempDiffPerCycle</a>*1000.0/30.0 ;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;              <a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>++;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>-<a class="code" href="_eway_wheelbldc_8c.html#ad709f2b2fd2fc6ab8acb3c7af33abcf6">sShoulderMotor</a>.<a class="code" href="struct_shoulder.html#a5ff71ec7613fea95ce3c39dab4aaced7">nRealPosInit</a>)/<a class="code" href="_eway_servo_8h.html#a6788e3d11074fae593fd17b91b12359d">SHOULDER_POS_TO_ROBOT_POS</a>;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[unID].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>/<a class="code" href="_eway_servo_8h.html#adfd8e8c9efb6f06d783bdb74d661fc8f">SHOULDER_SPEED_TO_ROBOT_SPEED</a>;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a>&lt;=<a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>)</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <a class="code" href="interpolate_8c.html#a789c1c6321dfac3359a40cac737678ce">unShoulderInterPolateFlag</a>=1;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <a class="code" href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a>=0;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            }</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;       <span class="keywordflow">return</span>;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;     }</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div><div class="ttc" id="interpolate_8c_html_afb4f0215dc7dafa4842191d7babc82aa"><div class="ttname"><a href="interpolate_8c.html#afb4f0215dc7dafa4842191d7babc82aa">fTempDiffPerCycle</a></div><div class="ttdeci">float fTempDiffPerCycle</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00039">interpolate.c:39</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_affabea60c53908aba34b80ed48ce99a0"><div class="ttname"><a href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">HSAMotorControl::nCmdSpeed</a></div><div class="ttdeci">s16 nCmdSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00052">EwayServo.h:52</a></div></div>
+<div class="ttc" id="_eway_servo_8h_html_a6788e3d11074fae593fd17b91b12359d"><div class="ttname"><a href="_eway_servo_8h.html#a6788e3d11074fae593fd17b91b12359d">SHOULDER_POS_TO_ROBOT_POS</a></div><div class="ttdeci">#define SHOULDER_POS_TO_ROBOT_POS</div><div class="ttdoc">肩膀位置单位转换 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00038">EwayServo.h:38</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a87a00461f5b56d32d16dd5b2fa99c392"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">HSAMotorControl::nLastCmdSpeed</a></div><div class="ttdeci">s16 nLastCmdSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00055">EwayServo.h:55</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a9bda0ad753dfb3e0747a07e88211bba0"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a9bda0ad753dfb3e0747a07e88211bba0">HSAMotorControl::unStopFlag</a></div><div class="ttdeci">u8 unStopFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00049">EwayServo.h:49</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a789c1c6321dfac3359a40cac737678ce"><div class="ttname"><a href="interpolate_8c.html#a789c1c6321dfac3359a40cac737678ce">unShoulderInterPolateFlag</a></div><div class="ttdeci">u8 unShoulderInterPolateFlag</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00048">interpolate.c:48</a></div></div>
+<div class="ttc" id="struct_emb_arm_motor_cmd_pack_html_aef7cf414ca8f2325f11471b78ff90540"><div class="ttname"><a href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">EmbArmMotorCmdPack::unModeFlag</a></div><div class="ttdeci">u8 unModeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00095">EwayCMD.h:95</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_ab37a2b6c59aeecf0ae4a144a3eac9f05"><div class="ttname"><a href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">HSAMotorControl::nExeSpeed</a></div><div class="ttdeci">s16 nExeSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00058">EwayServo.h:58</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab10cf5dbcd6eab966e884f2b3c375e92"><div class="ttname"><a href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a></div><div class="ttdeci">RobotServo sMyServo[Head_Servo_Num+Arm_Servo_Num+Shoulder_Motor_Num]</div><div class="ttdoc">舵机数据结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00026">EwayServo.c:26</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a78e694554e0a87567e20fe25fb0bbf28"><div class="ttname"><a href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">RobotServo::sControl</a></div><div class="ttdeci">HSAMotorControl sControl</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00102">EwayServo.h:102</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a65a110635364a4ab9397a0879171e370"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">HSAMotorControl::nExePosition</a></div><div class="ttdeci">s32 nExePosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00057">EwayServo.h:57</a></div></div>
+<div class="ttc" id="struct_emb_arm_motor_cmd_pack_html_a6c2c36e4adf1c66618bd706285dfe58e"><div class="ttname"><a href="struct_emb_arm_motor_cmd_pack.html#a6c2c36e4adf1c66618bd706285dfe58e">EmbArmMotorCmdPack::unCmbCount</a></div><div class="ttdeci">u8 unCmbCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00094">EwayCMD.h:94</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a9b58f28ccbbae3749ddc42947dfb7fcd"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">HSAMotorControl::nCmdPosition</a></div><div class="ttdeci">s32 nCmdPosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00051">EwayServo.h:51</a></div></div>
+<div class="ttc" id="_eway_c_m_d_8c_html_a0de7795893891ebfa8d7d9d843821d6d"><div class="ttname"><a href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a></div><div class="ttdeci">EmbArmMotorCmdPack sArmMotorCmdPack</div><div class="ttdoc">手臂命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00026">EwayCMD.c:26</a></div></div>
+<div class="ttc" id="_eway_wheelbldc_8c_html_ad709f2b2fd2fc6ab8acb3c7af33abcf6"><div class="ttname"><a href="_eway_wheelbldc_8c.html#ad709f2b2fd2fc6ab8acb3c7af33abcf6">sShoulderMotor</a></div><div class="ttdeci">Shoulder sShoulderMotor</div><div class="ttdoc">肩膀结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_wheelbldc_8c_source.html#l00029">EwayWheelbldc.c:29</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a8e50322a4b108b8c547594ba94c4b8c1"><div class="ttname"><a href="interpolate_8c.html#a8e50322a4b108b8c547594ba94c4b8c1">nTempGoalPosition</a></div><div class="ttdeci">s32 nTempGoalPosition</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00041">interpolate.c:41</a></div></div>
+<div class="ttc" id="struct_shoulder_html_a5ff71ec7613fea95ce3c39dab4aaced7"><div class="ttname"><a href="struct_shoulder.html#a5ff71ec7613fea95ce3c39dab4aaced7">Shoulder::nRealPosInit</a></div><div class="ttdeci">u16 nRealPosInit</div><div class="ttdef"><b>Definition:</b> <a href="_eway_wheelbldc_8h_source.html#l00062">EwayWheelbldc.h:62</a></div></div>
+<div class="ttc" id="interpolate_8h_html_ad34f6fafc202c1fda8a782c78ae42048"><div class="ttname"><a href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a></div><div class="ttdeci">#define INTERPOLATE_NUM</div><div class="ttdoc">插值数量 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8h_source.html#l00026">interpolate.h:26</a></div></div>
+<div class="ttc" id="_eway_servo_8h_html_adfd8e8c9efb6f06d783bdb74d661fc8f"><div class="ttname"><a href="_eway_servo_8h.html#adfd8e8c9efb6f06d783bdb74d661fc8f">SHOULDER_SPEED_TO_ROBOT_SPEED</a></div><div class="ttdeci">#define SHOULDER_SPEED_TO_ROBOT_SPEED</div><div class="ttdoc">肩膀速度单位转换 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00040">EwayServo.h:40</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_aca0ed4aa3ed5328b94c933b1c92c861e"><div class="ttname"><a href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">HSAMotorControl::nLastCmdPosition</a></div><div class="ttdeci">s32 nLastCmdPosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00054">EwayServo.h:54</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_adab2e2a993245d23b36e458df527f71f"><div class="ttname"><a href="struct_h_s_a_motor_control.html#adab2e2a993245d23b36e458df527f71f">HSAMotorControl::unBrakeFlag</a></div><div class="ttdeci">u8 unBrakeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00048">EwayServo.h:48</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a1ad9965fe4a95e11dcbde29c41250719"><div class="ttname"><a href="interpolate_8c.html#a1ad9965fe4a95e11dcbde29c41250719">unShoulderInterPolateNum</a></div><div class="ttdeci">u8 unShoulderInterPolateNum</div><div class="ttdoc">肩膀插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00033">interpolate.c:33</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef0bee76bf229dc9c240df127e188c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0bee76bf229dc9c240df127e188c5b">&#9670;&nbsp;</a></span>GenerateWheelGoalPositionSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GenerateWheelGoalPositionSpeed </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>轮子插值 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00307">307</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_eway_servo_8h_source.html#l00051">HSAMotorControl::nCmdPosition</a>, <a class="el" href="_eway_servo_8h_source.html#l00054">HSAMotorControl::nLastCmdPosition</a>, <a class="el" href="_eway_servo_8h_source.html#l00055">HSAMotorControl::nLastCmdSpeed</a>, <a class="el" href="_eway_wheelbldc_8h_source.html#l00055">WheelMotor::sControl</a>, <a class="el" href="_eway_c_m_d_8c_source.html#l00030">sWheelCmdPack</a>, <a class="el" href="_eway_wheelbldc_8c_source.html#l00027">sWheelMotor</a>, <a class="el" href="_eway_c_m_d_8h_source.html#l00117">EmbWheelCmdPack::unCmbCount</a>, <a class="el" href="interpolate_8c_source.html#l00050">unWheelInterPolateFlag</a>, <a class="el" href="interpolate_8c_source.html#l00037">unWheelInterPolateNum</a> , 以及 <a class="el" href="_eway_wheelbldc_8h_source.html#l00027">WHEEL_MOTOR_NUM</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_motion_control_8c_source.html#l00426">SendWheelDataToExePack()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{ </div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    s32   nInitPosition,nEndPosition,uni; </div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">float</span> fInitSpeed,fEndSpeed; </div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordflow">if</span>  (0 == <a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>)</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;         <a class="code" href="interpolate_8c.html#a50668822ec8506c016133ecd26fc6113">unWheelInterPolateFlag</a>=0;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;       </div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">if</span> (1==<a class="code" href="_eway_c_m_d_8c.html#ae4a95b05c64f58d12a43106db21f641a">sWheelCmdPack</a>.<a class="code" href="struct_emb_wheel_cmd_pack.html#a807c9d5c094e6e8bc4f2fdad922c324c">unCmbCount</a>)</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;         {</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          <span class="comment">// here, we assume the goal speed of target point is zero,SpeedToDiff(MotorCMDSpeed[i])</span></div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                 <span class="keywordflow">for</span> (uni=0;uni&lt; <a class="code" href="_eway_wheelbldc_8h.html#a25336adee5399e44c37274ef503e2c41">WHEEL_MOTOR_NUM</a>;uni++)</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                     {</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                         nInitPosition=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">nLastCmdPosition</a>;</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                         nEndPosition=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                         fInitSpeed=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">nLastCmdSpeed</a>/10.0/1000.0*30.0;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                         fEndSpeed=0;</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                          <span class="keywordflow">if</span>(abs(nInitPosition-nEndPosition)&gt;=5)</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                         {</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                         InterpolateSpeedPosition(nInitPosition,fInitSpeed,nEndPosition,fEndSpeed,<a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>);</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                         <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="interpolate_8c.html#a8e50322a4b108b8c547594ba94c4b8c1">nTempGoalPosition</a>;</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                         <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=<a class="code" href="interpolate_8c.html#afb4f0215dc7dafa4842191d7babc82aa">fTempDiffPerCycle</a>*10.0*1000.0/30.0;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                         }</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                         <span class="keywordflow">else</span></div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                 {</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                 <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                 <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                 }  </div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                     }</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                      <a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>++;</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                         <span class="keywordflow">if</span>(<a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>&gt;=<a class="code" href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a>)</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                         {</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                             <a class="code" href="interpolate_8c.html#a50668822ec8506c016133ecd26fc6113">unWheelInterPolateFlag</a>=1;</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                             <a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>=0;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                             <span class="keywordflow">for</span> (uni=0;uni&lt; <a class="code" href="_eway_wheelbldc_8h.html#a25336adee5399e44c37274ef503e2c41">WHEEL_MOTOR_NUM</a>;uni++)</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                    {</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                  <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">nLastCmdPosition</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                  <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">nLastCmdSpeed</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>;</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                    }</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                     }</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                     <span class="keywordflow">return</span>;</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">else</span>  <span class="keywordflow">if</span> (2&lt;=<a class="code" href="_eway_c_m_d_8c.html#ae4a95b05c64f58d12a43106db21f641a">sWheelCmdPack</a>.<a class="code" href="struct_emb_wheel_cmd_pack.html#a807c9d5c094e6e8bc4f2fdad922c324c">unCmbCount</a>)</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;         {</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;          <span class="comment">// here, we assume the goal speed of target point is zero,SpeedToDiff(MotorCMDSpeed[i])</span></div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                 <span class="keywordflow">for</span> (uni=0;uni&lt; <a class="code" href="_eway_wheelbldc_8h.html#a25336adee5399e44c37274ef503e2c41">WHEEL_MOTOR_NUM</a>;uni++)</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                     {</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                         nInitPosition=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">nLastCmdPosition</a>;</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                         nEndPosition=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                         fInitSpeed=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">nLastCmdSpeed</a>/10.0/1000.0*30.0;</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                         fEndSpeed=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>/10.0/1000.0*30.0;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                         <span class="keywordflow">if</span>(abs(nInitPosition-nEndPosition)&gt;=5)</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                         {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                         InterpolateSpeedPosition(nInitPosition,fInitSpeed,nEndPosition,fEndSpeed,<a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>);</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                         <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="interpolate_8c.html#a8e50322a4b108b8c547594ba94c4b8c1">nTempGoalPosition</a>;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                         <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=<a class="code" href="interpolate_8c.html#afb4f0215dc7dafa4842191d7babc82aa">fTempDiffPerCycle</a>*10.0*1000.0/30.0;</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                         }</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                         <span class="keywordflow">else</span></div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                 {</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                 <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                 <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>;</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                 } </div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                     }</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                         <a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>++;</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                         <span class="keywordflow">if</span>(<a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>&gt;=<a class="code" href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a>)</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                         {</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                             <a class="code" href="interpolate_8c.html#a50668822ec8506c016133ecd26fc6113">unWheelInterPolateFlag</a>=1;</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                             <a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>=0;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                             <span class="keywordflow">for</span> (uni=0;uni&lt; <a class="code" href="_eway_wheelbldc_8h.html#a25336adee5399e44c37274ef503e2c41">WHEEL_MOTOR_NUM</a>;uni++)</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                                     {</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                                     <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">nLastCmdPosition</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">nCmdPosition</a>;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                     <a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">nLastCmdSpeed</a>=<a class="code" href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a>[uni].<a class="code" href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">nCmdSpeed</a>;</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                     }</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                         }</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordflow">return</span>;</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        }</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div><div class="ttc" id="interpolate_8c_html_afb4f0215dc7dafa4842191d7babc82aa"><div class="ttname"><a href="interpolate_8c.html#afb4f0215dc7dafa4842191d7babc82aa">fTempDiffPerCycle</a></div><div class="ttdeci">float fTempDiffPerCycle</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00039">interpolate.c:39</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a50668822ec8506c016133ecd26fc6113"><div class="ttname"><a href="interpolate_8c.html#a50668822ec8506c016133ecd26fc6113">unWheelInterPolateFlag</a></div><div class="ttdeci">u8 unWheelInterPolateFlag</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00050">interpolate.c:50</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_affabea60c53908aba34b80ed48ce99a0"><div class="ttname"><a href="struct_h_s_a_motor_control.html#affabea60c53908aba34b80ed48ce99a0">HSAMotorControl::nCmdSpeed</a></div><div class="ttdeci">s16 nCmdSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00052">EwayServo.h:52</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a87a00461f5b56d32d16dd5b2fa99c392"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a87a00461f5b56d32d16dd5b2fa99c392">HSAMotorControl::nLastCmdSpeed</a></div><div class="ttdeci">s16 nLastCmdSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00055">EwayServo.h:55</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_ab37a2b6c59aeecf0ae4a144a3eac9f05"><div class="ttname"><a href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">HSAMotorControl::nExeSpeed</a></div><div class="ttdeci">s16 nExeSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00058">EwayServo.h:58</a></div></div>
+<div class="ttc" id="_eway_c_m_d_8c_html_ae4a95b05c64f58d12a43106db21f641a"><div class="ttname"><a href="_eway_c_m_d_8c.html#ae4a95b05c64f58d12a43106db21f641a">sWheelCmdPack</a></div><div class="ttdeci">EmbWheelCmdPack sWheelCmdPack</div><div class="ttdoc">轮子命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00030">EwayCMD.c:30</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a65a110635364a4ab9397a0879171e370"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">HSAMotorControl::nExePosition</a></div><div class="ttdeci">s32 nExePosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00057">EwayServo.h:57</a></div></div>
+<div class="ttc" id="interpolate_8c_html_ac881af8c5744572c479fa0bf22350a9b"><div class="ttname"><a href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a></div><div class="ttdeci">u8 unWheelInterPolateNum</div><div class="ttdoc">轮子插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00037">interpolate.c:37</a></div></div>
+<div class="ttc" id="_eway_wheelbldc_8h_html_a25336adee5399e44c37274ef503e2c41"><div class="ttname"><a href="_eway_wheelbldc_8h.html#a25336adee5399e44c37274ef503e2c41">WHEEL_MOTOR_NUM</a></div><div class="ttdeci">#define WHEEL_MOTOR_NUM</div><div class="ttdoc">轮子电机个数 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_wheelbldc_8h_source.html#l00027">EwayWheelbldc.h:27</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a9b58f28ccbbae3749ddc42947dfb7fcd"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a9b58f28ccbbae3749ddc42947dfb7fcd">HSAMotorControl::nCmdPosition</a></div><div class="ttdeci">s32 nCmdPosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00051">EwayServo.h:51</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a8e50322a4b108b8c547594ba94c4b8c1"><div class="ttname"><a href="interpolate_8c.html#a8e50322a4b108b8c547594ba94c4b8c1">nTempGoalPosition</a></div><div class="ttdeci">s32 nTempGoalPosition</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00041">interpolate.c:41</a></div></div>
+<div class="ttc" id="_eway_wheelbldc_8c_html_abe0fe393043abfab119c9e1065df8459"><div class="ttname"><a href="_eway_wheelbldc_8c.html#abe0fe393043abfab119c9e1065df8459">sWheelMotor</a></div><div class="ttdeci">WheelMotor sWheelMotor[WHEEL_MOTOR_NUM+1]</div><div class="ttdoc">轮子结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_wheelbldc_8c_source.html#l00027">EwayWheelbldc.c:27</a></div></div>
+<div class="ttc" id="interpolate_8h_html_ad34f6fafc202c1fda8a782c78ae42048"><div class="ttname"><a href="interpolate_8h.html#ad34f6fafc202c1fda8a782c78ae42048">INTERPOLATE_NUM</a></div><div class="ttdeci">#define INTERPOLATE_NUM</div><div class="ttdoc">插值数量 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8h_source.html#l00026">interpolate.h:26</a></div></div>
+<div class="ttc" id="struct_wheel_motor_html_abaccefbb2cbb6d56f7852c21f8f2b25e"><div class="ttname"><a href="struct_wheel_motor.html#abaccefbb2cbb6d56f7852c21f8f2b25e">WheelMotor::sControl</a></div><div class="ttdeci">HSAMotorControl sControl</div><div class="ttdef"><b>Definition:</b> <a href="_eway_wheelbldc_8h_source.html#l00055">EwayWheelbldc.h:55</a></div></div>
+<div class="ttc" id="struct_emb_wheel_cmd_pack_html_a807c9d5c094e6e8bc4f2fdad922c324c"><div class="ttname"><a href="struct_emb_wheel_cmd_pack.html#a807c9d5c094e6e8bc4f2fdad922c324c">EmbWheelCmdPack::unCmbCount</a></div><div class="ttdeci">u8 unCmbCount</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00117">EwayCMD.h:117</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_aca0ed4aa3ed5328b94c933b1c92c861e"><div class="ttname"><a href="struct_h_s_a_motor_control.html#aca0ed4aa3ed5328b94c933b1c92c861e">HSAMotorControl::nLastCmdPosition</a></div><div class="ttdeci">s32 nLastCmdPosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00054">EwayServo.h:54</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0576ea38613674e58936649a44c8a10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0576ea38613674e58936649a44c8a10c">&#9670;&nbsp;</a></span>InterpolateBrake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterpolateBrake </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>插值函数 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00444">444</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="interpolate_8h_source.html#l00029">ARM_NUM</a>, <a class="el" href="interpolate_8h_source.html#l00030">HEAD_NUM</a>, <a class="el" href="interpolate_8c_source.html#l00031">unArmInterPolateNum</a>, <a class="el" href="interpolate_8c_source.html#l00035">unHeadInterPolateNum</a>, <a class="el" href="interpolate_8c_source.html#l00037">unWheelInterPolateNum</a> , 以及 <a class="el" href="interpolate_8h_source.html#l00031">WHEEL_POSITION_NUM</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_wheel_control_8c_source.html#l00210">EmbWheelBrake()</a>, <a class="el" href="_motion_control_8c_source.html#l00257">SendArmDataToExePack()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">switch</span> (unObject)</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    {</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="interpolate_8h.html#a288112c03a9d41fabb42bf9222cd9d55">ARM_NUM</a>:</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <a class="code" href="interpolate_8c.html#a46e9ec3cdd44bc08f37a8b1e6509d580">unArmInterPolateNum</a>=0;<span class="comment">//插值点个数</span></div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="interpolate_8h.html#ac6f6d43e495a77c0acc20ab3d04c4c90">HEAD_NUM</a> : </div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <a class="code" href="interpolate_8c.html#aea3908ad795cdde2555c5169450bba33">unHeadInterPolateNum</a>=0;<span class="comment">//插值点个数</span></div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="interpolate_8h.html#abc65d26c771e87cbac7b21dfe1528381">WHEEL_POSITION_NUM</a>:</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <a class="code" href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a>=0;<span class="comment">//插值点个数</span></div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">default</span>:</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    }</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;}</div><div class="ttc" id="interpolate_8c_html_aea3908ad795cdde2555c5169450bba33"><div class="ttname"><a href="interpolate_8c.html#aea3908ad795cdde2555c5169450bba33">unHeadInterPolateNum</a></div><div class="ttdeci">u8 unHeadInterPolateNum</div><div class="ttdoc">头部插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00035">interpolate.c:35</a></div></div>
+<div class="ttc" id="interpolate_8c_html_a46e9ec3cdd44bc08f37a8b1e6509d580"><div class="ttname"><a href="interpolate_8c.html#a46e9ec3cdd44bc08f37a8b1e6509d580">unArmInterPolateNum</a></div><div class="ttdeci">u8 unArmInterPolateNum</div><div class="ttdoc">手臂插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00031">interpolate.c:31</a></div></div>
+<div class="ttc" id="interpolate_8h_html_a288112c03a9d41fabb42bf9222cd9d55"><div class="ttname"><a href="interpolate_8h.html#a288112c03a9d41fabb42bf9222cd9d55">ARM_NUM</a></div><div class="ttdeci">#define ARM_NUM</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8h_source.html#l00029">interpolate.h:29</a></div></div>
+<div class="ttc" id="interpolate_8h_html_ac6f6d43e495a77c0acc20ab3d04c4c90"><div class="ttname"><a href="interpolate_8h.html#ac6f6d43e495a77c0acc20ab3d04c4c90">HEAD_NUM</a></div><div class="ttdeci">#define HEAD_NUM</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8h_source.html#l00030">interpolate.h:30</a></div></div>
+<div class="ttc" id="interpolate_8c_html_ac881af8c5744572c479fa0bf22350a9b"><div class="ttname"><a href="interpolate_8c.html#ac881af8c5744572c479fa0bf22350a9b">unWheelInterPolateNum</a></div><div class="ttdeci">u8 unWheelInterPolateNum</div><div class="ttdoc">轮子插值点个数 </div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8c_source.html#l00037">interpolate.c:37</a></div></div>
+<div class="ttc" id="interpolate_8h_html_abc65d26c771e87cbac7b21dfe1528381"><div class="ttname"><a href="interpolate_8h.html#abc65d26c771e87cbac7b21dfe1528381">WHEEL_POSITION_NUM</a></div><div class="ttdeci">#define WHEEL_POSITION_NUM</div><div class="ttdef"><b>Definition:</b> <a href="interpolate_8h_source.html#l00031">interpolate.h:31</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="ae5e4bf85356a3280effa0b8f1005f506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e4bf85356a3280effa0b8f1005f506">&#9670;&nbsp;</a></span>unArmInterPolateFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unArmInterPolateFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00044">44</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00074">GenerateArmGoalPositionSpeed()</a>.</p>
+
+</div>
+</div>
+<a id="a46e9ec3cdd44bc08f37a8b1e6509d580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e9ec3cdd44bc08f37a8b1e6509d580">&#9670;&nbsp;</a></span>unArmInterPolateNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unArmInterPolateNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>手臂插值点个数 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00031">31</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00074">GenerateArmGoalPositionSpeed()</a> , 以及 <a class="el" href="interpolate_8c_source.html#l00444">InterpolateBrake()</a>.</p>
+
+</div>
+</div>
+<a id="ac32129913e6650198e0103b51664be08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32129913e6650198e0103b51664be08">&#9670;&nbsp;</a></span>unHeadInterPolateFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unHeadInterPolateFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00046">46</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00176">GenerateHeadGoalPositionSpeed()</a> , 以及 <a class="el" href="_motion_control_8c_source.html#l00349">SendHeadDataToExePack()</a>.</p>
+
+</div>
+</div>
+<a id="aea3908ad795cdde2555c5169450bba33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3908ad795cdde2555c5169450bba33">&#9670;&nbsp;</a></span>unHeadInterPolateNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unHeadInterPolateNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>头部插值点个数 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00035">35</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00176">GenerateHeadGoalPositionSpeed()</a> , 以及 <a class="el" href="interpolate_8c_source.html#l00444">InterpolateBrake()</a>.</p>
+
+</div>
+</div>
+<a id="a789c1c6321dfac3359a40cac737678ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789c1c6321dfac3359a40cac737678ce">&#9670;&nbsp;</a></span>unShoulderInterPolateFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unShoulderInterPolateFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1ad9965fe4a95e11dcbde29c41250719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad9965fe4a95e11dcbde29c41250719">&#9670;&nbsp;</a></span>unShoulderInterPolateNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unShoulderInterPolateNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>肩膀插值点个数 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a50668822ec8506c016133ecd26fc6113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50668822ec8506c016133ecd26fc6113">&#9670;&nbsp;</a></span>unWheelInterPolateFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unWheelInterPolateFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00050">50</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00307">GenerateWheelGoalPositionSpeed()</a>, <a class="el" href="_motion_control_8c_source.html#l00426">SendWheelDataToExePack()</a>, <a class="el" href="_wheel_control_8c_source.html#l00090">WheelSetCMD()</a> , 以及 <a class="el" href="_wheel_control_8c_source.html#l00044">WheelStart()</a>.</p>
+
+</div>
+</div>
+<a id="ac881af8c5744572c479fa0bf22350a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac881af8c5744572c479fa0bf22350a9b">&#9670;&nbsp;</a></span>unWheelInterPolateNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 unWheelInterPolateNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>轮子插值点个数 </p>
+
+<p class="definition">在文件 <a class="el" href="interpolate_8c_source.html">interpolate.c</a> 第 <a class="el" href="interpolate_8c_source.html#l00037">37</a> 行定义.</p>
+
+<p class="reference">参考自 <a class="el" href="interpolate_8c_source.html#l00307">GenerateWheelGoalPositionSpeed()</a>, <a class="el" href="interpolate_8c_source.html#l00444">InterpolateBrake()</a> , 以及 <a class="el" href="_wheel_control_8c_source.html#l00044">WheelStart()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

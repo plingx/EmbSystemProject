@@ -1,0 +1,1 @@
+copy Flash\Obj\output.hex ..\SCU(mdk).hex

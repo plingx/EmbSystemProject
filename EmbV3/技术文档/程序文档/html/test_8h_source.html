@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Test/test.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_39f37d9def01d977ba02d0a7407f5c39.html">EMB_Test</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">test.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="test_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __TEST_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __TEST_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bsp_8h.html">bsp.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="test_8h.html#ad59586b79a284587fb595e0cae80feb6">    6</a></span>&#160;<span class="preprocessor">#define WHEEL_TEST_INFO_PACK_LEN 34</span></div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="test_8h.html#ad658b49479ca95f0114fcb022fdd071e">    7</a></span>&#160;<span class="preprocessor">#define WHEEL_SPEED_TEST_INFO_PACK_LEN 34</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="test_8h.html#ac2732051eed973fba5623172ab8b9cd4">    8</a></span>&#160;<span class="preprocessor">#define HEAD_TEST_INFO_PACK_LEN 46</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="test_8h.html#aa1f1bded45b6d064d29aaf1eb7e98f7e">    9</a></span>&#160;<span class="preprocessor">#define ARM_TEST_INFO_PACK_LEN 58</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="test_8h.html#a247834ccc61aeaa00fe64bb76f3e320a">   10</a></span>&#160;<span class="preprocessor">#define MORTOR_TEST_INFO_PACK_LEN 46</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//typedef struct</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//{ </span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//  u16 nWheelID ;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//  s32 nLASTPosition;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//  s16 nLASTSpeed ;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//  s32 nGoalPosition;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//  s16 nSpeed ;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//}test;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//void wheeltestInfoPack(void);</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//void armtestInfoPack(void);</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//void headtestInfoPack(void);</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//void wheelSpeedtestInfoPack(void);</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//void alltestInfoPack(void);</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//void FarmtestInfoPack(void)   ;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//void MotorPIDInfoPack(void)   ;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="test_8h.html#a5c6e10628de3b998ec9a43310512748f">MotortestPack</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//void sinramp(void);</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="bsp_8h_html"><div class="ttname"><a href="bsp_8h.html">bsp.h</a></div></div>
+<div class="ttc" id="test_8h_html_a5c6e10628de3b998ec9a43310512748f"><div class="ttname"><a href="test_8h.html#a5c6e10628de3b998ec9a43310512748f">MotortestPack</a></div><div class="ttdeci">void MotortestPack(void)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

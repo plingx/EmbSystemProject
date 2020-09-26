@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EwayEmb0.3: D:/SVN/trunk/EwayBotEmbSys/EwayBotEmbV0.2.新协议稳定版/User/app/EMB_Module/Emb_MyServo/MyServo_Master.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EwayEmb0.3
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6d4e12d46ad8519ff7b80e874016d102.html">User</a></li><li class="navelem"><a class="el" href="dir_acf573fc364cdf9ecce11643a84a2368.html">app</a></li><li class="navelem"><a class="el" href="dir_70e54bb3413a824ef01dcb0be39aea9c.html">EMB_Module</a></li><li class="navelem"><a class="el" href="dir_c743469d00c7b0c8e09202ac50613e8e.html">Emb_MyServo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">MyServo_Master.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>舵机总控制逻辑  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp_8h_source.html">bsp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_my_servo___master_8h_source.html">MyServo_Master.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_app_8h_source.html">EwayApp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eway_servo_8h_source.html">EwayServo.h</a>&quot;</code><br />
+</div>
+<p><a href="_my_servo___master_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">SpeedProtect</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机速度保护</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nInitSpeed</td><td>输入速度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>保护后速度 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">MotorMotorControl</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机控制，控制下发数据</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unStartID</td><td>起始ID， </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unNum</td><td>个数：unStartID+unNum&lt;=15</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a8c1cf811a1b38184e0be658beecfb773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo___master_8c.html#a8c1cf811a1b38184e0be658beecfb773">MotorControl</a> (u8 unStartID, u8 unServoNum)</td></tr>
+<tr class="memdesc:a8c1cf811a1b38184e0be658beecfb773"><td class="mdescLeft">&#160;</td><td class="mdescRight">舵机控制  <a href="#a8c1cf811a1b38184e0be658beecfb773">更多...</a><br /></td></tr>
+<tr class="separator:a8c1cf811a1b38184e0be658beecfb773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PositionProtect</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机位置保护</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nInitPosition</td><td>输入位置</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>保护后位置 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">MotorPIDChange</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>舵机PID改变</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unStartID</td><td>起始ID， </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unNum</td><td>个数：unStartID+unNum&lt;=15</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_NONE Successfully Other values Unsuccessfully </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+</div></td></tr>
+<tr class="memitem:a56611d1d90b52e69e3bb4544bb655974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo___master_8c.html#a56611d1d90b52e69e3bb4544bb655974">MotorPIDChange</a> (u8 unStartID, u8 unServoNum)</td></tr>
+<tr class="separator:a56611d1d90b52e69e3bb4544bb655974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aea4670c464c43510275f92338fda2ea1"><td class="memItemLeft" align="right" valign="top">u8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_servo___master_8c.html#aea4670c464c43510275f92338fda2ea1">pcMyServo_Master</a> =&quot;MyM&quot;</td></tr>
+<tr class="separator:aea4670c464c43510275f92338fda2ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>舵机总控制逻辑 </p>
+<p>版权所有(C) 2017 - 2022.　北京一维弦科技有限公司. 著作人保留所有权利. 公司通信地址：北京市海淀区北三环西路48号北京科技会展中心1B座16L</p>
+<p>本文件的详细说明. </p><dl class="section author"><dt>作者</dt><dd>xxx, <a href="#" onclick="location.href='mai'+'lto:'+'xxx'+'@e'+'way'+'bo'+'t.c'+'om'; return false;">xxx@e<span style="display: none;">.nosp@m.</span>wayb<span style="display: none;">.nosp@m.</span>ot.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2000-01-01 </dd></dl>
+<dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<dl class="section user"><dt>Change History:</dt><dd></dd></dl>
+<p>&lt;Date&gt; | &lt;Version&gt; | &lt;Author&gt; | </p>
+<p>2000/01/01 | 0.0.1 | xxxx | Create file</p>
+<p>2008/02/13 | 0.0.2 | xxxx | Add ..... </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo___master_8c_source.html">MyServo_Master.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a8c1cf811a1b38184e0be658beecfb773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1cf811a1b38184e0be658beecfb773">&#9670;&nbsp;</a></span>MotorControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MotorControl </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unStartID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unServoNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>舵机控制 </p>
+
+<p class="definition">在文件 <a class="el" href="_my_servo___master_8c_source.html">MyServo_Master.c</a> 第 <a class="el" href="_my_servo___master_8c_source.html#l00045">45</a> 行定义.</p>
+
+<p class="reference">参考 <a class="el" href="_emb_init_pra_8h_source.html#l00131">Head_Start_ID</a>, <a class="el" href="_eway_servo_8h_source.html#l00058">HSAMotorControl::nExeSpeed</a>, <a class="el" href="_eway_c_m_d_8c_source.html#l00026">sArmMotorCmdPack</a>, <a class="el" href="_eway_servo_8h_source.html#l00102">RobotServo::sControl</a>, <a class="el" href="_eway_c_m_d_8c_source.html#l00028">sHeadMotorCmdPack</a>, <a class="el" href="_eway_servo_8c_source.html#l00026">sMyServo</a>, <a class="el" href="_eway_c_m_d_8h_source.html#l00095">EmbArmMotorCmdPack::unModeFlag</a>, <a class="el" href="_eway_c_m_d_8h_source.html#l00106">EmbHeadMotorCmdPack::unModeFlag</a>, <a class="el" href="_eway_servo_8h_source.html#l00063">HSAMotorControl::unPrePosition</a>, <a class="el" href="_eway_servo_8h_source.html#l00071">RobotServo::unPresentPositionH</a>, <a class="el" href="_eway_servo_8h_source.html#l00070">RobotServo::unPresentPositionL</a> , 以及 <a class="el" href="_eway_servo_8h_source.html#l00062">HSAMotorControl::unStopPos</a>.</p>
+
+<p class="reference">参考自 <a class="el" href="_motion_control_8c_source.html#l00531">MyServoMoving()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    u8 uni,unflag;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (uni=unStartID;uni&lt;unStartID+unServoNum;uni++)</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.nExeSpeed&lt;=15)<span class="comment">//最小速度限制</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;             <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=15;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//当前位置确认</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;           <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a409b9c56daba0f261263bf4c2947c041">unPrePosition</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a79bde9cf2e35849e38b411ec79f42d20">unPresentPositionL</a>+(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a18089f6fdaab96cfc042e79637bb7e77">unPresentPositionH</a>&lt;&lt;8);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//停止位置确认，如果是刹车指令，舵机下发当前位置</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;           <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ad0f25e4bfa3a608c4ddaab8ea9179f2d">unStopPos</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a79bde9cf2e35849e38b411ec79f42d20">unPresentPositionL</a>+(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a18089f6fdaab96cfc042e79637bb7e77">unPresentPositionH</a>&lt;&lt;8);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (uni&gt;=<a class="code" href="_emb_init_pra_8h.html#a2c4e3aaa4f867fdc88ccc64239623a96">Head_Start_ID</a>)<span class="comment">//判断头或手臂</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;             unflag=<a class="code" href="_eway_c_m_d_8c.html#a20fe4ac1bfae514b71374e20f27445c5">sHeadMotorCmdPack</a>.<a class="code" href="struct_emb_head_motor_cmd_pack.html#ad4f9805262db196dcb8ea4c2f8500bb4">unModeFlag</a>;<span class="comment">//控制模式</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">else</span> </div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;             unflag=<a class="code" href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a>.<a class="code" href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">unModeFlag</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">//减速比不同电机确认。</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="keywordflow">if</span>(uni!=9&amp;&amp;uni!=7&amp;&amp;uni!=6&amp;&amp;uni!=1&amp;&amp;uni!=0&amp;&amp;uni!=3)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=SpeedProtect(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.nExeSpeed)*<a class="code" href="_eway_servo_8h.html#aeebe06ea6bc686838e2e166fda6a5537">ControlSP</a>;<span class="comment">//速度转换</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=SpeedProtect(<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.nExeSpeed)*<a class="code" href="_eway_servo_8h.html#ae3579b983b5d4d2777fcc48b236ec6ff">ControlSPH</a>;<span class="comment">//速度转换</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(1==<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.unBrakeFlag)   <span class="comment">//刹车标志。        </span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span>(1==unflag)<span class="comment">//速度模式</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ad0f25e4bfa3a608c4ddaab8ea9179f2d">unStopPos</a>;<span class="comment">//停止位速度模式改变目标点 </span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>=(int)5*<a class="code" href="_eway_servo_8h.html#aeebe06ea6bc686838e2e166fda6a5537">ControlSP</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            </div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span>(1==<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.unStopFlag)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">unServoSendID</a>=0xFE;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#adab2e2a993245d23b36e458df527f71f">unBrakeFlag</a>=1;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a9bda0ad753dfb3e0747a07e88211bba0">unStopFlag</a>=1;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">/*目标位置速度确认*/</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a84a84112fce6e33f3240404c027521da">unGoalPositionL</a>=(int)<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.nExePosition&amp;0xff;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a4b8440aefbfa72dd9a406848866baee5">unGoalPositionH</a>=((<span class="keywordtype">int</span>)<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>&gt;&gt;8)&amp;0xff;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a0fe44b2364deee3578dc2843b90b8db8">unMovingSpeedL</a> =(int)<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].sControl.nExeSpeed&amp;0xFF;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ae7a7594ee9377a62cd59e290f1f7c4bb">unMovingSpeedH</a> = ((<span class="keywordtype">int</span>)<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>&gt;&gt;8)&amp;0xFF;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//命令复制给电机下发BUF</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (uni&gt;=<a class="code" href="_emb_init_pra_8h.html#a2c4e3aaa4f867fdc88ccc64239623a96">Head_Start_ID</a>)</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[<a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a0fe44b2364deee3578dc2843b90b8db8">unMovingSpeedL</a>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[++<a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ae7a7594ee9377a62cd59e290f1f7c4bb">unMovingSpeedH</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[++<a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a84a84112fce6e33f3240404c027521da">unGoalPositionL</a>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[++<a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a4b8440aefbfa72dd9a406848866baee5">unGoalPositionH</a>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>++;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            </div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[<a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a0fe44b2364deee3578dc2843b90b8db8">unMovingSpeedL</a>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[++<a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#ae7a7594ee9377a62cd59e290f1f7c4bb">unMovingSpeedH</a>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[++<a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a84a84112fce6e33f3240404c027521da">unGoalPositionL</a>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">unBuf</a>[++<a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>]=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a4b8440aefbfa72dd9a406848866baee5">unGoalPositionH</a>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a>.<a class="code" href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">unWrite</a>++;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#af1afe4a2e03481658d981b54758c0b81">nLastExePosition</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">nExePosition</a>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#a8a86da6c6f0de7ddf71172cef16c5f8a">nLastExeSpeed</a>=<a class="code" href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a>[uni].<a class="code" href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">sControl</a>.<a class="code" href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">nExeSpeed</a>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div><div class="ttc" id="struct_robot_servo_html_ae7a7594ee9377a62cd59e290f1f7c4bb"><div class="ttname"><a href="struct_robot_servo.html#ae7a7594ee9377a62cd59e290f1f7c4bb">RobotServo::unMovingSpeedH</a></div><div class="ttdeci">u8 unMovingSpeedH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00096">EwayServo.h:96</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a18089f6fdaab96cfc042e79637bb7e77"><div class="ttname"><a href="struct_robot_servo.html#a18089f6fdaab96cfc042e79637bb7e77">RobotServo::unPresentPositionH</a></div><div class="ttdeci">u8 unPresentPositionH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00071">EwayServo.h:71</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a409b9c56daba0f261263bf4c2947c041"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a409b9c56daba0f261263bf4c2947c041">HSAMotorControl::unPrePosition</a></div><div class="ttdeci">u16 unPrePosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00063">EwayServo.h:63</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_aa0fa715615ff390064f0b34b97e0a296"><div class="ttname"><a href="_eway_servo_8c.html#aa0fa715615ff390064f0b34b97e0a296">sHeadMotorBuf</a></div><div class="ttdeci">MotorBuf sHeadMotorBuf</div><div class="ttdoc">头下发数据buffer </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00040">EwayServo.c:40</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a4b8440aefbfa72dd9a406848866baee5"><div class="ttname"><a href="struct_robot_servo.html#a4b8440aefbfa72dd9a406848866baee5">RobotServo::unGoalPositionH</a></div><div class="ttdeci">u8 unGoalPositionH</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00094">EwayServo.h:94</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a9bda0ad753dfb3e0747a07e88211bba0"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a9bda0ad753dfb3e0747a07e88211bba0">HSAMotorControl::unStopFlag</a></div><div class="ttdeci">u8 unStopFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00049">EwayServo.h:49</a></div></div>
+<div class="ttc" id="struct_motor_buf_html_a090393a8de5fc9b4b61242a6dd2eb9bc"><div class="ttname"><a href="struct_motor_buf.html#a090393a8de5fc9b4b61242a6dd2eb9bc">MotorBuf::unWrite</a></div><div class="ttdeci">u8 unWrite</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00108">EwayServo.h:108</a></div></div>
+<div class="ttc" id="struct_emb_arm_motor_cmd_pack_html_aef7cf414ca8f2325f11471b78ff90540"><div class="ttname"><a href="struct_emb_arm_motor_cmd_pack.html#aef7cf414ca8f2325f11471b78ff90540">EmbArmMotorCmdPack::unModeFlag</a></div><div class="ttdeci">u8 unModeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00095">EwayCMD.h:95</a></div></div>
+<div class="ttc" id="_eway_servo_8h_html_aeebe06ea6bc686838e2e166fda6a5537"><div class="ttname"><a href="_eway_servo_8h.html#aeebe06ea6bc686838e2e166fda6a5537">ControlSP</a></div><div class="ttdeci">#define ControlSP</div><div class="ttdoc">舵机速度转换系数1：240减速比 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00034">EwayServo.h:34</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_ab37a2b6c59aeecf0ae4a144a3eac9f05"><div class="ttname"><a href="struct_h_s_a_motor_control.html#ab37a2b6c59aeecf0ae4a144a3eac9f05">HSAMotorControl::nExeSpeed</a></div><div class="ttdeci">s16 nExeSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00058">EwayServo.h:58</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab10cf5dbcd6eab966e884f2b3c375e92"><div class="ttname"><a href="_eway_servo_8c.html#ab10cf5dbcd6eab966e884f2b3c375e92">sMyServo</a></div><div class="ttdeci">RobotServo sMyServo[Head_Servo_Num+Arm_Servo_Num+Shoulder_Motor_Num]</div><div class="ttdoc">舵机数据结构体 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00026">EwayServo.c:26</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_ad0f25e4bfa3a608c4ddaab8ea9179f2d"><div class="ttname"><a href="struct_h_s_a_motor_control.html#ad0f25e4bfa3a608c4ddaab8ea9179f2d">HSAMotorControl::unStopPos</a></div><div class="ttdeci">u16 unStopPos</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00062">EwayServo.h:62</a></div></div>
+<div class="ttc" id="struct_emb_head_motor_cmd_pack_html_ad4f9805262db196dcb8ea4c2f8500bb4"><div class="ttname"><a href="struct_emb_head_motor_cmd_pack.html#ad4f9805262db196dcb8ea4c2f8500bb4">EmbHeadMotorCmdPack::unModeFlag</a></div><div class="ttdeci">u8 unModeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8h_source.html#l00106">EwayCMD.h:106</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a78e694554e0a87567e20fe25fb0bbf28"><div class="ttname"><a href="struct_robot_servo.html#a78e694554e0a87567e20fe25fb0bbf28">RobotServo::sControl</a></div><div class="ttdeci">HSAMotorControl sControl</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00102">EwayServo.h:102</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a65a110635364a4ab9397a0879171e370"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a65a110635364a4ab9397a0879171e370">HSAMotorControl::nExePosition</a></div><div class="ttdeci">s32 nExePosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00057">EwayServo.h:57</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a79bde9cf2e35849e38b411ec79f42d20"><div class="ttname"><a href="struct_robot_servo.html#a79bde9cf2e35849e38b411ec79f42d20">RobotServo::unPresentPositionL</a></div><div class="ttdeci">u8 unPresentPositionL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00070">EwayServo.h:70</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_af1afe4a2e03481658d981b54758c0b81"><div class="ttname"><a href="struct_h_s_a_motor_control.html#af1afe4a2e03481658d981b54758c0b81">HSAMotorControl::nLastExePosition</a></div><div class="ttdeci">s32 nLastExePosition</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00060">EwayServo.h:60</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_affb1529c95d960fa73cd71093279820c"><div class="ttname"><a href="struct_robot_servo.html#affb1529c95d960fa73cd71093279820c">RobotServo::unServoSendID</a></div><div class="ttdeci">u8 unServoSendID</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00069">EwayServo.h:69</a></div></div>
+<div class="ttc" id="_eway_c_m_d_8c_html_a0de7795893891ebfa8d7d9d843821d6d"><div class="ttname"><a href="_eway_c_m_d_8c.html#a0de7795893891ebfa8d7d9d843821d6d">sArmMotorCmdPack</a></div><div class="ttdeci">EmbArmMotorCmdPack sArmMotorCmdPack</div><div class="ttdoc">手臂命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00026">EwayCMD.c:26</a></div></div>
+<div class="ttc" id="_eway_servo_8c_html_ab24d5c28f4953cb2f536499af3e6c93a"><div class="ttname"><a href="_eway_servo_8c.html#ab24d5c28f4953cb2f536499af3e6c93a">sArmMotorBuf</a></div><div class="ttdeci">MotorBuf sArmMotorBuf</div><div class="ttdoc">手臂下发数据buffer </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8c_source.html#l00038">EwayServo.c:38</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a0fe44b2364deee3578dc2843b90b8db8"><div class="ttname"><a href="struct_robot_servo.html#a0fe44b2364deee3578dc2843b90b8db8">RobotServo::unMovingSpeedL</a></div><div class="ttdeci">u8 unMovingSpeedL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00095">EwayServo.h:95</a></div></div>
+<div class="ttc" id="_eway_c_m_d_8c_html_a20fe4ac1bfae514b71374e20f27445c5"><div class="ttname"><a href="_eway_c_m_d_8c.html#a20fe4ac1bfae514b71374e20f27445c5">sHeadMotorCmdPack</a></div><div class="ttdeci">EmbHeadMotorCmdPack sHeadMotorCmdPack</div><div class="ttdoc">头部命令数据包 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_c_m_d_8c_source.html#l00028">EwayCMD.c:28</a></div></div>
+<div class="ttc" id="struct_motor_buf_html_a366c7ee41db3906111823b18c747d94c"><div class="ttname"><a href="struct_motor_buf.html#a366c7ee41db3906111823b18c747d94c">MotorBuf::unBuf</a></div><div class="ttdeci">u8 unBuf[255]</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00107">EwayServo.h:107</a></div></div>
+<div class="ttc" id="_emb_init_pra_8h_html_a2c4e3aaa4f867fdc88ccc64239623a96"><div class="ttname"><a href="_emb_init_pra_8h.html#a2c4e3aaa4f867fdc88ccc64239623a96">Head_Start_ID</a></div><div class="ttdeci">#define Head_Start_ID</div><div class="ttdef"><b>Definition:</b> <a href="_emb_init_pra_8h_source.html#l00131">EmbInitPra.h:131</a></div></div>
+<div class="ttc" id="struct_robot_servo_html_a84a84112fce6e33f3240404c027521da"><div class="ttname"><a href="struct_robot_servo.html#a84a84112fce6e33f3240404c027521da">RobotServo::unGoalPositionL</a></div><div class="ttdeci">u8 unGoalPositionL</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00093">EwayServo.h:93</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_a8a86da6c6f0de7ddf71172cef16c5f8a"><div class="ttname"><a href="struct_h_s_a_motor_control.html#a8a86da6c6f0de7ddf71172cef16c5f8a">HSAMotorControl::nLastExeSpeed</a></div><div class="ttdeci">s16 nLastExeSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00061">EwayServo.h:61</a></div></div>
+<div class="ttc" id="_eway_servo_8h_html_ae3579b983b5d4d2777fcc48b236ec6ff"><div class="ttname"><a href="_eway_servo_8h.html#ae3579b983b5d4d2777fcc48b236ec6ff">ControlSPH</a></div><div class="ttdeci">#define ControlSPH</div><div class="ttdoc">舵机速度转换系数2:360减速比 </div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00036">EwayServo.h:36</a></div></div>
+<div class="ttc" id="struct_h_s_a_motor_control_html_adab2e2a993245d23b36e458df527f71f"><div class="ttname"><a href="struct_h_s_a_motor_control.html#adab2e2a993245d23b36e458df527f71f">HSAMotorControl::unBrakeFlag</a></div><div class="ttdeci">u8 unBrakeFlag</div><div class="ttdef"><b>Definition:</b> <a href="_eway_servo_8h_source.html#l00048">EwayServo.h:48</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a56611d1d90b52e69e3bb4544bb655974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56611d1d90b52e69e3bb4544bb655974">&#9670;&nbsp;</a></span>MotorPIDChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MotorPIDChange </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unStartID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>unServoNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_my_servo___master_8c_source.html">MyServo_Master.c</a> 第 <a class="el" href="_my_servo___master_8c_source.html#l00166">166</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    </div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="aea4670c464c43510275f92338fda2ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4670c464c43510275f92338fda2ea1">&#9670;&nbsp;</a></span>pcMyServo_Master</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8* pcMyServo_Master =&quot;MyM&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_my_servo___master_8c_source.html">MyServo_Master.c</a> 第 <a class="el" href="_my_servo___master_8c_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
