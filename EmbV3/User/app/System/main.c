@@ -1559,6 +1559,12 @@ void StartTaskSysRegular(void const * argument)
         sprintf(&Ver[0],"\r\nCy:%d,sysCnt:%d Emb System start running.\r\n",MySysTick,EwayEmbSys.sysTimCnt);        
         PrintfUart1DmaTransferConfig((u8*)(&Ver[0]),strlen((&Ver[0])));
     }
+		
+		if(pDebug->sysDebugCtrl&SysDebugCtrl_EMB_SYS_MASK)
+    {
+        sprintf(&Ver[0],"\r\nCy:%d,sysCnt:%d Emb System print Modified.\r\n",MySysTick,EwayEmbSys.sysTimCnt);        
+        PrintfUart1DmaTransferConfig((u8*)(&Ver[0]),strlen((&Ver[0])));
+    }
     
     /*
     pDebug->sysDebugCtrl |= (SysDebugCtrl_Emb_Proc_PC_Cmd_MASK|SysDebugCtrl_Motor_2_Emb_MASK|SysDebugCtrl_EmbSysInterLogicProc);
