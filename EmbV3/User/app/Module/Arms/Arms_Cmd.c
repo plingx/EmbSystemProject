@@ -28,7 +28,7 @@ extern EwayEmbSysDebugModule* pDebug;
 extern EWAYBOT_SERVO_STATUS sysEwServo[SYS_MAX_GENERAL_SERVO_NUMS];
 
 
-
+// just for test
 
 /*
 手臂电机下发指令流程        (目前主要先实现位置指令的下发)
